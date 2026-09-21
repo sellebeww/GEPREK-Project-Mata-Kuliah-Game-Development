@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a7711a8258924647bfda306f17e3a77, type: 3}
+  m_Name: Skin_Lecturer
+  m_EditorClassIdentifier: Assembly-CSharp::Geprek.Data.CharacterSkin
+  displayName: Lecturer
+  framesPerDirection: 3
+  frames:
+  - {fileID: 1388056377, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: -1666314818, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: -1524606745, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: 174546023, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: 1390897459, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: -937920791, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: -674435028, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: 1571175171, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: -610227417, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: 1663335453, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: -1227562820, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: 2077511131, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}

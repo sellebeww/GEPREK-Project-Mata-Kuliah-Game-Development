@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18559a986a4704289a78624945693c19, type: 3}
+  m_Name: Day_A2_2
+  m_EditorClassIdentifier: Assembly-CSharp::Geprek.Data.DayPlanDef
+  dayInArc: 2
+  title: Karyawan Pertama
+  briefing: Rekrut karyawan di toko supaya pengantaran tidak menumpuk.
+  targetRevenue: 210000
+  totalCustomers: 20
+  spawnIntervalStart: 6.5
+  spawnIntervalEnd: 4.5
+  patienceMultiplier: 1.05
+  maxRecipeComplexity: 0
+  objectives:
+  - kind: 2
+    amount: 6
+    recipe: {fileID: 11400000, guid: db821b0844b8847ec88c17387044472a, type: 2}
+  hasLunchRush: 1
+  rushStart: 0.39499998
+  rushEnd: 0.625
+  rushSpawnScale: 0.5775
+  rushPatienceScale: 0.9275

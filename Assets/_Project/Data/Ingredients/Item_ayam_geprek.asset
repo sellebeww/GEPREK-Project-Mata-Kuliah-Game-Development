@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af626864b3a5b44749037e35f497b173, type: 3}
+  m_Name: Item_ayam_geprek
+  m_EditorClassIdentifier: Assembly-CSharp::Geprek.Data.ItemDef
+  id: ayam_geprek
+  displayName: Ayam Geprek
+  icon: {fileID: -904230512, guid: b2940a722af034fd4862b738da7251f7, type: 3}
+  stage: 2
+  isPlatingComponent: 1
+  cookResult: {fileID: 0}
+  burnResult: {fileID: 0}
+  prepResult: {fileID: 0}
+  cookTime: 5
+  burnGrace: 6
+  prepTime: 2.5

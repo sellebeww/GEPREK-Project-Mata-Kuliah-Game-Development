@@ -1,0 +1,1803 @@
+fileFormatVersion: 2
+guid: b2940a722af034fd4862b738da7251f7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 138216426066323220
+    second: Foods_0
+  - first:
+      213: 5093126576142034854
+    second: Foods_1
+  - first:
+      213: -2860202713576427454
+    second: Foods_2
+  - first:
+      213: 8326203587107148169
+    second: Foods_3
+  - first:
+      213: 3478696898630265609
+    second: Foods_4
+  - first:
+      213: 2359628389229301742
+    second: Foods_5
+  - first:
+      213: 6926616686844706316
+    second: Foods_6
+  - first:
+      213: 3514213634008630315
+    second: Foods_7
+  - first:
+      213: 8835227144600006651
+    second: Foods_8
+  - first:
+      213: 8876726240187145090
+    second: Foods_9
+  - first:
+      213: 3151324051903645268
+    second: Foods_10
+  - first:
+      213: 5091692154403781356
+    second: Foods_11
+  - first:
+      213: -4316550205606163535
+    second: Foods_12
+  - first:
+      213: 2120654009663389168
+    second: Foods_13
+  - first:
+      213: 8683788127360132974
+    second: Foods_14
+  - first:
+      213: 7049278283185786012
+    second: Foods_15
+  - first:
+      213: 5256876910139490356
+    second: Foods_16
+  - first:
+      213: -4411135730633246758
+    second: Foods_17
+  - first:
+      213: -2074802483952238985
+    second: Foods_18
+  - first:
+      213: 8446610904501026338
+    second: Foods_19
+  - first:
+      213: -1656986305891554114
+    second: Foods_20
+  - first:
+      213: -5211473533272405835
+    second: Foods_21
+  - first:
+      213: -2633268605822719272
+    second: Foods_22
+  - first:
+      213: 607249015233398715
+    second: Foods_23
+  - first:
+      213: -9148637396049210403
+    second: Foods_24
+  - first:
+      213: -4512295190538914477
+    second: Foods_25
+  - first:
+      213: -1256988582501358063
+    second: Foods_26
+  - first:
+      213: -3675861889207485493
+    second: Foods_27
+  - first:
+      213: -7741142818211773839
+    second: Foods_28
+  - first:
+      213: 6267946363634822303
+    second: Foods_29
+  - first:
+      213: -1476721744108376287
+    second: Foods_30
+  - first:
+      213: 354419410429318546
+    second: Foods_31
+  - first:
+      213: 4413911831795485508
+    second: Foods_32
+  - first:
+      213: 786372225737053170
+    second: Foods_33
+  - first:
+      213: 6218966675241028699
+    second: Foods_34
+  - first:
+      213: 6087200392409547957
+    second: Foods_35
+  - first:
+      213: -9038263525343848083
+    second: Foods_36
+  - first:
+      213: 3954737301740638124
+    second: Foods_37
+  - first:
+      213: 2417540516156584462
+    second: Foods_38
+  - first:
+      213: -3671961699564068653
+    second: Foods_39
+  - first:
+      213: -7081003756961035043
+    second: Foods_40
+  - first:
+      213: -7103386091168331618
+    second: Foods_41
+  - first:
+      213: -7203229175617811766
+    second: Foods_42
+  - first:
+      213: 6614804054221285451
+    second: Foods_43
+  - first:
+      213: -4389919025192335389
+    second: Foods_44
+  - first:
+      213: 6956189985397256084
+    second: Foods_45
+  - first:
+      213: -4485117363116851148
+    second: Foods_46
+  - first:
+      213: -981291994897971266
+    second: Foods_47
+  - first:
+      213: -6095826991365236752
+    second: Foods_48
+  - first:
+      213: -1342955091425321014
+    second: Foods_49
+  - first:
+      213: 1703204070322346465
+    second: Foods_50
+  - first:
+      213: -8866567008241443695
+    second: Foods_51
+  - first:
+      213: 2778146056521760513
+    second: Foods_52
+  - first:
+      213: 8053880300692609968
+    second: Foods_53
+  - first:
+      213: -9168448025354061884
+    second: Foods_54
+  - first:
+      213: 5116094775732186545
+    second: Foods_55
+  - first:
+      213: -599537199965227531
+    second: Foods_56
+  - first:
+      213: 8646682800488195365
+    second: Foods_57
+  - first:
+      213: -8292766412287870052
+    second: Foods_58
+  - first:
+      213: 5380236208535579272
+    second: Foods_59
+  - first:
+      213: -80371520870581298
+    second: Foods_60
+  - first:
+      213: 8011679090893460790
+    second: Foods_61
+  - first:
+      213: -2379666877569551258
+    second: Foods_62
+  - first:
+      213: 4625570979149625759
+    second: Foods_63
+  - first:
+      213: 2060600343759115779
+    second: Foods_64
+  - first:
+      213: 6649176609362900108
+    second: Foods_65
+  - first:
+      213: -2804289994557310743
+    second: Foods_66
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: chicken_raw
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1104
+        width: 132
+        height: 99
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05169b5ad23b14fea9cd732618559347
+      internalID: -1908906573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_fried
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 1099
+        width: 118
+        height: 116
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cdb06259b3fe4cb4862624f3e3c2c3f
+      internalID: 640961517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_geprek
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 1099
+        width: 129
+        height: 116
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f2f922c7b6b64fee8ae6b8c972541ab
+      internalID: -904230512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chicken_katsu
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 1099
+        width: 135
+        height: 109
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc0333bdfceae46d38f5f1eb0632e74c
+      internalID: 2042520178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rice_scoop
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 1107
+        width: 110
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1cff73dc44eb4ef58da186c4d338ae0
+      internalID: -737220853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rice_bowl
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1098
+        width: 123
+        height: 113
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 788762182db364d099d6507dae88bfac
+      internalID: 1967001010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sambal_merah
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 1098
+        width: 121
+        height: 110
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fec250e3762e4c41a443e8a2b67c8b9
+      internalID: 460587802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sambal_ijo
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 1098
+        width: 121
+        height: 110
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fadd83ced09a4ff982858af93cc73ea
+      internalID: 878218516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chili_one
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 965
+        width: 96
+        height: 81
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5638ea3bf76234400a80d077fc1e49cb
+      internalID: 352857824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chili_red
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 946
+        width: 134
+        height: 113
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee035fdd187da47dbb4035673608e09a
+      internalID: 376316466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chili_green
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 948
+        width: 132
+        height: 110
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3fa948967c784351af92b51276d3de5
+      internalID: -814741392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: garlic
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 956
+        width: 113
+        height: 89
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd63e05bd17024178aeefa894743296d
+      internalID: -1605205385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shallot
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 951
+        width: 111
+        height: 108
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7827f27c122d64bf2bb970d536c4ed3a
+      internalID: -1383565588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tomato
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 951
+        width: 103
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44f6eae3978284802ac0961b00efcb73
+      internalID: 1668419730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cucumber
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 949
+        width: 123
+        height: 107
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10d19a861b02e4b299e37ae8fe22571f
+      internalID: 590706603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kemangi
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 943
+        width: 120
+        height: 119
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85fd44aa5340146c38de6bc5a1a4bd84
+      internalID: -2066246507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rice_sack
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 782
+        width: 125
+        height: 133
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d1f369f7dcc94ed99c7ecba00a54f92
+      internalID: 255243829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: egg_bowl
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 787
+        width: 127
+        height: 110
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 427d3d2e2dac44c179d6848f84addfd3
+      internalID: -581584729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cooking_oil
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 781
+        width: 70
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc59e56f1b61043839aae7f5c1660959
+      internalID: -1541774188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salt
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 786
+        width: 73
+        height: 119
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a54401206a0b24e50800f08fdfab7a26
+      internalID: 1842311793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepper
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 786
+        width: 73
+        height: 120
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f35a42b4ff8344e7a00981aefda0255
+      internalID: 844225333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soy_sauce
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 783
+        width: 80
+        height: 141
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f75985d64cfa1498ebc7c054ce82b5b5
+      internalID: 2092508030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coconut_milk
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 781
+        width: 107
+        height: 138
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fe2a1005ee9a482cae6953c0df95e5d
+      internalID: 1458538652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cabbage
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 788
+        width: 120
+        height: 117
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6b1f2f633d974e45910180dba708f39
+      internalID: 986453143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dish_original
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 635
+        width: 145
+        height: 108
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52d584186848d41f7911c6c1e8ff6704
+      internalID: 1497735675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dish_sambal_merah
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 636
+        width: 141
+        height: 107
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69ff551d66d954f618bdb236147e2c31
+      internalID: 1595781921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dish_sambal_ijo
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 636
+        width: 143
+        height: 106
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d05b0e50bb75344c2917060a2b1d0541
+      internalID: -2048707472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dish_mozzarella
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 635
+        width: 143
+        height: 110
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63eef9175737f4c3f865d5dff67c80b4
+      internalID: -63809261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dish_telur
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 635
+        width: 144
+        height: 110
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcf08b528b73547e3b348574685f3c22
+      internalID: 1275289413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dish_tahu
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 635
+        width: 144
+        height: 109
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2031806c5426b42389cf62d143f754b2
+      internalID: 1182233785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dish_komplit
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 635
+        width: 144
+        height: 110
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5300946f283bd45568912e47afdf1e51
+      internalID: 921491595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dish_lalapan
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 635
+        width: 144
+        height: 110
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5921ef9bb8b05470bbbbc9bf39817833
+      internalID: -1734360450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tahu
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 491
+        width: 136
+        height: 105
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2404888eac47b4d67a4bf2d80ea3eb93
+      internalID: 1256251168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tempe
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 490
+        width: 137
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b291bb9883e384b9f89d749abc49a594
+      internalID: 647134234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: telur_ceplok
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 487
+        width: 130
+        height: 97
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 202294cc805fc4f8880e1be3ac0cb7de
+      internalID: 790009199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kerupuk
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 486
+        width: 126
+        height: 101
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9c69cf3df5354571a2b9cf3193f7ea2
+      internalID: -615035069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: timun_iris
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 490
+        width: 136
+        height: 91
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 017f06f2f7e39483ba9c27c9500ff2a3
+      internalID: -388336414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kol_iris
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 490
+        width: 137
+        height: 97
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d32bc1c7dc02948709c96ce337397536
+      internalID: 850584042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lalapan
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 491
+        width: 135
+        height: 107
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15fd50b28adda430ba475f5aa6bb577b
+      internalID: 419124792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nasi_sambal
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 487
+        width: 136
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de2bccc2b9aa34d0d844baa349baeec5
+      internalID: -404498408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plate_empty
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 338
+        width: 143
+        height: 102
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdd6b695d5761438d8ce84c2595318e1
+      internalID: -1842304919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobek_small
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 331
+        width: 130
+        height: 116
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c9aa44257a874e11bbc0adadc0f53db
+      internalID: 922911066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tray
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 343
+        width: 143
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 818094b844a7b45d09ddc1686f8b23c7
+      internalID: -1608852957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boxmeal_open
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 339
+        width: 155
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e5fa2a99d65b47c58d0dcc78ad2aeef
+      internalID: 1991654347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: box_closed
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 338
+        width: 139
+        height: 113
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ead356fa20a64c298440969085f75b8
+      internalID: -434592434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: box_meal
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 326
+        width: 135
+        height: 136
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31347a4f02027475aa97b261eba3202c
+      internalID: -286516078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: paper_bag
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 326
+        width: 118
+        height: 134
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3643b9a8cdd624102b3e5b5a34ee12b2
+      internalID: -1550836229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cutlery
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 330
+        width: 81
+        height: 124
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4caf8d3a711749f4b0f531acc442fdd
+      internalID: 421640145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: book_closed
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 177
+        width: 114
+        height: 124
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cd774cf968d7417b8be5726315bb847
+      internalID: -85139877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: book_open
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 183
+        width: 156
+        height: 105
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ae0d19696f7f44c7bc6ceb67bc141f8
+      internalID: -596554677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scroll
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 177
+        width: 142
+        height: 124
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e10166485e2a44879192faa03bff401
+      internalID: 1636604816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coin
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 195
+        width: 91
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 175af5ba88bb14063a0a9584e681c5ea
+      internalID: 581667794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coin_stack
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 183
+        width: 106
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e9d842ff215e4a8f849d7e0ae59ce9c
+      internalID: -1250878741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wallet
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 185
+        width: 125
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 069c4b1c12efa405bb8fdcbf7aa06890
+      internalID: -31261251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clipboard
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 180
+        width: 101
+        height: 122
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 142f28c1066b74d98bb2c4aec2459a5d
+      internalID: 584832096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: notebook
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 179
+        width: 108
+        height: 123
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f4734007035440bbbdf148f4b16a8a3
+      internalID: -448836042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: es_teh
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 22
+        width: 92
+        height: 145
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d26477820f94d472290e0007ff55a879
+      internalID: 1851658250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: es_jeruk
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 22
+        width: 91
+        height: 145
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbc7da77681a640ebbb53a118febcc43
+      internalID: 603057505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air_putih
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 25
+        width: 91
+        height: 122
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45e1a788f581847e283ef94c1cf26509
+      internalID: -1593819727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teh_hangat
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 31
+        width: 130
+        height: 104
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4018227a58a4426480db6ac751bc38d
+      internalID: -632915794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botol_air
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 18
+        width: 70
+        height: 148
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e99c3edacc8734f0089658008ddb5290
+      internalID: 239811893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wadah_nasi
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 28
+        width: 133
+        height: 116
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63e1859cfc7d74207be1de37e0b9fd42
+      internalID: -828173536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: takeaway_bag
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 21
+        width: 122
+        height: 143
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5be65ac094c8a4060b09bb8111d6b3b5
+      internalID: 1111225132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veg_crate
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 21
+        width: 147
+        height: 132
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aad03bf6a760f4639a349e80022abec9
+      internalID: 1874380764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5098b87d5b17e444685e89c582c899fe
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      air_putih: -1593819727
+      book_closed: -85139877
+      book_open: -596554677
+      botol_air: 239811893
+      box_closed: -434592434
+      box_meal: -286516078
+      boxmeal_open: 1991654347
+      cabbage: 986453143
+      chicken_fried: 640961517
+      chicken_geprek: -904230512
+      chicken_katsu: 2042520178
+      chicken_raw: -1908906573
+      chili_green: -814741392
+      chili_one: 352857824
+      chili_red: 376316466
+      clipboard: 584832096
+      cobek_small: 922911066
+      coconut_milk: 1458538652
+      coin: 581667794
+      coin_stack: -1250878741
+      cooking_oil: -1541774188
+      cucumber: 590706603
+      cutlery: 421640145
+      dish_komplit: 921491595
+      dish_lalapan: -1734360450
+      dish_mozzarella: -63809261
+      dish_original: 1497735675
+      dish_sambal_ijo: -2048707472
+      dish_sambal_merah: 1595781921
+      dish_tahu: 1182233785
+      dish_telur: 1275289413
+      egg_bowl: -581584729
+      es_jeruk: 603057505
+      es_teh: 1851658250
+      garlic: -1605205385
+      kemangi: -2066246507
+      kerupuk: -615035069
+      kol_iris: 850584042
+      lalapan: 419124792
+      nasi_sambal: -404498408
+      notebook: -448836042
+      paper_bag: -1550836229
+      pepper: 844225333
+      plate_empty: -1842304919
+      rice_bowl: 1967001010
+      rice_sack: 255243829
+      rice_scoop: -737220853
+      salt: 1842311793
+      sambal_ijo: 878218516
+      sambal_merah: 460587802
+      scroll: 1636604816
+      shallot: -1383565588
+      soy_sauce: 2092508030
+      tahu: 1256251168
+      takeaway_bag: 1111225132
+      teh_hangat: -632915794
+      telur_ceplok: 790009199
+      tempe: 647134234
+      timun_iris: -388336414
+      tomato: 1668419730
+      tray: -1608852957
+      veg_crate: 1874380764
+      wadah_nasi: -828173536
+      wallet: -31261251
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

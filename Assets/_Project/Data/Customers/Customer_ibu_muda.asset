@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89c51a21b71ab4c62a599d6b723b0a90, type: 3}
+  m_Name: Customer_ibu_muda
+  m_EditorClassIdentifier: Assembly-CSharp::Geprek.Data.CustomerTypeDef
+  id: ibu_muda
+  displayName: Ibu Muda
+  skin: {fileID: 11400000, guid: 6cbc56ce7f7a34fd5b4ebe6d3c5f97eb, type: 2}
+  patienceMultiplier: 1.1
+  payMultiplier: 1.05
+  spawnWeight: 1
+  minArc: 1
+  isSpecialGuest: 0
+  specialReputationGain: 0.12
+  specialReputationLoss: 0.08

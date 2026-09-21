@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a7711a8258924647bfda306f17e3a77, type: 3}
+  m_Name: Skin_Businesswoman
+  m_EditorClassIdentifier: Assembly-CSharp::Geprek.Data.CharacterSkin
+  displayName: Businesswoman
+  framesPerDirection: 3
+  frames:
+  - {fileID: 690858836, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: -2021464858, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: -334751460, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: -2049915256, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: 1526623683, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: 1165653453, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: 1631329204, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: 358608483, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: -330086646, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: -155690789, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: -286817988, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: 350339254, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}

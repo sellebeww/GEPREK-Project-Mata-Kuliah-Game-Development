@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c3d0ae1593ac4a96932a560f9177a48, type: 3}
+  m_Name: Arc_2
+  m_EditorClassIdentifier: Assembly-CSharp::Geprek.Data.ArcDef
+  arcNumber: 2
+  title: 'Arc 2: Pengembangan'
+  intro: Warung pindah ke ruko. Kapasitas bertambah dan kamu bisa merekrut karyawan.
+  outro: Bisnismu stabil. Sudah waktunya memikirkan cabang.
+  businessLocation: 2
+  days:
+  - {fileID: 11400000, guid: 3346697dc0c944ff2a326eea7e1937ab, type: 2}
+  - {fileID: 11400000, guid: 9af69f93150854ecdab6f7fd32a8618b, type: 2}
+  - {fileID: 11400000, guid: 600478fe5450442fa8f29b20f17c6eb0, type: 2}
+  - {fileID: 11400000, guid: 037e5d97f69a747e8b300087d8750bb5, type: 2}
+  - {fileID: 11400000, guid: 99f270bf3f4274b63ba33502cfd10246, type: 2}
+  arcRevenueTarget: 1150000
+  minSatisfaction: 0.5

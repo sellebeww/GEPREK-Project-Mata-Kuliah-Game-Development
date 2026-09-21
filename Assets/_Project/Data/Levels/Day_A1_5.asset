@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18559a986a4704289a78624945693c19, type: 3}
+  m_Name: Day_A1_5
+  m_EditorClassIdentifier: Assembly-CSharp::Geprek.Data.DayPlanDef
+  dayInArc: 5
+  title: Ujian Pertama
+  briefing: Hari terakhir sebelum lapor ke dosen. Kejar target arc.
+  targetRevenue: 170000
+  totalCustomers: 17
+  spawnIntervalStart: 7
+  spawnIntervalEnd: 4.5
+  patienceMultiplier: 1
+  maxRecipeComplexity: 4
+  objectives:
+  - kind: 0
+    amount: 14
+    recipe: {fileID: 0}
+  - kind: 2
+    amount: 5
+    recipe: {fileID: 11400000, guid: 39c100d6d526448bfb8c161c405b7b20, type: 2}
+  hasLunchRush: 1
+  rushStart: 0.32
+  rushEnd: 0.7
+  rushSpawnScale: 0.45
+  rushPatienceScale: 0.86

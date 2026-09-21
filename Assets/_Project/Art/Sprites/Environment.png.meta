@@ -1,0 +1,1794 @@
+fileFormatVersion: 2
+guid: 54c4587d628694038a7d1c977d3e007b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2753597471096352698
+    second: Environment_0
+  - first:
+      213: -446867404522521166
+    second: Environment_1
+  - first:
+      213: 5089713165793692188
+    second: Environment_2
+  - first:
+      213: 2713915087196460949
+    second: Environment_3
+  - first:
+      213: -4500993874483076431
+    second: Environment_4
+  - first:
+      213: 3411122762858479303
+    second: Environment_5
+  - first:
+      213: -6081611462039590206
+    second: Environment_6
+  - first:
+      213: -5508807443964245338
+    second: Environment_7
+  - first:
+      213: 3914693016000628799
+    second: Environment_8
+  - first:
+      213: 3062189330265537062
+    second: Environment_9
+  - first:
+      213: 2748799819732492174
+    second: Environment_10
+  - first:
+      213: -2994877863233710035
+    second: Environment_11
+  - first:
+      213: -7033716677687157895
+    second: Environment_12
+  - first:
+      213: 1648749068166103451
+    second: Environment_13
+  - first:
+      213: -2213567507432036408
+    second: Environment_14
+  - first:
+      213: 5357120858899214548
+    second: Environment_15
+  - first:
+      213: 7639126416902016418
+    second: Environment_16
+  - first:
+      213: 6624564900204519675
+    second: Environment_17
+  - first:
+      213: -3991350176519637132
+    second: Environment_18
+  - first:
+      213: -1812239924292666704
+    second: Environment_19
+  - first:
+      213: 5527991814459261845
+    second: Environment_20
+  - first:
+      213: 1215948700918501126
+    second: Environment_21
+  - first:
+      213: 3402626008137936661
+    second: Environment_22
+  - first:
+      213: 6704674279086497085
+    second: Environment_23
+  - first:
+      213: 6521106915325849606
+    second: Environment_24
+  - first:
+      213: -1748565696620533181
+    second: Environment_25
+  - first:
+      213: -5391879529046575787
+    second: Environment_26
+  - first:
+      213: 9048288764117043530
+    second: Environment_27
+  - first:
+      213: -3707002486540017073
+    second: Environment_28
+  - first:
+      213: 3371635014090334378
+    second: Environment_29
+  - first:
+      213: -3610254309448376044
+    second: Environment_30
+  - first:
+      213: -8660716236246925858
+    second: Environment_31
+  - first:
+      213: -2027768988174841985
+    second: Environment_32
+  - first:
+      213: 6349013988125360775
+    second: Environment_33
+  - first:
+      213: -7963306881671151232
+    second: Environment_34
+  - first:
+      213: -8895750759828453358
+    second: Environment_35
+  - first:
+      213: -420011917627683574
+    second: Environment_36
+  - first:
+      213: -4963233293970173821
+    second: Environment_37
+  - first:
+      213: 4387114940483708709
+    second: Environment_38
+  - first:
+      213: -7193238942633767280
+    second: Environment_39
+  - first:
+      213: 2769150087056988002
+    second: Environment_40
+  - first:
+      213: -4169703812491793260
+    second: Environment_41
+  - first:
+      213: 6991994851604387820
+    second: Environment_42
+  - first:
+      213: -7409474071180929432
+    second: Environment_43
+  - first:
+      213: -4636847794397422758
+    second: Environment_44
+  - first:
+      213: -8074864621814108229
+    second: Environment_45
+  - first:
+      213: -6122121489174308049
+    second: Environment_46
+  - first:
+      213: -2288535303482236656
+    second: Environment_47
+  - first:
+      213: 4846823439203006643
+    second: Environment_48
+  - first:
+      213: 7769852044318417917
+    second: Environment_49
+  - first:
+      213: -2523555378865668779
+    second: Environment_50
+  - first:
+      213: 3932388392915983735
+    second: Environment_51
+  - first:
+      213: 319902059651018086
+    second: Environment_52
+  - first:
+      213: -1973385982776480943
+    second: Environment_53
+  - first:
+      213: 7973757071517147555
+    second: Environment_54
+  - first:
+      213: 6965315667032882931
+    second: Environment_55
+  - first:
+      213: -325212454176087214
+    second: Environment_56
+  - first:
+      213: 8212117662868637731
+    second: Environment_57
+  - first:
+      213: -6708498939408676765
+    second: Environment_58
+  - first:
+      213: -4959275033867595251
+    second: Environment_59
+  - first:
+      213: -4498274057855931184
+    second: Environment_60
+  - first:
+      213: -7656109257990232069
+    second: Environment_61
+  - first:
+      213: -4543334528943961756
+    second: Environment_62
+  - first:
+      213: -4200805785040630638
+    second: Environment_63
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wok_stove
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1105
+        width: 128
+        height: 111
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cbb9a1ad9c6f4d45aaf4ebb0f44a2a6
+      internalID: -1723759078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fryer_double
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 1105
+        width: 121
+        height: 124
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dcd3ca64da2a4bbca8873753e76df0e
+      internalID: 464856529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fryer_bank
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1105
+        width: 124
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40bd2249293274eb19d7e8c750b514b0
+      internalID: 175385577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ricecooker_silver
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 1108
+        width: 130
+        height: 116
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec668fca2ce5942ba891d4f3a89a25f4
+      internalID: -513459798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ricecooker_red
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 1103
+        width: 129
+        height: 133
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: badb04766f9584b49a0a482a8cdcf0f6
+      internalID: 2115995571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cobek_stand
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 1101
+        width: 105
+        height: 142
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92018bbdae45c46afbdb98817df6f37b
+      internalID: 89392952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: counter_sambal
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 1101
+        width: 132
+        height: 119
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 801569907a5db469893318443d25b8d2
+      internalID: -2038328704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: counter_full
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 1101
+        width: 135
+        height: 131
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21bf7e28b15364cbcadb4df13293d4f8
+      internalID: -755969146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cabinet_meat
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 945
+        width: 118
+        height: 118
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76034b7994777429ca4c51e8ddbea6e6
+      internalID: 1141749844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pantry_shelf
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 942
+        width: 122
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e273f3e521d474e4b8aac468f5a92738
+      internalID: -2107053598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rice_bin
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 944
+        width: 113
+        height: 118
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2981e9f7e7f24baaa059301ac525dd1
+      internalID: 720347747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rice_barrel
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 941
+        width: 115
+        height: 130
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 177878a8e49e84d099c9ac2d40d350d0
+      internalID: -184110412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veg_basket
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 945
+        width: 137
+        height: 120
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fdb0f1fc9c894096b7174531f80ac4d
+      internalID: -2112599962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veg_display
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 941
+        width: 129
+        height: 135
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ade5bbaa1ee2d4f7b94bc7994c6301ea
+      internalID: -1760933462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dish_rack
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 945
+        width: 133
+        height: 120
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1a082442273f42b8a2cb4a806cd899a
+      internalID: -422411764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: service_cart
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 942
+        width: 123
+        height: 138
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfcf062380065408da2c3313243fda4b
+      internalID: 2059350329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: awning
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 806
+        width: 139
+        height: 97
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a09e902afed194976bf35944de6b1b95
+      internalID: 1335117751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: umbrella
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 781
+        width: 148
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13979972e922a4343afddf2440a08737
+      internalID: -1510475155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fence_wood
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 795
+        width: 134
+        height: 102
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5b94c8188c1e4308a254b353f4f32b4
+      internalID: 1172725864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fence_stone
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 802
+        width: 137
+        height: 87
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dadf3c35926224f968302af09b0d7127
+      internalID: 1339993264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gate
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 793
+        width: 138
+        height: 107
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 142cc57606ea14e199a1cb2b73cba95f
+      internalID: -1136365989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bollard
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 787
+        width: 61
+        height: 116
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62285bb7545c34a74ab36273446a0cba
+      internalID: 992659082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: street_lamp
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 773
+        width: 49
+        height: 161
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5e3708c021ec48d99b5e6b30c48a3f8
+      internalID: 1138576637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planter
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 784
+        width: 118
+        height: 129
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4955e02b70bb410c8eb6609eb060de2
+      internalID: 586367281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door_open
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 618
+        width: 103
+        height: 155
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f170f5b2b6db34ef098c2b29f2eef65f
+      internalID: -1064162455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door_glass_b
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 626
+        width: 85
+        height: 143
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b27af98065fd64846a3a8932d96114c0
+      internalID: -108122559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: window_shutter
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 642
+        width: 141
+        height: 108
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0aa46b38091044e98416508425de325
+      internalID: 1648242112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: window_slide
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 642
+        width: 140
+        height: 105
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1bfc049f57504f37b6784f8ac651cfa
+      internalID: -131048292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sign_wood
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 641
+        width: 132
+        height: 116
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c5224cf6b06048128b575f33df1a11b
+      internalID: 126525065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sign_red
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 645
+        width: 141
+        height: 92
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44c87aeaaf882416582dce13320bd4d6
+      internalID: 1583681066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sign_chicken
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 630
+        width: 75
+        height: 136
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbd2e8f2e0697440a951d2f08e851cf7
+      internalID: -194360415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: menu_board
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 628
+        width: 115
+        height: 129
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 889112f6fe6484c3b8bc040ffbf3a421
+      internalID: 2146838156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rug_red
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 519
+        width: 138
+        height: 47
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 207efdafe2f1049eabd187763780a285
+      internalID: 581727971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rug_teal
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 497
+        width: 151
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f0cc5ce135f9431fb8472b9a08326c6
+      internalID: -340331177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mirror
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 480
+        width: 85
+        height: 136
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7c4e0fbab25a4629abb9e2c30dd336a
+      internalID: 1837619991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: family_photo
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 488
+        width: 123
+        height: 108
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de35de79e1d9d4221adb8022a57cd97e
+      internalID: -1553973836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hanging_plant
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 471
+        width: 105
+        height: 148
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 472dd7967c6ed47d0af1eef14725265e
+      internalID: 1708923184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: calendar
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 483
+        width: 80
+        height: 129
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2dedc7704189417d9ca587bf5ea2ce1
+      internalID: -408598238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lamp_table
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 472
+        width: 97
+        height: 142
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6a01edd7c10b48e980b51bb3b6dc32d
+      internalID: -13268758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slippers
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 479
+        width: 120
+        height: 101
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44fc4d53521964d6b88815e05d45bd4b
+      internalID: 1036176564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coffee_table
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 318
+        width: 131
+        height: 119
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeb957e269397469095df2a5336b7e64
+      internalID: 1844630329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: armchair
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 315
+        width: 124
+        height: 137
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cf06c0495afa4184bf9ff474ff3fe11
+      internalID: -830708441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tv
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 317
+        width: 114
+        height: 149
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf6431d9fda06412e8d4bc3357c2e6e1
+      internalID: -674513375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: radio
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 332
+        width: 116
+        height: 119
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aeb2440a40644a51b77afcb46747db8
+      internalID: -114528222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cabinet_pot
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 318
+        width: 129
+        height: 145
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9c9b8e6521f54621b9b726bf0a06aa4
+      internalID: 1578654443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laundry_basket
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 327
+        width: 123
+        height: 110
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11b31a579d055447da2dfbfb876a435b
+      internalID: -1069827008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: curtain
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 320
+        width: 131
+        height: 132
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad46a52f772b04f97b441681202b25e9
+      internalID: -1535900184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: folder
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 322
+        width: 116
+        height: 122
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ddcb5e955771404b99063c104b7b1d6
+      internalID: 31298552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: desk_study
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 172
+        width: 136
+        height: 117
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8927e5713d8364900bde7ae633c7b1c7
+      internalID: -937554625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: office_chair
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 162
+        width: 105
+        height: 138
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fbc05ee830b44ca98e98a0033106154
+      internalID: -56204763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laptop_chart
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 173
+        width: 137
+        height: 108
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8c1519e3707b42988d5b3f48c8cb913
+      internalID: -654652775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monitor_branch
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 174
+        width: 138
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70933d988ab5040bfbeb134ca56094db
+      internalID: -1199964793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: filing_cabinet
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 162
+        width: 95
+        height: 141
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 593e7c1b173534e8e914282af482b202
+      internalID: 121126604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: corkboard
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 181
+        width: 140
+        height: 105
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85e0047c836604f8b845bded9ca0f5dd
+      internalID: -1371616919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: locker
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 162
+        width: 107
+        height: 144
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13a384ec543124f22801478566c08bb2
+      internalID: 1307795926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trophy
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 169
+        width: 78
+        height: 126
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b6c0d69e8fee47fe8f9531a03243f3b
+      internalID: -408398784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mop_bucket
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 18
+        width: 107
+        height: 146
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2855f3f10126a4070b26eabd98e83216
+      internalID: 689643037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wet_sign
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 18
+        width: 96
+        height: 126
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a829addd4cc5746df8f0ad8d4ce02483
+      internalID: -294025946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: towel
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 47
+        width: 118
+        height: 75
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb38954e142a745078d8725148ae25e5
+      internalID: 1744032119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plates_dirty
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 39
+        width: 104
+        height: 88
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13db984f492f64dceb214c41e4e4162c
+      internalID: -699241235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plates_clean
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 37
+        width: 103
+        height: 92
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eeee74dcd67d4115915bdae624b5ed4
+      internalID: 1426733205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: order_rail
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 67
+        width: 140
+        height: 79
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35bca4b3decdc49239ae3c52db3c68fa
+      internalID: 109819581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: takeaway_station
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 20
+        width: 140
+        height: 122
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb4c3daa49ae24714ab2dc48a18f57b3
+      internalID: -1867534835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condiment_org
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 27
+        width: 132
+        height: 115
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65121295ae44e4eeeae0b0e517948d22
+      internalID: 795618460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1fd28d05982094dc1bda3a04b1ec9b91
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      armchair: -830708441
+      awning: 1335117751
+      bollard: 992659082
+      cabinet_meat: 1141749844
+      cabinet_pot: 1578654443
+      calendar: -408598238
+      cobek_stand: 89392952
+      coffee_table: 1844630329
+      condiment_org: 795618460
+      corkboard: -1371616919
+      counter_full: -755969146
+      counter_sambal: -2038328704
+      curtain: -1535900184
+      desk_study: -937554625
+      dish_rack: -422411764
+      door_glass_b: -108122559
+      door_open: -1064162455
+      family_photo: -1553973836
+      fence_stone: 1339993264
+      fence_wood: 1172725864
+      filing_cabinet: 121126604
+      folder: 31298552
+      fryer_bank: 175385577
+      fryer_double: 464856529
+      gate: -1136365989
+      hanging_plant: 1708923184
+      lamp_table: -13268758
+      laptop_chart: -654652775
+      laundry_basket: -1069827008
+      locker: 1307795926
+      menu_board: 2146838156
+      mirror: 1837619991
+      monitor_branch: -1199964793
+      mop_bucket: 689643037
+      office_chair: -56204763
+      order_rail: 109819581
+      pantry_shelf: -2107053598
+      planter: 586367281
+      plates_clean: 1426733205
+      plates_dirty: -699241235
+      radio: -114528222
+      rice_barrel: -184110412
+      rice_bin: 720347747
+      ricecooker_red: 2115995571
+      ricecooker_silver: -513459798
+      rug_red: 581727971
+      rug_teal: -340331177
+      service_cart: 2059350329
+      sign_chicken: -194360415
+      sign_red: 1583681066
+      sign_wood: 126525065
+      slippers: 1036176564
+      street_lamp: 1138576637
+      takeaway_station: -1867534835
+      towel: 1744032119
+      trophy: -408398784
+      tv: -674513375
+      umbrella: -1510475155
+      veg_basket: -2112599962
+      veg_display: -1760933462
+      wet_sign: -294025946
+      window_shutter: 1648242112
+      window_slide: -131048292
+      wok_stove: -1723759078
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

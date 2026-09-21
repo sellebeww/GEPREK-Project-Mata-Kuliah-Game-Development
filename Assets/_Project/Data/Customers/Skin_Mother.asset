@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a7711a8258924647bfda306f17e3a77, type: 3}
+  m_Name: Skin_Mother
+  m_EditorClassIdentifier: Assembly-CSharp::Geprek.Data.CharacterSkin
+  displayName: Mother
+  framesPerDirection: 3
+  frames:
+  - {fileID: 798098200, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: -755826539, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: -343049387, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: 1883210522, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: 1900995113, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: 1470453624, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: -1109017196, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: 1774486274, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: -1504860214, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: -366396317, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: -1026404684, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: 1751335273, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}

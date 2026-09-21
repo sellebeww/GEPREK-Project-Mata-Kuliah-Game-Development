@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89c51a21b71ab4c62a599d6b723b0a90, type: 3}
+  m_Name: Customer_food_vlogger
+  m_EditorClassIdentifier: Assembly-CSharp::Geprek.Data.CustomerTypeDef
+  id: food_vlogger
+  displayName: Food Vlogger
+  skin: {fileID: 11400000, guid: e5126e495d2654e09888b55ab7e02ec5, type: 2}
+  patienceMultiplier: 0.75
+  payMultiplier: 1.8
+  spawnWeight: 0
+  minArc: 1
+  isSpecialGuest: 1
+  specialReputationGain: 0.12
+  specialReputationLoss: 0.08

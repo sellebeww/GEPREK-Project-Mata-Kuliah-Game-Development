@@ -1,0 +1,2626 @@
+fileFormatVersion: 2
+guid: 27d739c9db2cf41b7ac4c0e51646fec2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5523310493559919428
+    second: Character 2_0
+  - first:
+      213: 3210466312625128415
+    second: Character 2_1
+  - first:
+      213: 6969935306566248009
+    second: Character 2_2
+  - first:
+      213: 3081374114918330275
+    second: Character 2_3
+  - first:
+      213: 2330761377080779233
+    second: Character 2_4
+  - first:
+      213: -7949915453379610510
+    second: Character 2_5
+  - first:
+      213: 1890711166072548439
+    second: Character 2_6
+  - first:
+      213: -8963408989175211581
+    second: Character 2_7
+  - first:
+      213: -8893421229381248900
+    second: Character 2_8
+  - first:
+      213: -8452614644752196329
+    second: Character 2_9
+  - first:
+      213: -4765805420350395928
+    second: Character 2_10
+  - first:
+      213: 1757382920479738524
+    second: Character 2_11
+  - first:
+      213: 4512425991632976173
+    second: Character 2_12
+  - first:
+      213: -7476236096257117600
+    second: Character 2_13
+  - first:
+      213: 1866600093684036841
+    second: Character 2_14
+  - first:
+      213: -9208361575804453332
+    second: Character 2_15
+  - first:
+      213: -2483395775667493406
+    second: Character 2_16
+  - first:
+      213: 5383578849717513428
+    second: Character 2_17
+  - first:
+      213: -5182074871334371229
+    second: Character 2_18
+  - first:
+      213: -3583700218202922189
+    second: Character 2_19
+  - first:
+      213: -771461415746620164
+    second: Character 2_20
+  - first:
+      213: -3595482377553474718
+    second: Character 2_21
+  - first:
+      213: 7603911723678616581
+    second: Character 2_22
+  - first:
+      213: 6721338773397801539
+    second: Character 2_23
+  - first:
+      213: 3966489940799889177
+    second: Character 2_24
+  - first:
+      213: -4828159784911920429
+    second: Character 2_25
+  - first:
+      213: 267878748296523587
+    second: Character 2_26
+  - first:
+      213: -517485577438127885
+    second: Character 2_27
+  - first:
+      213: -3878374968266145042
+    second: Character 2_28
+  - first:
+      213: 8756648797477423361
+    second: Character 2_29
+  - first:
+      213: 3035059297299102225
+    second: Character 2_30
+  - first:
+      213: 274039047752287149
+    second: Character 2_31
+  - first:
+      213: -9076786433935678007
+    second: Character 2_32
+  - first:
+      213: 1581673598718036607
+    second: Character 2_33
+  - first:
+      213: 7940139073433538760
+    second: Character 2_34
+  - first:
+      213: 9202616183960402796
+    second: Character 2_35
+  - first:
+      213: -330937084359363800
+    second: Character 2_36
+  - first:
+      213: 119200910108730312
+    second: Character 2_37
+  - first:
+      213: 8757999549083272276
+    second: Character 2_38
+  - first:
+      213: 5875082535727525308
+    second: Character 2_39
+  - first:
+      213: 9079207468154779829
+    second: Character 2_40
+  - first:
+      213: 834342128014316169
+    second: Character 2_41
+  - first:
+      213: 5465733180114152842
+    second: Character 2_42
+  - first:
+      213: 8767877229574968234
+    second: Character 2_43
+  - first:
+      213: 6990534753748998408
+    second: Character 2_44
+  - first:
+      213: 5873320727787336366
+    second: Character 2_45
+  - first:
+      213: -6367471832054114203
+    second: Character 2_46
+  - first:
+      213: -392105518152703515
+    second: Character 2_47
+  - first:
+      213: -8538644844432933602
+    second: Character 2_48
+  - first:
+      213: 1408631540211733128
+    second: Character 2_49
+  - first:
+      213: 388219522775158450
+    second: Character 2_50
+  - first:
+      213: -2976709745250117988
+    second: Character 2_51
+  - first:
+      213: -5367100859519634587
+    second: Character 2_52
+  - first:
+      213: 2833880102038611157
+    second: Character 2_53
+  - first:
+      213: -6644142066007092207
+    second: Character 2_54
+  - first:
+      213: -4421181050405826597
+    second: Character 2_55
+  - first:
+      213: 7465785386803830769
+    second: Character 2_56
+  - first:
+      213: -3459134915557084561
+    second: Character 2_57
+  - first:
+      213: 2587678359623339307
+    second: Character 2_58
+  - first:
+      213: -6003191972183865168
+    second: Character 2_59
+  - first:
+      213: 5887191669022829531
+    second: Character 2_60
+  - first:
+      213: 5106612660610677509
+    second: Character 2_61
+  - first:
+      213: -2975522882175798345
+    second: Character 2_62
+  - first:
+      213: 4316509169100652989
+    second: Character 2_63
+  - first:
+      213: -2237133880031310398
+    second: Character 2_64
+  - first:
+      213: -2501827377109463503
+    second: Character 2_65
+  - first:
+      213: -430963594004918812
+    second: Character 2_66
+  - first:
+      213: 3984474840741799923
+    second: Character 2_67
+  - first:
+      213: -5287382299930555071
+    second: Character 2_68
+  - first:
+      213: -2282557120647405521
+    second: Character 2_69
+  - first:
+      213: 6866162415550666121
+    second: Character 2_70
+  - first:
+      213: 1418304891330280651
+    second: Character 2_71
+  - first:
+      213: -992401839908029294
+    second: Character 2_72
+  - first:
+      213: -6265070042486737513
+    second: Character 2_73
+  - first:
+      213: -6809130207473752877
+    second: Character 2_74
+  - first:
+      213: 965006437675315839
+    second: Character 2_75
+  - first:
+      213: 5618773157990724567
+    second: Character 2_76
+  - first:
+      213: -5394955380805231673
+    second: Character 2_77
+  - first:
+      213: -1690154731309242856
+    second: Character 2_78
+  - first:
+      213: 463627877282197411
+    second: Character 2_79
+  - first:
+      213: -5372533759902588722
+    second: Character 2_80
+  - first:
+      213: -7347970512941373242
+    second: Character 2_81
+  - first:
+      213: 1264045698216887443
+    second: Character 2_82
+  - first:
+      213: -5677880246371077494
+    second: Character 2_83
+  - first:
+      213: -7798331328892620733
+    second: Character 2_84
+  - first:
+      213: -3687385624574099881
+    second: Character 2_85
+  - first:
+      213: 6765577440495746265
+    second: Character 2_86
+  - first:
+      213: 7526795303666685966
+    second: Character 2_87
+  - first:
+      213: 8076849405394109604
+    second: Character 2_88
+  - first:
+      213: 2375628306667116689
+    second: Character 2_89
+  - first:
+      213: -4012695910482118790
+    second: Character 2_90
+  - first:
+      213: 8191628239219981597
+    second: Character 2_91
+  - first:
+      213: -2880763129238534636
+    second: Character 2_92
+  - first:
+      213: -6275569771318472508
+    second: Character 2_93
+  - first:
+      213: -5917347586284753047
+    second: Character 2_94
+  - first:
+      213: 4437596725215578287
+    second: Character 2_95
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Waiter_down_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 896
+        width: 128
+        height: 119
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e7fbf0c5776a48798cfdd6e2d6b0574
+      internalID: 1699394468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Waiter_down_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 896
+        width: 128
+        height: 119
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c8462b6b72424138989f8454cb2caaf
+      internalID: -1729214478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Waiter_down_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 896
+        width: 128
+        height: 119
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c04b838f89707472d9fea5ff8e79a320
+      internalID: 1711600280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Waiter_left_0
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 896
+        width: 128
+        height: 119
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08d232cf8aca7406387817db53ae576b
+      internalID: -832184933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Waiter_left_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 896
+        width: 128
+        height: 119
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 996416ea82d834c75b96085dcf0275ad
+      internalID: 1792654930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Waiter_left_2
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 896
+        width: 128
+        height: 119
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80d12a6de97e048728a35d6b9a5d93e8
+      internalID: 1855987322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Waiter_right_0
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 896
+        width: 128
+        height: 119
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbd08c3c5a1de44309184cebb9695a9a
+      internalID: 1354138844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Waiter_right_1
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 896
+        width: 128
+        height: 119
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99e78131288924754b21899344ceb686
+      internalID: 1369439443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Waiter_right_2
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 896
+        width: 128
+        height: 119
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 513dbc2ae180c40d6ba1e0b08f016abe
+      internalID: 2134072308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Waiter_up_0
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 896
+        width: 128
+        height: 119
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a24d07eb127b94229aa99d185ac00ec0
+      internalID: -946628968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Waiter_up_1
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 896
+        width: 128
+        height: 119
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e82a15ceeac48f0b6bd982f85d2314
+      internalID: -432995190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Waiter_up_2
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 896
+        width: 128
+        height: 119
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3f3a31087a104cffb534b8c35d2c113
+      internalID: 695107532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mother_down_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 770
+        width: 128
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e874c0d8eac864840bbb4657bc29bce2
+      internalID: 798098200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mother_down_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 770
+        width: 128
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 088495fefd4dc46e4a1d2ae7daadf907
+      internalID: -755826539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mother_down_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 770
+        width: 128
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bd294ea5e0d745948a71371657790c8
+      internalID: -343049387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mother_left_0
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 770
+        width: 128
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb67995bde0bc4573b869042f48db506
+      internalID: 1883210522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mother_left_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 770
+        width: 128
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51f406cc30375471ba405022b96b93a3
+      internalID: 1900995113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mother_left_2
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 770
+        width: 128
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c969b93f8d24d7d9996fe10d671407
+      internalID: 1470453624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mother_right_0
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 770
+        width: 128
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d096f8bf6f914df0b4fbc575f7fabef
+      internalID: -1109017196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mother_right_1
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 770
+        width: 128
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f0f44737927e4637ab4430ea6dd9193
+      internalID: 1774486274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mother_right_2
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 770
+        width: 128
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80200239ca2934d04987ed746491a0f9
+      internalID: -1504860214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mother_up_0
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 770
+        width: 128
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a217cf1aaf8a942e782e02b7fd34e58f
+      internalID: -366396317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mother_up_1
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 770
+        width: 128
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04c7dbf34c0ef470ba5973ed9c4aa575
+      internalID: -1026404684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mother_up_2
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 770
+        width: 128
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 680987afb4bb949ca80d9b673705deb2
+      internalID: 1751335273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Father_down_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 642
+        width: 128
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b4b67c3b229945c2a949aa0cac4ba73
+      internalID: -551552312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Father_down_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 642
+        width: 128
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb18faefb73d24b2a8c595eee466419f
+      internalID: 1381280986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Father_down_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 642
+        width: 128
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a4faf4cfa03940368633d71515dd2e8
+      internalID: -2034811198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Father_left_0
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 642
+        width: 128
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06ecf01e45a24490f8d0fc4a25d95c58
+      internalID: -1510084316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Father_left_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 642
+        width: 128
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26f0cfdb794cf4168bf5936418bf6cbc
+      internalID: 145507897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Father_left_2
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 642
+        width: 128
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 731c080d3eea246b78d937f867f42145
+      internalID: -72782277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Father_right_0
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 642
+        width: 128
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4e26ca6137874e57b72ceeab66e6d73
+      internalID: -424390074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Father_right_1
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 642
+        width: 128
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a3ea8a391f2f4a0fbc65fa3f718bcb0
+      internalID: -348598138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Father_right_2
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 642
+        width: 128
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d67bff84da1794772af9d6b66bdf126c
+      internalID: 286306490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Father_up_0
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 642
+        width: 128
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 134529f91239347bb9b2e18c8abc7a1e
+      internalID: 933582311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Father_up_1
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 642
+        width: 128
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba84affdd07e142b893ec777e29fa016
+      internalID: -1623999704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Father_up_2
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 642
+        width: 128
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9e28da13a1ae47a9830a8837443d690
+      internalID: -491894390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecturer_down_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 516
+        width: 128
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fbd8f5ed4c0f4c7ca29e0aa7b5158a0
+      internalID: 1388056377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecturer_down_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 516
+        width: 128
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec0b0c27cfc7c4d319490d6b9448e3c3
+      internalID: -1666314818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecturer_down_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 516
+        width: 128
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bd31d823733d40e38c1eb7baa09871d
+      internalID: -1524606745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecturer_left_0
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 516
+        width: 128
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6693f09400df48178d9f3f77aca73c2
+      internalID: 174546023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecturer_left_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 516
+        width: 128
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bf49b692b89c475688c8ef34b71c9ef
+      internalID: 1390897459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecturer_left_2
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 516
+        width: 128
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71ca935dd3fe941469af973c64fdf43b
+      internalID: -937920791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecturer_right_0
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 516
+        width: 128
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69621d553d8814c079c466485085aaad
+      internalID: -674435028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecturer_right_1
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 516
+        width: 128
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d6cb4ef924384eb4ba42207c9556a13
+      internalID: 1571175171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecturer_right_2
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 516
+        width: 128
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee4ed450837814345ac300a8dda5b3e6
+      internalID: -610227417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecturer_up_0
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 516
+        width: 128
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dfdb4c7ce4b84dc38159db4370c2184
+      internalID: 1663335453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecturer_up_1
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 516
+        width: 128
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e88a19faf54704aba972dfafc282508d
+      internalID: -1227562820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lecturer_up_2
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 516
+        width: 128
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c06b131bb60e4998b294c0ed257da6c
+      internalID: 2077511131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chef_down_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 388
+        width: 128
+        height: 127
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdfa932f4e4da40e3a69d9cf72850c15
+      internalID: 652600870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chef_down_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 388
+        width: 128
+        height: 127
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c08425aa7bcb4ec1b7fda1a1495af73
+      internalID: -759804454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chef_down_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 388
+        width: 128
+        height: 127
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a469079e2623c42b9bfa0c2f2f503b29
+      internalID: -1406008369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chef_left_0
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 388
+        width: 128
+        height: 127
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0ae8a8caef99480992b7e166d3c7698
+      internalID: -1056920067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chef_left_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 388
+        width: 128
+        height: 127
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7117876dc05d943249f4ef57fdad8ab0
+      internalID: -649645089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chef_left_2
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 388
+        width: 128
+        height: 127
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be23de9ac960449c492576529499431b
+      internalID: 1844900809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chef_right_0
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 388
+        width: 128
+        height: 127
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3983cde4371944dca51dbc6692e5d1f
+      internalID: -1289831442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chef_right_1
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 388
+        width: 128
+        height: 127
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98cfa2ff25f9948deb4cc36ea22b4deb
+      internalID: -7678732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chef_right_2
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 388
+        width: 128
+        height: 127
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0151a516454fb4045830ea144c6eaf73
+      internalID: 98563504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chef_up_0
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 388
+        width: 128
+        height: 127
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69059dc1c27b14e109f772519fa62acb
+      internalID: -1137509713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chef_up_1
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 388
+        width: 128
+        height: 127
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76fe15c76dc974701a6f5cefe583ff38
+      internalID: 51766495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chef_up_2
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 388
+        width: 128
+        height: 127
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 273cffda32c204b25be39a84df15ab84
+      internalID: 1060984332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Waitress_down_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 261
+        width: 128
+        height: 127
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 710e87c063b914227b0768e1059a47fd
+      internalID: 1841785802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Waitress_down_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 261
+        width: 128
+        height: 127
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f12db0b5759740058026093886ef155
+      internalID: -256928999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Waitress_down_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 261
+        width: 128
+        height: 127
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 324bced3c09594d6ba20f735cba6927f
+      internalID: 1922336882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Waitress_left_0
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 261
+        width: 128
+        height: 127
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 419a3d555494f40b792fe016a81e5bab
+      internalID: -774554280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Waitress_left_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 261
+        width: 128
+        height: 127
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2053be555725f4025aa613e680da11b1
+      internalID: 494716912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Waitress_left_2
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 261
+        width: 128
+        height: 127
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75ff452c2a6f34d5aa1b44d14837df82
+      internalID: 620826502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Waitress_right_0
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 261
+        width: 128
+        height: 127
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37006f158d8764714b72b4642d825897
+      internalID: -1182295323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Waitress_right_1
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 261
+        width: 128
+        height: 127
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c1978172f635442c8152f9f9aaaa7f1
+      internalID: 1203070243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Waitress_right_2
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 261
+        width: 128
+        height: 127
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b5abd8ad8f894a4d99f9a81ce8fd89d
+      internalID: -634990861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Waitress_up_0
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 261
+        width: 128
+        height: 127
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 166a353ba3ef54f5f93c11d85ef18ab3
+      internalID: 383713144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Waitress_up_1
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 261
+        width: 128
+        height: 127
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef18cac135f6b433c94a080a7bd6c082
+      internalID: -1400212804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Waitress_up_2
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 261
+        width: 128
+        height: 127
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbab06cb96e5648109d5556fab15325e
+      internalID: -982662555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cashier_down_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 134
+        width: 128
+        height: 124
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb1b3cfb8a2d54c529cc04d383c7ad78
+      internalID: -733601062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cashier_down_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 134
+        width: 128
+        height: 124
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb1ce9853114742f098047360c926ecb
+      internalID: -1102183900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cashier_down_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 134
+        width: 128
+        height: 124
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eab7663f36162409f9adab3cbc4edd0b
+      internalID: -420995799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cashier_left_0
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 134
+        width: 128
+        height: 124
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2804efd24b6348b883ae8a287343873
+      internalID: -988927950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cashier_left_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 134
+        width: 128
+        height: 124
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e1959af3c0b74aee95d4df6c03736f4
+      internalID: 995098921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cashier_left_2
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 134
+        width: 128
+        height: 124
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f888d34e2305443358f2d08c68897072
+      internalID: 894114009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cashier_right_0
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 134
+        width: 128
+        height: 124
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f24eaa1ef10534147841836e6941e38a
+      internalID: 1957294107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cashier_right_1
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 134
+        width: 128
+        height: 124
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3641bdcd806c546f8ad230543995cdb4
+      internalID: -1412794205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cashier_right_2
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 134
+        width: 128
+        height: 124
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8a2e46b427364277b438319c769a45c
+      internalID: 2035686853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cashier_up_0
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 134
+        width: 128
+        height: 124
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a28dae75fc84a17b27b2fd3d62b1bb
+      internalID: 186546162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cashier_up_1
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 134
+        width: 128
+        height: 124
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3e306953f2b6412484794d9c127bfd7
+      internalID: 416216492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cashier_up_2
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 134
+        width: 128
+        height: 124
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ef08fe0b5c804d019fac1da000c54be
+      internalID: -1524572163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Businesswoman_down_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10454c482e241401c94c796e36664115
+      internalID: 690858836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Businesswoman_down_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 7
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51796e94fb21d4779917a3e5a3eb381c
+      internalID: -2021464858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Businesswoman_down_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 7
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c096528da10c4a9681e810baebdefd8
+      internalID: -334751460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Businesswoman_left_0
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 7
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 883d16990825b4d2381c5eba9bdc7bd4
+      internalID: -2049915256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Businesswoman_left_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 7
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34dfff23f77eb4fe281e5d0b382f0849
+      internalID: 1526623683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Businesswoman_left_2
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 7
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3de71a5b385dc4b8d8258c3254dc076b
+      internalID: 1165653453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Businesswoman_right_0
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 7
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2768711326c014bcbb93334dc12d1faf
+      internalID: 1631329204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Businesswoman_right_1
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 7
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd842dc5324ad47fea78af12eccb0a59
+      internalID: 358608483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Businesswoman_right_2
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 7
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ddcc576cf5f04a3c879562fb00caa7a
+      internalID: -330086646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Businesswoman_up_0
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 7
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a7986bc9c5b46ba859f9f8e9881bff
+      internalID: -155690789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Businesswoman_up_1
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 7
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a188e79e0b4c457782b064f49301c58
+      internalID: -286817988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Businesswoman_up_2
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 7
+        width: 128
+        height: 123
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00b21183b6c3d47de9d0810898279628
+      internalID: 350339254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 13e19125c899e49d194a9449a81f3661
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Businesswoman_down_0: 690858836
+      Businesswoman_down_1: -2021464858
+      Businesswoman_down_2: -334751460
+      Businesswoman_left_0: -2049915256
+      Businesswoman_left_1: 1526623683
+      Businesswoman_left_2: 1165653453
+      Businesswoman_right_0: 1631329204
+      Businesswoman_right_1: 358608483
+      Businesswoman_right_2: -330086646
+      Businesswoman_up_0: -155690789
+      Businesswoman_up_1: -286817988
+      Businesswoman_up_2: 350339254
+      Cashier_down_0: -733601062
+      Cashier_down_1: -1102183900
+      Cashier_down_2: -420995799
+      Cashier_left_0: -988927950
+      Cashier_left_1: 995098921
+      Cashier_left_2: 894114009
+      Cashier_right_0: 1957294107
+      Cashier_right_1: -1412794205
+      Cashier_right_2: 2035686853
+      Cashier_up_0: 186546162
+      Cashier_up_1: 416216492
+      Cashier_up_2: -1524572163
+      Chef_down_0: 652600870
+      Chef_down_1: -759804454
+      Chef_down_2: -1406008369
+      Chef_left_0: -1056920067
+      Chef_left_1: -649645089
+      Chef_left_2: 1844900809
+      Chef_right_0: -1289831442
+      Chef_right_1: -7678732
+      Chef_right_2: 98563504
+      Chef_up_0: -1137509713
+      Chef_up_1: 51766495
+      Chef_up_2: 1060984332
+      Father_down_0: -551552312
+      Father_down_1: 1381280986
+      Father_down_2: -2034811198
+      Father_left_0: -1510084316
+      Father_left_1: 145507897
+      Father_left_2: -72782277
+      Father_right_0: -424390074
+      Father_right_1: -348598138
+      Father_right_2: 286306490
+      Father_up_0: 933582311
+      Father_up_1: -1623999704
+      Father_up_2: -491894390
+      Lecturer_down_0: 1388056377
+      Lecturer_down_1: -1666314818
+      Lecturer_down_2: -1524606745
+      Lecturer_left_0: 174546023
+      Lecturer_left_1: 1390897459
+      Lecturer_left_2: -937920791
+      Lecturer_right_0: -674435028
+      Lecturer_right_1: 1571175171
+      Lecturer_right_2: -610227417
+      Lecturer_up_0: 1663335453
+      Lecturer_up_1: -1227562820
+      Lecturer_up_2: 2077511131
+      Mother_down_0: 798098200
+      Mother_down_1: -755826539
+      Mother_down_2: -343049387
+      Mother_left_0: 1883210522
+      Mother_left_1: 1900995113
+      Mother_left_2: 1470453624
+      Mother_right_0: -1109017196
+      Mother_right_1: 1774486274
+      Mother_right_2: -1504860214
+      Mother_up_0: -366396317
+      Mother_up_1: -1026404684
+      Mother_up_2: 1751335273
+      Waiter_down_0: 1699394468
+      Waiter_down_1: -1729214478
+      Waiter_down_2: 1711600280
+      Waiter_left_0: -832184933
+      Waiter_left_1: 1792654930
+      Waiter_left_2: 1855987322
+      Waiter_right_0: 1354138844
+      Waiter_right_1: 1369439443
+      Waiter_right_2: 2134072308
+      Waiter_up_0: -946628968
+      Waiter_up_1: -432995190
+      Waiter_up_2: 695107532
+      Waitress_down_0: 1841785802
+      Waitress_down_1: -256928999
+      Waitress_down_2: 1922336882
+      Waitress_left_0: -774554280
+      Waitress_left_1: 494716912
+      Waitress_left_2: 620826502
+      Waitress_right_0: -1182295323
+      Waitress_right_1: 1203070243
+      Waitress_right_2: -634990861
+      Waitress_up_0: 383713144
+      Waitress_up_1: -1400212804
+      Waitress_up_2: -982662555
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

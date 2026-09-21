@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8499d5ae3147d4d5387a77a4805e2e6a, type: 3}
+  m_Name: Upgrade_penggorengan2
+  m_EditorClassIdentifier: Assembly-CSharp::Geprek.Data.UpgradeDef
+  id: penggorengan2
+  displayName: Penggorengan Kedua
+  description: Buka satu penggorengan lagi supaya bisa masak paralel.
+  icon: {fileID: -265422660, guid: b6395ec4171df474ba7bace304b5c05e, type: 3}
+  kind: 3
+  baseCost: 60000
+  costGrowth: 2
+  valuePerLevel: 1
+  maxLevel: 1
+  unlockArc: 1

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b3cdf97a7e034ef7b2316ca4a035d8f, type: 3}
+  m_Name: Recipe_geprek_tahu_tempe
+  m_EditorClassIdentifier: Assembly-CSharp::Geprek.Data.RecipeDef
+  id: geprek_tahu_tempe
+  displayName: Geprek Tahu Tempe
+  description: Porsi lebih mengenyangkan dengan tahu dan tempe goreng.
+  icon: {fileID: 1182233785, guid: b2940a722af034fd4862b738da7251f7, type: 3}
+  components:
+  - {fileID: 11400000, guid: fead24e08687d41caac811ef8f677558, type: 2}
+  - {fileID: 11400000, guid: 208cee5d551364265a55572b5c3899ff, type: 2}
+  - {fileID: 11400000, guid: 56078cbf2250948bbb927eac0dd7bc11, type: 2}
+  basePrice: 27000
+  xpReward: 18
+  unlockLevel: 5
+  unlockArc: 2
+  unlockCost: 70000
+  fromParents: 0
+  patienceMultiplier: 0.95

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a7711a8258924647bfda306f17e3a77, type: 3}
+  m_Name: Skin_Waitress
+  m_EditorClassIdentifier: Assembly-CSharp::Geprek.Data.CharacterSkin
+  displayName: Waitress
+  framesPerDirection: 3
+  frames:
+  - {fileID: 1841785802, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: -256928999, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: 1922336882, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: -774554280, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: 494716912, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: 620826502, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: -1182295323, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: 1203070243, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: -634990861, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: 383713144, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: -1400212804, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: -982662555, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
