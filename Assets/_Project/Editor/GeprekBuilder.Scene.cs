@@ -45,9 +45,21 @@ namespace Geprek.EditorTools
             var resto = BuildBusiness(locationsRoot, RestoranSpec());
             var home = BuildHome(locationsRoot, out var nightManager);
 
+            // semua lokasi dibangun di ruang dunia yang sama lalu ditumpuk (lihat
+            // BusinessSpec), jadi hanya Warung yang aktif dari awal -- sama seperti
+            // yang dilakukan LocationManager.Show() saat runtime. Tanpa ini, membuka
+            // scene di Editor (sebelum Play) menampilkan keempat lokasi bertumpuk.
+            ruko.SetActive(false);
+            resto.SetActive(false);
+            home.SetActive(false);
+
             var player = (GameObject)PrefabUtility.InstantiatePrefab(PlayerPrefab);
             player.name = "Player";
-            player.transform.position = new Vector3(-2.0f, 1.0f, 0f);
+            // sama dengan titik PlayerSpawn Warung, supaya tampilan scene di Editor
+            // (sebelum Play) juga tidak menaruh pemain menutupi papan nama stasiun
+            var warungSpec = WarungSpec();
+            player.transform.position = new Vector3(
+                Mathf.Lerp(warungSpec.min.x, warungSpec.max.x, 0.32f), new Layout(warungSpec).laneY + 0.2f, 0f);
 
             var follow = camera.GetComponent<CameraFollow>();
             SetField(follow, "target", player.transform);
@@ -189,10 +201,12 @@ namespace Geprek.EditorTools
                 float size = spec != null ? spec.cameraSize : HomeCameraSize;
                 LocationId id = spec != null ? spec.id : LocationId.Home;
 
-                // pemain berdiri di lantai dapur, kira-kira sepertiga dari kiri,
-                // supaya ruangan lebar tetap terbaca sejak frame pertama
+                // pemain berdiri di lorong pelanggan tepat di bawah pulau dapur, kira-kira
+                // sepertiga dari kiri supaya ruangan lebar tetap terbaca sejak frame
+                // pertama. Dulu +1.1 dari islandY mendarat nyaris tepat di tinggi papan
+                // nama stasiun (counter), jadi pemain selalu berdiri menutupi label.
                 Vector3 spawn = spec != null
-                    ? new Vector3(Mathf.Lerp(spec.min.x, spec.max.x, 0.32f), new Layout(spec).islandY + 1.1f, 0f)
+                    ? new Vector3(Mathf.Lerp(spec.min.x, spec.max.x, 0.32f), new Layout(spec).laneY + 0.2f, 0f)
                     : new Vector3(0f, -0.8f, 0f);
 
                 var spawnGo = Go("PlayerSpawn", root.transform, spawn);

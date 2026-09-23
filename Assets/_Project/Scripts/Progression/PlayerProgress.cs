@@ -24,6 +24,7 @@ namespace Geprek.Progression
         public int totalDayCount = 1;
         public int lifetimeRevenue;
         public int lifetimeServed;
+        public bool tutorialSeen;
 
         public List<string> unlockedRecipes = new();
         public List<UpgradeEntry> upgrades = new();

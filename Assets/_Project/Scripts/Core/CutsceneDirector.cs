@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace Geprek.Core
 {
-    public enum CutsceneId { Opening, ToArc2, ToArc3, Ending }
+    public enum CutsceneId { Opening, ToArc2, ToArc3, Ending, Tutorial }
 
     /// <summary>
     /// Satu perintah dalam adegan. Isinya sengaja sederhana supaya naskahnya
@@ -136,8 +136,56 @@ namespace Geprek.Core
             CutsceneId.ToArc2 => ToArc2(),
             CutsceneId.ToArc3 => ToArc3(),
             CutsceneId.Ending => Ending(),
+            CutsceneId.Tutorial => Tutorial(),
             _ => System.Array.Empty<Beat>()
         };
+
+        /// <summary>Cari objek stasiun yang sedang aktif di lokasi sekarang, kalau ada.</summary>
+        static Vector3? PosOf(string name)
+        {
+            var go = GameObject.Find(name);
+            return go != null ? go.transform.position : (Vector3?)null;
+        }
+
+        IEnumerable<Beat> Tutorial()
+        {
+            var ibu = Face(database != null ? database.motherSkin : null);
+
+            // Warung muat penuh di satu layar pada zoom normal, jadi Focus() ke tiap
+            // stasiun tidak akan terlihat bergerak (kamera sudah mentok batas ruangan).
+            // Zoom masuk sementara supaya perpindahan antar stasiun benar-benar terlihat,
+            // lalu kembalikan ukurannya di akhir.
+            var cam = cameraFollow != null ? cameraFollow.GetComponent<Camera>() : null;
+            float originalSize = cam != null ? cam.orthographicSize : 0f;
+            cameraFollow?.SetSize(2.6f);
+
+            yield return Line("Ibu", "Sebelum ibu tinggal, ibu tunjukkan dulu alurnya ya. Sekali ini saja.", ibu);
+
+            yield return Focus(PosOf("SumberAyam"));
+            yield return Line("Ibu", "Ambil AYAM MENTAH dari sini dulu.", ibu);
+
+            yield return Focus(PosOf("Penggorengan1"));
+            yield return Line("Ibu", "Taruh di PENGGORENGAN, tahan tombolnya. Angkat pas sudah matang -- kelamaan sedikit saja bisa gosong.", ibu);
+
+            yield return Focus(PosOf("Cobek1"));
+            yield return Line("Ibu", "Ayam matang dibawa ke sini, ke COBEK. Tahan tombolnya untuk diulek jadi geprek.", ibu);
+
+            yield return Focus(PosOf("SumberNasi"));
+            yield return Line("Ibu", "Jangan lupa NASI dan sambal atau pelengkap lain sesuai pesanan pelanggan.", ibu);
+
+            yield return Focus(PosOf("MejaPenyajian"));
+            yield return Line("Ibu", "Susun semuanya di MEJA PENYAJIAN sampai lengkap sesuai resep yang dipesan.", ibu);
+
+            yield return Focus(PosOf("Meja1"));
+            yield return Line("Ibu", "Antar piring yang sudah jadi ke meja pelanggan yang cocok pesanannya. Lihat gelembung di atas kepala mereka.", ibu);
+
+            yield return Focus(PosOf("Kasir"));
+            yield return Line("Ibu", "Kalau sudah selesai makan, mereka bayar sendiri di sini.", ibu);
+
+            cameraFollow?.SetSize(originalSize);
+            yield return Focus(null);
+            yield return Line("Ibu", "Segitu saja. Sisanya... coba sendiri. Ibu tunggu di rumah, semangat ya!", ibu);
+        }
 
         IEnumerable<Beat> Opening()
         {

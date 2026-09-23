@@ -95,7 +95,7 @@ namespace Geprek.EditorTools
             BuildBusinessWalls(root, spec, L);
 
             var plate = BuildKitchen(root, spec, L, out var upgradeFryers, zoneEdges);
-            BuildWallDecor(root, spec, L);
+            BuildWallDecor(root, spec, L, zoneEdges);
             BuildEntrance(root, spec, L);
             var seats = BuildDining(root, spec, L);
             BuildDiningDecor(root, spec, L);
@@ -159,8 +159,11 @@ namespace Geprek.EditorTools
                 band.transform.localScale = new Vector3(x1 - x0, top - L.kitchenFloorBottom, 1f);
                 band.color = ZoneStyle[z].tint;
 
+                // y=+0.12 (bukan +0.30) supaya tidak bertabrakan dengan papan nama
+                // stasiun di lantai pulau (meja saji/kasir/sampah), yang duduk di
+                // islandY-0.40 = kitchenFloorBottom+0.30 persis.
                 WorldLabel.Create(floors, ZoneStyle[z].name,
-                                  new Vector3(x0 + 0.35f, L.kitchenFloorBottom + 0.30f, 0f),
+                                  new Vector3(x0 + 0.35f, L.kitchenFloorBottom + 0.12f, 0f),
                                   0.042f, new Color(0.30f, 0.21f, 0.14f, 0.95f),
                                   FloorOrder + 3, TextAnchor.MiddleLeft);
             }
@@ -273,6 +276,8 @@ namespace Geprek.EditorTools
                                              House("bin_blue"), new Vector3(zoneEdges[1] + 0.4f, L.islandY, 0f),
                                              spec.stationScale * 1.05f);
             StationPlaque(trash.transform, "SAMPAH", -0.40f);
+
+            BuildKitchenFlavor(kitchen, spec, L, zoneEdges);
 
             return first;
         }

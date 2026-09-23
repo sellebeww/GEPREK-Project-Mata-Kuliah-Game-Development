@@ -50,6 +50,13 @@ namespace Geprek.Core
         Coroutine _closingRoutine;
         bool _lunchRush;
 
+        /// <summary>
+        /// Jadi true begitu NewGame/ContinueGame benar-benar berjalan. Tanpa ini,
+        /// menutup game dari menu utama (Progress masih kosong bawaan) ikut menimpa
+        /// save file yang sudah ada dengan data kosong lewat OnApplicationQuit.
+        /// </summary>
+        bool _sessionStarted;
+
         /// <summary>True selama jam sibuk hari ini. Spawner dan UI membacanya.</summary>
         public bool IsLunchRush => _lunchRush;
 
@@ -119,6 +126,7 @@ namespace Geprek.Core
 
         public void NewGame()
         {
+            _sessionStarted = true;
             SaveSystem.Delete();
             Progress = new PlayerProgress { money = Config.startingMoney };
             Progress.arcStats.Reset(1);
@@ -148,6 +156,7 @@ namespace Geprek.Core
         {
             var loaded = SaveSystem.Load();
             if (loaded == null) { NewGame(); return; }
+            _sessionStarted = true;
             Progress = loaded;
             GameEvents.RaiseMoney(Progress.money, 0);
             GameEvents.RaiseXp(Progress.xp, Progress.XpToNext(Config), Progress.level);
@@ -173,6 +182,22 @@ namespace Geprek.Core
             var plan = CurrentDay;
             if (plan == null) { Debug.LogError("[Geprek] Rencana hari tidak ditemukan."); return; }
 
+            locations?.Show(CurrentArc.businessLocation, snapPlayer: true);
+
+            // hari pertama: Ibu tunjukkan alur dapur dulu sebelum jam operasional jalan
+            if (!Progress.tutorialSeen)
+            {
+                Progress.tutorialSeen = true;
+                PlayCutsceneThen(CutsceneId.Tutorial, () => StartOperatingHours(plan));
+            }
+            else
+            {
+                StartOperatingHours(plan);
+            }
+        }
+
+        void StartOperatingHours(DayPlanDef plan)
+        {
             DayProgress = 0f;
             _lunchRush = false;
 
@@ -184,7 +209,6 @@ namespace Geprek.Core
 
             Today.Reset(Progress.totalDayCount, Progress.arcNumber, plan.targetRevenue);
 
-            locations?.Show(CurrentArc.businessLocation, snapPlayer: true);
             ActiveBusiness?.RefreshFryers(ExtraFryers);
             SetState(GameState.DayOperating);
 
@@ -438,7 +462,7 @@ namespace Geprek.Core
             return stars;
         }
 
-        void OnApplicationPause(bool paused) { if (paused) SaveNow(); }
-        void OnApplicationQuit() => SaveNow();
+        void OnApplicationPause(bool paused) { if (paused && _sessionStarted) SaveNow(); }
+        void OnApplicationQuit() { if (_sessionStarted) SaveNow(); }
     }
 }

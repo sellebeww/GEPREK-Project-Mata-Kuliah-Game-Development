@@ -138,6 +138,71 @@ namespace Geprek.EditorTools
             return station;
         }
 
+        /// <summary>
+        /// Detail non-interaktif di lantai dapur (di celah antara sampah, meja saji,
+        /// dan kasir): meja prep, area cuci piring, dan perlengkapan makan. Bukan
+        /// stasiun baru -- cuma supaya tahapan siapkan -> masak -> saji -> cuci
+        /// terbaca, sesuai masukan bahwa dapurnya kurang terasa alurnya.
+        /// </summary>
+        static void BuildKitchenFlavor(Transform kitchen, BusinessSpec spec, Layout L, float[] zoneEdges)
+        {
+            float trashX = zoneEdges[1] + 0.4f;
+            float kasirX = spec.max.x - 2.2f;
+
+            // posisi meja saji PERTAMA dan TERAKHIR, dihitung dengan rumus yang sama
+            // persis dengan BuildKitchen -- lokasi berplate 1 (Warung/Ruko) punya celah
+            // besar di sisi sampah, tapi lokasi berplate 2 (Restoran) meja saji pertamanya
+            // duduk dekat sekali dengan sampah, jadi celahnya nyaris tidak ada di sana.
+            // Taruh dekorasi baru relatif terhadap celah yang BENAR-BENAR ada di tiap
+            // lokasi, bukan jarak tetap, supaya tidak ikut menabrak papan nama meja saji.
+            float islandSpan = (spec.max.x - spec.min.x) * 0.5f;
+            float firstPlateX = spec.plates == 1
+                ? spec.min.x + (spec.max.x - spec.min.x) * 0.66f
+                : spec.min.x + islandSpan * 0.55f;
+            float lastPlateX = spec.plates == 1
+                ? firstPlateX
+                : spec.min.x + islandSpan * 0.55f + (spec.plates - 1) * islandSpan * 0.8f;
+
+            float earlyGap = firstPlateX - trashX;
+            float lateGap = kasirX - lastPlateX;
+
+            var prep = Go("MejaPrep", kitchen, new Vector3(trashX + earlyGap * 0.4f, L.islandY, 0f)).transform;
+            var prepTable = Sr("Meja", prep, House("prep_table"), Vector3.zero);
+            prepTable.transform.localScale = new Vector3(0.85f, 0.85f, 1f);
+            var board = Sr("Talenan", prep, House("cutting_board"), new Vector3(0f, 0.40f, 0f));
+            board.transform.localScale = new Vector3(0.46f, 0.46f, 1f);
+            var sortPrep = prep.gameObject.AddComponent<SortingByY>();
+            SetField(sortPrep, "renderers", new[] { prepTable, board });
+            StationPlaque(prep, "PREP", -0.42f);
+
+            var wash = Go("AreaCuci", kitchen, new Vector3(lastPlateX + lateGap * 0.5f, L.islandY, 0f)).transform;
+            var sink = Sr("Wastafel", wash, House("sink_double"), Vector3.zero);
+            sink.transform.localScale = new Vector3(0.8f, 0.8f, 1f);
+            var dirty = Sr("PiringKotor", wash, Env("plates_dirty"), new Vector3(-0.5f, 0.28f, 0f));
+            dirty.transform.localScale = new Vector3(0.38f, 0.38f, 1f);
+            var clean = Sr("PiringBersih", wash, Env("plates_clean"), new Vector3(0.5f, 0.28f, 0f));
+            clean.transform.localScale = new Vector3(0.38f, 0.38f, 1f);
+            var sortWash = wash.gameObject.AddComponent<SortingByY>();
+            SetField(sortWash, "renderers", new[] { sink, dirty, clean });
+            StationPlaque(wash, "CUCI PIRING", -0.42f);
+
+            var cutlery = Go("AlatMakan", kitchen, new Vector3(lastPlateX + lateGap * 0.80f, L.islandY, 0f)).transform;
+            var plate = Sr("PiringKosong", cutlery, Food("plate_empty"), new Vector3(-0.18f, 0f, 0f));
+            plate.transform.localScale = new Vector3(0.40f, 0.40f, 1f);
+            var spoon = Sr("Sendok", cutlery, Food("cutlery"), new Vector3(0.26f, 0.05f, 0f));
+            spoon.transform.localScale = new Vector3(0.30f, 0.30f, 1f);
+            var sortCutlery = cutlery.gameObject.AddComponent<SortingByY>();
+            SetField(sortCutlery, "renderers", new[] { plate, spoon });
+
+            var kasirDeco = Go("DetailKasir", kitchen, new Vector3(kasirX + 0.85f, L.islandY, 0f)).transform;
+            var clipboard = Sr("Nota", kasirDeco, Food("clipboard"), new Vector3(0f, 0.15f, 0f));
+            clipboard.transform.localScale = new Vector3(0.26f, 0.26f, 1f);
+            var coins = Sr("Receh", kasirDeco, Food("coin_stack"), new Vector3(0f, -0.05f, 0f));
+            coins.transform.localScale = new Vector3(0.22f, 0.22f, 1f);
+            var sortKasir = kasirDeco.gameObject.AddComponent<SortingByY>();
+            SetField(sortKasir, "renderers", new[] { clipboard, coins });
+        }
+
         // ---------------------------------------------------------------- hiasan
 
         static SpriteRenderer Deco(Transform parent, string name, Sprite sprite, Vector3 pos,
@@ -157,14 +222,32 @@ namespace Geprek.EditorTools
             return sr;
         }
 
-        static void BuildWallDecor(Transform root, BusinessSpec spec, Layout L)
+        /// <summary>
+        /// Dekorasi dinding dibuat mengikuti tiga zona dapur di bawahnya (rak bahan di
+        /// atas BAHAN, cerobong di atas MASAK, rak pelengkap di atas SAMBAL) supaya
+        /// dinding terasa menyatu dengan meja kerja, bukan ikon acak yang mengambang
+        /// di tembok kosong.
+        /// </summary>
+        static void BuildWallDecor(Transform root, BusinessSpec spec, Layout L, float[] zoneEdges)
         {
             var decor = Go("WallDecor", root).transform;
             float left = spec.min.x, right = spec.max.x;
+            float wallY = L.wallBandY;
 
-            // dinding belakang sebagian besar tertutup HUD, jadi hanya alat dapur di sana
-            Deco(decor, "Hood", House("range_hood"), new Vector3(left + 4.2f, L.wallBandY + 0.05f, 0f), 0.72f, DecorOrder);
-            Deco(decor, "Fan", House("fan"), new Vector3(right - 0.7f, L.wallBandY + 0.1f, 0f), 0.55f, DecorOrder);
+            Deco(decor, "RakBahan", House("shelf_ingredients"),
+                 new Vector3((zoneEdges[0] + zoneEdges[1]) * 0.5f, wallY + 0.05f, 0f), 0.62f, DecorOrder);
+
+            // satu cerobong per ~dua alat masak, merata di atas zona MASAK -- dapur
+            // yang lebih besar (Ruko/Restoran) otomatis dapat cerobong lebih banyak
+            int hoods = Mathf.Max(1, Mathf.RoundToInt((spec.TotalFryers + spec.cobeks) / 2f));
+            var hoodX = SlotsIn(zoneEdges[1], zoneEdges[2], hoods);
+            foreach (var x in hoodX)
+                Deco(decor, "Hood", House("range_hood"), new Vector3(x, wallY + 0.05f, 0f), 0.68f, DecorOrder);
+
+            Deco(decor, "RakPelengkap", Env("pantry_shelf"),
+                 new Vector3(zoneEdges[2] + (zoneEdges[3] - zoneEdges[2]) * 0.32f, wallY + 0.03f, 0f), 0.62f, DecorOrder);
+
+            Deco(decor, "Fan", House("fan"), new Vector3(right - 0.7f, wallY + 0.1f, 0f), 0.55f, DecorOrder);
 
             // identitas warung ditempel di sisi kiri dan kanan yang selalu terlihat
             Deco(decor, "BannerAyam", Env("sign_chicken"), new Vector3(left + 0.55f, L.islandY + 0.2f, 0f), 0.85f, DecorOrder + 10);
@@ -174,11 +257,14 @@ namespace Geprek.EditorTools
 
             BuildSpicePoster(decor, new Vector3(right - 0.85f, L.islandY + 1.05f, 0f));
 
+            // kenangan warung ibu -- selalu ada di setiap lokasi (dulu cuma muncul di
+            // lokasi modern; besarnya sekarang tumbuh mengikuti kemewahan tempatnya)
+            Deco(decor, "FotoKeluarga", Env("family_photo"),
+                 new Vector3(left + 0.6f, wallY + 0.05f, 0f),
+                 spec.modernDecor ? 0.62f : 0.42f, DecorOrder);
+
             if (spec.modernDecor)
-            {
                 Deco(decor, "Trofi", Env("trophy"), new Vector3(left + 2.2f, L.islandY + 0.1f, 0f), 0.6f);
-                Deco(decor, "FotoKeluarga", Env("family_photo"), new Vector3(left + 3.4f, L.wallBandY + 0.05f, 0f), 0.6f, DecorOrder);
-            }
         }
 
         static void BuildSpicePoster(Transform parent, Vector3 pos)
@@ -346,8 +432,20 @@ namespace Geprek.EditorTools
                 var mark = Sr($"QueueMark{i}", go.transform, Ui("floor_queue"), new Vector3(x, L.laneY - 0.06f, 0f),
                               FloorOrder + 7);
                 mark.transform.localScale = new Vector3(0.48f, 0.36f, 1f);
-                mark.color = new Color(1f, 1f, 1f, 0.3f);
+                mark.color = new Color(1f, 1f, 1f, 0.55f);
             }
+
+            // pembatas + papan kecil supaya jalur antrean kelihatan sebagai jalur,
+            // bukan cuma pola lantai yang samar
+            float queueStart = spec.min.x + 2.2f, queueEnd = queueStart + (queueCount - 1) * 0.85f;
+            Deco(go.transform, "PembatasAwal", Env("bollard"), new Vector3(queueStart - 0.55f, L.laneY, 0f), 0.5f);
+            Deco(go.transform, "PembatasAkhir", Env("bollard"), new Vector3(queueEnd + 0.55f, L.laneY, 0f), 0.5f);
+
+            var antreSign = Sr("PapanAntre", go.transform, Ui("plaque"),
+                               new Vector3(queueStart - 0.15f, L.laneY + 1.15f, 0f), DecorOrder + 40);
+            antreSign.transform.localScale = new Vector3(0.62f, 0.6f, 1f);
+            WorldLabel.Create(antreSign.transform, "ANTRE SINI", new Vector3(0f, 0.005f, 0f), 0.028f,
+                              new Color(0.99f, 0.95f, 0.87f), DecorOrder + 41);
 
             SetField(spawner, "customerPrefab", CustomerPrefab);
             SetField(spawner, "doorPoint", door);
