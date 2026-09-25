@@ -123,6 +123,7 @@ namespace Geprek.EditorTools
                 list.GetArrayElementAtIndex(i).objectReferenceValue = upgradeFryers[i];
             so.ApplyModifiedPropertiesWithoutUndo();
 
+            if (spec.id == LocationId.Warung) ApplyWarungVisualLayout(root);
             return root.gameObject;
         }
 

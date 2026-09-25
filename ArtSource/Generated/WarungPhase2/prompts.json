@@ -1,0 +1,80 @@
+{
+  "tool": "Built-in image_gen.imagegen",
+  "date": "2026-09-24",
+  "sources": [
+    {
+      "name": "mood_happy",
+      "source": "/Users/jgo/.codex/generated_images/01a0d1be-ddd6-7de3-b083-5a2e404a6e68/exec-5c12c562-b4e1-4288-8cdc-1428e2c9f456.png"
+    },
+    {
+      "name": "mood_waiting",
+      "source": "/Users/jgo/.codex/generated_images/01a0d1be-ddd6-7de3-b083-5a2e404a6e68/exec-9958601a-8cc7-4d04-9158-8fc724ee4242.png"
+    },
+    {
+      "name": "mood_angry",
+      "source": "/Users/jgo/.codex/generated_images/01a0d1be-ddd6-7de3-b083-5a2e404a6e68/exec-3883b490-8e18-4269-a22a-0a3bc361cec7.png"
+    },
+    {
+      "name": "patience_frame",
+      "source": "/Users/jgo/.codex/generated_images/01a0d1be-ddd6-7de3-b083-5a2e404a6e68/exec-6f65d1e3-3c9f-443f-86bc-3618779f7207.png"
+    },
+    {
+      "name": "patience_fill",
+      "source": "/Users/jgo/.codex/generated_images/01a0d1be-ddd6-7de3-b083-5a2e404a6e68/exec-bf822117-b880-40bb-9efb-c47e4a13c150.png"
+    },
+    {
+      "name": "spice_shelf",
+      "source": "/Users/jgo/.codex/generated_images/01a0d1be-ddd6-7de3-b083-5a2e404a6e68/exec-11e48112-1623-4973-8c07-fe520a843fd5.png"
+    },
+    {
+      "name": "menu_board",
+      "source": "/Users/jgo/.codex/generated_images/01a0d1be-ddd6-7de3-b083-5a2e404a6e68/exec-0e0f95ff-3481-480e-a7b6-9f83ec88a561.png"
+    },
+    {
+      "name": "day_banner",
+      "source": "/Users/jgo/.codex/generated_images/01a0d1be-ddd6-7de3-b083-5a2e404a6e68/exec-bd4cfaa6-b1b6-4f55-9503-b55387986ac2.png"
+    },
+    {
+      "name": "order_bubble",
+      "source": "/Users/jgo/.codex/generated_images/01a0d1be-ddd6-7de3-b083-5a2e404a6e68/exec-0de31f9e-2ae0-4b46-a9a1-d299c0408645.png"
+    }
+  ],
+  "prompts": [
+    {
+      "name": "mood_happy",
+      "prompt": "Use case: stylized-concept. Production game sprite for GEPREK!, a warm Indonesian ayam-geprek warung game. Create ONE isolated customer-expression speech-bubble icon on a genuinely transparent PNG alpha background. Square composition designed on a 128 x 128 pixel logical grid, clear 1-2 logical pixel dark warm-brown outline, crisp pixel clusters, limited warm palette (cream #F4DDA7, toasted tan #BD874D, deep brown #39271F, chili red #C9472D). Match detailed top-down cozy kitchen pixel sprites with dark outlines, wood and cream accents; readable when displayed at only 28 pixels. Bubble is cream parchment with subtly shaded tan lower edge, rounded-square body and one small tail pointing straight down. Symmetric consistent silhouette fills about 85 percent of the canvas, generous transparent border. Facial marks are large and simple dark-brown pixel shapes. No text, no letters, no watermark, no scene, no checkerboard painted into background, no extra floating objects. Render as pixel art, not vector, not smooth gradients. Expression: satisfied, cheerful closed crescent eyes and one broad happy smile, two tiny muted coral cheek dots."
+    },
+    {
+      "name": "mood_waiting",
+      "prompt": "Use case: stylized-concept. Production game sprite for GEPREK!, a warm Indonesian ayam-geprek warung game. Create ONE isolated customer-expression speech-bubble icon on a genuinely transparent PNG alpha background. Square composition designed on a 128 x 128 pixel logical grid, clear 1-2 logical pixel dark warm-brown outline, crisp pixel clusters, limited warm palette (cream #F4DDA7, toasted tan #BD874D, deep brown #39271F, chili red #C9472D). Match detailed top-down cozy kitchen pixel sprites with dark outlines, wood and cream accents; readable when displayed at only 28 pixels. Bubble is cream parchment with subtly shaded tan lower edge, rounded-square body and one small tail pointing straight down. Symmetric consistent silhouette fills about 85 percent of the canvas, generous transparent border. Facial marks are large and simple dark-brown pixel shapes. No text, no letters, no watermark, no scene, no checkerboard painted into background, no extra floating objects. Render as pixel art, not vector, not smooth gradients. Expression: patiently waiting, two round open eyes and a short neutral horizontal mouth, calm expression."
+    },
+    {
+      "name": "mood_angry",
+      "prompt": "Use case: stylized-concept. Production game sprite for GEPREK!, a warm Indonesian ayam-geprek warung game. Create ONE isolated customer-expression speech-bubble icon on a genuinely transparent PNG alpha background. Square composition designed on a 128 x 128 pixel logical grid, clear 1-2 logical pixel dark warm-brown outline, crisp pixel clusters, limited warm palette (cream #F4DDA7, toasted tan #BD874D, deep brown #39271F, chili red #C9472D). Match detailed top-down cozy kitchen pixel sprites with dark outlines, wood and cream accents; readable when displayed at only 28 pixels. Bubble is cream parchment with subtly shaded tan lower edge, rounded-square body and one small tail pointing straight down. Symmetric consistent silhouette fills about 85 percent of the canvas, generous transparent border. Facial marks are large and simple dark-brown pixel shapes. No text, no letters, no watermark, no scene, no checkerboard painted into background, no extra floating objects. Render as pixel art, not vector, not smooth gradients. Expression: upset/impatient, inward slanted eyebrows, small dark eyes and a clearly downturned mouth, tiny muted chili-red cheek marks."
+    },
+    {
+      "name": "patience_frame",
+      "prompt": "Use case: stylized-concept. Production PNG sprite for GEPREK!, a cozy Indonesian ayam-geprek warung game. One isolated asset on genuinely transparent alpha, no painted checkerboard, no scenery, no watermark. Crisp detailed 2D pixel art, limited warm colors, deep brown #39271F one-to-two logical pixel outline, cream #F4DDA7, honey tan #BD874D, terracotta #C9472D. Consistent pixel clusters and stepped contours, no antialiasing, no soft gradients or glow. Asset: EMPTY patience meter frame. Straight-on horizontal warm bamboo-and-dark-wood tray frame, design for a 128 x 32 logical-pixel sprite. A single long recessed dark brown EMPTY rectangular channel across the central 90 percent, with a thin golden-beige wooden rim, tiny square corner joinery. Long wide rectangle proportion 4:1 centered with small transparent padding. NO fill, NO progress color, NO words, NO numbers, no icons. Top and bottom rim visually 3 logical pixels thick, side caps 5 pixels. Keep channel perfectly straight for a separate progress fill to fit."
+    },
+    {
+      "name": "patience_fill",
+      "prompt": "Use case: stylized-concept. Production PNG sprite for GEPREK!, a cozy Indonesian ayam-geprek warung game. One isolated asset on genuinely transparent alpha, no painted checkerboard, no scenery, no watermark. Crisp detailed 2D pixel art, limited warm colors, deep brown #39271F one-to-two logical pixel outline, cream #F4DDA7, honey tan #BD874D, terracotta #C9472D. Consistent pixel clusters and stepped contours, no antialiasing, no soft gradients or glow. Asset: one separate progress meter FILL strip, fully filled from left to right, no surrounding frame. Long straight pale parchment-ivory horizontal bar with small stepped ends, one pixel light top edge and 2-pixel muted tan bottom edge. Intended 128 x 16 logical pixels, 8:1 strip proportion centered with transparent padding, one uninterrupted uniform rectangular surface to tint green/gold/chili-red in the game. Neutral warm OFF-WHITE #F5ECD7 base color, NO colored frame, NO icons, NO words, NO numbers, no segmentation. Flat high-contrast silhouette."
+    },
+    {
+      "name": "spice_shelf",
+      "prompt": "Use case: stylized-concept. Production PNG sprite for GEPREK!, a cozy Indonesian ayam-geprek warung game. One isolated asset on genuinely transparent alpha, no painted checkerboard, no scenery, no watermark. Crisp detailed 2D pixel art, limited warm colors, deep brown #39271F one-to-two logical pixel outline, cream #F4DDA7, honey tan #BD874D, terracotta #C9472D. Consistent pixel clusters and stepped contours, no antialiasing, no soft gradients or glow. Asset: small wall-mounted Indonesian spice shelf, logical sprite 128 x 128. Match warm shaded top-down three-quarter RPG kitchen furniture, camera above looking down about 35 degrees; front faces visible, NOT isometric diamond. Two dark warm-brown wooden shelves supported by two short side posts; upper row three small cream spice jars with terracotta lids, lower row small chili-red jar, tan garlic basket, muted green glass seasoning bottle. Compact orderly cozy silhouette with dark outline, upper-left light, minimal internal texture, distinguishable at 70 screen pixels. No text or lettering, no giant background wall, no floor, transparent all around."
+    },
+    {
+      "name": "menu_board",
+      "prompt": "Use case: stylized-concept. Production PNG sprite for GEPREK!, a cozy Indonesian ayam-geprek warung game. One isolated asset on genuinely transparent alpha, no painted checkerboard, no scenery, no watermark. Crisp detailed 2D pixel art, limited warm colors, deep brown #39271F one-to-two logical pixel outline, cream #F4DDA7, honey tan #BD874D, terracotta #C9472D. Consistent pixel clusters and stepped contours, no antialiasing, no soft gradients or glow. Asset: compact wall menu board for Indonesian chicken restaurant, logical sprite128 x160. Three-quarter top-down RPG decoration, front mostly facing viewer. Warm dark wooden rectangular frame, muted deep charcoal-green chalkboard center, small cream heading exactly 'MENU', three short cream chalk rule marks and tiny simple food icons (rice mound, chicken leg, red chili). Heading M E N U must be correctly spelled, no other readable text or prices. One little terracotta accent at corner, wooden frame has dark outline and upper-left highlights, no chalk smears or photorealism. Entire standalone board visible with transparent padding."
+    },
+    {
+      "name": "day_banner",
+      "prompt": "Use case: stylized-concept. Production PNG sprite for GEPREK!, a cozy Indonesian ayam-geprek warung game. One isolated asset on genuinely transparent alpha, no painted checkerboard, no scenery, no watermark. Crisp detailed 2D pixel art, limited warm colors, deep brown #39271F one-to-two logical pixel outline, cream #F4DDA7, honey tan #BD874D, terracotta #C9472D. Consistent pixel clusters and stepped contours, no antialiasing, no soft gradients or glow. Asset: blank UI plaque for dynamically rendered game level title and Hari X day subtitle, designed for 512 x128 logical pixels and horizontal 9-slice stretching. Long horizontal cream parchment card within warm wood frame. Flat straight-on UI, not world perspective. Wide uncluttered solid light cream center occupying at least75 percent width, two thin tan/brown frame lines, darker lower wooden lip, simple small chili-red-and-muted-green pixel garnish confined to far left cap and tiny brass rivets confined to extreme corners. Corners subtly stepped. Overall ratio4:1, centered with small transparent margin. All central text will be rendered by Unity: ABSOLUTELY NO TEXT, no letters, no symbols, no lines across central blank area, no decorative center image. Clear readable restrained warm pixel game UI."
+    },
+    {
+      "name": "order_bubble",
+      "prompt": "Use case: stylized-concept. Production PNG sprite for GEPREK!, a cozy Indonesian ayam-geprek warung game. One isolated asset on genuinely transparent alpha, no painted checkerboard, no scenery, no watermark. Crisp detailed 2D pixel art, limited warm colors, deep brown #39271F one-to-two logical pixel outline, cream #F4DDA7, honey tan #BD874D, terracotta #C9472D. Consistent pixel clusters and stepped contours, no antialiasing, no soft gradients or glow. Asset: blank food-order speech bubble panel, logical sprite128 x96. A simple cream parchment rounded rectangle with a small triangle tail at bottom center, thick deep warm-brown stepped outline and muted tan bottom shading. Straight-on overlay UI. Mostly empty cream interior, no face, no expression, no food, no text, no decoration. Ratio4:3 rounded rectangle silhouette and one short centered downward tail. Small transparent padding all around. The Unity game places an item icon and a separate small mood bubble inside this blank panel, so leave all inner area blank. No smooth vector outlines."
+    }
+  ]
+}

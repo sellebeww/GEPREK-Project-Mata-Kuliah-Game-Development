@@ -6,11 +6,15 @@ namespace Geprek.UI
 {
     public partial class UIRoot
     {
+        [SerializeField] Sprite titleCardArtwork;
         RectTransform _cutsceneLayer, _cutsceneBox, _titleCard;
         Image _cutFade, _barTop, _barBottom, _cutPortrait;
         Text _cutSpeaker, _cutText, _cutHint, _titleMain, _titleSub;
 
         float _fadeTarget, _fadeSpeed;
+        CanvasGroup _titleGroup;
+        float _titleElapsed, _titleDuration;
+        const float TitleSlideSeconds = 0.28f;
 
         /// <summary>
         /// Lapisan adegan cerita: dua bilah hitam di atas-bawah, kotak dialog besar,
@@ -62,22 +66,38 @@ namespace Geprek.UI
             btn.onClick.AddListener(() => cutscene?.Advance());
             clickArea.rectTransform.SetAsFirstSibling();
 
-            // kartu judul
-            _titleCard = UIFactory.Rect("TitleCard", _cutsceneLayer);
-            UIFactory.Anchor(_titleCard, new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f),
-                             new Vector2(0f, 20f), new Vector2(900f, 180f));
+            // The banner fits inside the upper cinematic band, clear of the work area.
+            var titlePanel = UIFactory.Panel("TitleCard", _cutsceneLayer, UIStyle.Cream, UIFactory.RoundedSoft);
+            if (titleCardArtwork != null)
+            {
+                titlePanel.sprite = titleCardArtwork;
+                titlePanel.type = Image.Type.Sliced;
+                titlePanel.color = Color.white;
+                titlePanel.pixelsPerUnitMultiplier = 1.5f;
+            }
+            titlePanel.raycastTarget = false;
+            _titleCard = titlePanel.rectTransform;
+            UIFactory.Anchor(_titleCard, new Vector2(0.5f, 1f), new Vector2(0.5f, 1f),
+                             new Vector2(0f, 80f), new Vector2(560f, 64f));
+            _titleGroup = _titleCard.gameObject.AddComponent<CanvasGroup>();
+            _titleGroup.blocksRaycasts = false;
+            _titleGroup.interactable = false;
+            _titleGroup.alpha = 0f;
 
-            _titleMain = UIFactory.Label("Main", _titleCard, "", UIStyle.FontTitle + 14, UIStyle.Gold,
+            _titleMain = UIFactory.Label("Main", _titleCard, "", 26, UIStyle.Chili,
                                          TextAnchor.MiddleCenter, FontStyle.Bold);
             UIFactory.Anchor(_titleMain.rectTransform, new Vector2(0.5f, 1f), new Vector2(0.5f, 1f),
-                             Vector2.zero, new Vector2(880f, 90f));
-            UIFactory.Outline(_titleMain, new Color(0.35f, 0.08f, 0.06f), new Vector2(3f, -3f));
+                             new Vector2(0f, -8f), new Vector2(470f, 30f));
 
-            _titleSub = UIFactory.Label("Sub", _titleCard, "", UIStyle.FontHeading, UIStyle.Cream,
+            _titleSub = UIFactory.Label("Sub", _titleCard, "", 15, UIStyle.Ink,
                                         TextAnchor.MiddleCenter);
             UIFactory.Anchor(_titleSub.rectTransform, new Vector2(0.5f, 1f), new Vector2(0.5f, 1f),
-                             new Vector2(0f, -94f), new Vector2(880f, 40f));
-            UIFactory.Outline(_titleSub, new Color(0f, 0f, 0f, 0.85f), new Vector2(2f, -2f));
+                             new Vector2(0f, -34f), new Vector2(470f, 18f));
+            var accent = UIFactory.Raw("Accent", _titleCard, UIStyle.Gold);
+            accent.gameObject.SetActive(titleCardArtwork == null);
+            accent.raycastTarget = false;
+            UIFactory.Anchor(accent.rectTransform, new Vector2(0.5f, 0f), new Vector2(0.5f, 0f),
+                             new Vector2(0f, 1f), new Vector2(526f, 3f));
 
             // lapisan gelap untuk transisi. Ditaruh di bawah kotak dialog dan kartu judul
             // supaya teks tetap terbaca saat layar sedang gelap.
@@ -112,7 +132,7 @@ namespace Geprek.UI
             if (!active)
             {
                 _cutsceneBox.gameObject.SetActive(false);
-                _titleCard.gameObject.SetActive(false);
+                OnCutsceneTitleHidden();
                 _fadeTarget = 0f;
                 _fadeSpeed = 4f;
             }
@@ -123,7 +143,7 @@ namespace Geprek.UI
         {
             if (_cutsceneBox == null) return;
 
-            _titleCard.gameObject.SetActive(false);
+            OnCutsceneTitleHidden();
             _cutsceneBox.gameObject.SetActive(true);
             _cutSpeaker.text = speaker;
             _cutText.text = text;
@@ -138,18 +158,35 @@ namespace Geprek.UI
             _cutText.rectTransform.anchoredPosition = new Vector2(portrait != null ? 136f : 24f, -48f);
         }
 
-        void OnCutsceneTitle(string title, string subtitle)
+        void OnCutsceneTitle(string title, string subtitle, float duration)
         {
             if (_titleCard == null) return;
             _cutsceneBox.gameObject.SetActive(false);
             _titleCard.gameObject.SetActive(true);
             _titleMain.text = title;
             _titleSub.text = subtitle;
+            _titleElapsed = 0f;
+            _titleDuration = Mathf.Max(TitleSlideSeconds * 2f, duration);
+            UpdateTitleBanner(0f);
         }
 
         void OnCutsceneTitleHidden()
         {
             if (_titleCard != null) _titleCard.gameObject.SetActive(false);
+            if (_titleGroup != null) _titleGroup.alpha = 0f;
+            _titleElapsed = _titleDuration = 0f;
+        }
+
+        void UpdateTitleBanner(float dt)
+        {
+            if (_titleCard == null || !_titleCard.gameObject.activeSelf) return;
+            _titleElapsed += dt;
+            float enter = Mathf.Clamp01(_titleElapsed / TitleSlideSeconds);
+            float leave = Mathf.Clamp01((_titleDuration - _titleElapsed) / TitleSlideSeconds);
+            float visible = Mathf.SmoothStep(0f, 1f, Mathf.Min(enter, leave));
+            _titleGroup.alpha = visible;
+            _titleCard.anchoredPosition = new Vector2(0f, Mathf.Lerp(80f, -7f, visible));
+            if (_titleElapsed >= _titleDuration) OnCutsceneTitleHidden();
         }
 
         void OnCutsceneFade(bool toBlack, float duration)
@@ -160,6 +197,7 @@ namespace Geprek.UI
 
         void TickCutscene(float dt)
         {
+            UpdateTitleBanner(dt);
             if (_cutFade == null) return;
 
             var c = _cutFade.color;

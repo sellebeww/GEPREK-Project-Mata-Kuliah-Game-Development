@@ -382,6 +382,7 @@ namespace Geprek.EditorTools
             numberPlate.transform.localScale = new Vector3(0.22f, 0.62f, 1f);
             WorldLabel.Create(numberPlate.transform, number.ToString(), new Vector3(0f, 0.004f, 0f), 0.055f,
                               new Color(0.99f, 0.95f, 0.87f), 0);
+            ConfigureTableNumber(numberPlate);
 
             var sorting = group.gameObject.AddComponent<SortingByY>();
             SetField(sorting, "isStatic", true);
@@ -408,6 +409,17 @@ namespace Geprek.EditorTools
             so.ApplyModifiedPropertiesWithoutUndo();
 
             return seat;
+        }
+
+        static void ConfigureTableNumber(SpriteRenderer plate)
+        {
+            plate.transform.localScale = new Vector3(0.28f, 0.90f, 1f);
+            var label = plate.GetComponentInChildren<WorldLabel>(true);
+            if (label == null) return;
+            // Stretch the plaque without squeezing the glyph with it.
+            label.transform.localScale = new Vector3(1f / 0.28f, 1f / 0.90f, 1f);
+            label.GetComponent<TextMesh>().characterSize = 0.035f;
+            label.RefreshSorting();
         }
 
         // ---------------------------------------------------------------- pelanggan
@@ -470,6 +482,7 @@ namespace Geprek.EditorTools
                 queueList.GetArrayElementAtIndex(i).objectReferenceValue = queue[i];
 
             so.ApplyModifiedPropertiesWithoutUndo();
+            ApplySpawnerArtwork(spawner);
             return spawner;
         }
     }

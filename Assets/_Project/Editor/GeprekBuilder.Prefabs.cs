@@ -162,6 +162,7 @@ namespace Geprek.EditorTools
             SetField(bubble, "moodNeutral", Ico("mood_neutral"));
             SetField(bubble, "moodAnnoyed", Ico("mood_annoyed"));
             SetField(bubble, "moodAngry", Ico("mood_angry"));
+            ApplyCustomerArtwork(bubble);
             return bubble;
         }
 

@@ -71,6 +71,7 @@ namespace Geprek.Player
             _mover.SetInput(move);
             animator?.Drive(_mover.Velocity, 0.12f);
 
+            interactor?.SetFacing(move);
             interactor?.Scan();
 
             if (_input.InteractPressed) interactor?.PressInteract();

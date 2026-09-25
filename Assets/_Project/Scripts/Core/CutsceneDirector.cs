@@ -44,7 +44,7 @@ namespace Geprek.Core
         [SerializeField] GameDatabase database;
 
         public event Action<string, string, Sprite> LineShown;   // pembicara, isi, potret
-        public event Action<string, string> TitleShown;
+        public event Action<string, string, float> TitleShown; // title, subtitle, duration
         public event Action TitleHidden;
         public event Action<bool, float> FadeRequested;          // ke hitam?, durasi
         public event Action<bool> CutsceneActiveChanged;
@@ -86,7 +86,7 @@ namespace Geprek.Core
                         break;
 
                     case BeatTitle t:
-                        TitleShown?.Invoke(t.title, t.subtitle);
+                        TitleShown?.Invoke(t.title, t.subtitle, t.hold);
                         yield return new WaitForSecondsRealtime(t.hold);
                         TitleHidden?.Invoke();
                         break;

@@ -179,13 +179,16 @@ namespace Geprek.UI
         {
             var box = UIFactory.Panel("Toast", _hud, new Color(0.16f, 0.12f, 0.10f, 0.92f));
             _toastBox = box.rectTransform;
-            UIFactory.Anchor(_toastBox, new Vector2(0.5f, 1f), new Vector2(0.5f, 1f), new Vector2(0f, -146f), new Vector2(520f, 46f));
+            UIFactory.Anchor(_toastBox, new Vector2(0.5f, 1f), new Vector2(0.5f, 1f), new Vector2(0f, -146f), new Vector2(600f, 46f));
 
             _toastIcon = UIFactory.Icon("Icon", _toastBox, null, new Vector2(28f, 28f));
             UIFactory.Anchor(_toastIcon.rectTransform, new Vector2(0f, 0.5f), new Vector2(0f, 0.5f), new Vector2(12f, 0f), new Vector2(28f, 28f));
 
-            _toastText = UIFactory.Label("Text", _toastBox, "", UIStyle.FontBody, UIStyle.Cream, TextAnchor.MiddleCenter);
-            UIFactory.Stretch(_toastText.rectTransform, 10f);
+            _toastText = UIFactory.Label("Text", _toastBox, "", UIStyle.FontBody, UIStyle.Cream, TextAnchor.MiddleLeft);
+            UIFactory.Stretch(_toastText.rectTransform, 8f);
+            _toastText.resizeTextForBestFit = true;
+            _toastText.resizeTextMinSize = 14;
+            _toastText.resizeTextMaxSize = UIStyle.FontBody;
 
             _toastBox.gameObject.SetActive(false);
         }
@@ -283,6 +286,9 @@ namespace Geprek.UI
         {
             if (_toastBox == null) return;
             _toastText.text = message;
+            // Long cashier recaps must leave room for the icon at the left edge.
+            _toastText.rectTransform.offsetMin = new Vector2(icon != null ? 52f : 12f, 8f);
+            _toastText.rectTransform.offsetMax = new Vector2(-12f, -8f);
             if (_toastIcon != null)
             {
                 _toastIcon.sprite = icon;

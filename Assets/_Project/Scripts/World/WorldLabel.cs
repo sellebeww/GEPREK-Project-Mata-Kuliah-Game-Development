@@ -6,14 +6,32 @@ namespace Geprek.World
     /// Label teks kecil di dunia, dipakai untuk menamai stasiun dapur dan nomor meja.
     /// Memakai TextMesh bawaan supaya tidak bergantung pada paket font tambahan.
     /// </summary>
-    [RequireComponent(typeof(TextMesh))]
+    [ExecuteAlways, RequireComponent(typeof(TextMesh))]
     public class WorldLabel : MonoBehaviour
     {
         [SerializeField] TextMesh textMesh;
+        MeshRenderer _renderer;
+        SpriteRenderer _backing;
 
         void Awake()
         {
             if (textMesh == null) textMesh = GetComponent<TextMesh>();
+        }
+
+        void OnEnable() => RefreshSorting();
+        void LateUpdate() => RefreshSorting();
+
+        /// <summary>Keep text above its plaque even when the group is sorted by Y.</summary>
+        public void RefreshSorting()
+        {
+            if (_renderer == null) _renderer = GetComponent<MeshRenderer>();
+            if (_backing == null && transform.parent != null)
+                _backing = transform.parent.GetComponent<SpriteRenderer>();
+            if (_renderer == null || _backing == null) return;
+            if (_renderer.sortingLayerID != _backing.sortingLayerID)
+                _renderer.sortingLayerID = _backing.sortingLayerID;
+            if (_renderer.sortingOrder != _backing.sortingOrder + 1)
+                _renderer.sortingOrder = _backing.sortingOrder + 1;
         }
 
         public void SetText(string value)

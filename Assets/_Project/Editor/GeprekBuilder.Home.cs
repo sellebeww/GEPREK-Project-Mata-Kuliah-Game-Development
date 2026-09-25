@@ -157,6 +157,7 @@ namespace Geprek.EditorTools
             Icon("moodAngry", "mood_angry");
 
             so.ApplyModifiedPropertiesWithoutUndo();
+            ApplyUiArtwork(ui);
         }
     }
 }

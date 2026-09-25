@@ -18,6 +18,7 @@ namespace Geprek.Stations
         [SerializeField] Color workingColor = new(0.95f, 0.5f, 0.35f);
 
         ItemDef _input;
+        float _inputQuality = 1f;
         float _progress;
         float _sfxTimer;
         Vector3 _pestleHome;
@@ -65,6 +66,7 @@ namespace Geprek.Stations
             {
                 var held = carry.Release();
                 _input = held.def;
+                _inputQuality = held.quality;
                 _progress = 0f;
                 ShowIcon(_input.icon);
                 ShowProgress(0f);
@@ -75,8 +77,7 @@ namespace Geprek.Stations
 
             if (IsDone)
             {
-                float quality = Game != null ? Game.Progress.CookQuality(Game.Config) : 1f;
-                carry.TryTake(CarriedItem.FromItem(_input.prepResult, quality));
+                carry.TryTake(CarriedItem.FromItem(_input.prepResult, _inputQuality));
                 Sfx(SfxId.Pickup);
                 Clear();
             }
@@ -125,6 +126,7 @@ namespace Geprek.Stations
         void Clear()
         {
             _input = null;
+            _inputQuality = 1f;
             _progress = 0f;
             ShowIcon(null);
             HideProgress();

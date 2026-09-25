@@ -58,8 +58,7 @@ namespace Geprek.EditorTools
             // sama dengan titik PlayerSpawn Warung, supaya tampilan scene di Editor
             // (sebelum Play) juga tidak menaruh pemain menutupi papan nama stasiun
             var warungSpec = WarungSpec();
-            player.transform.position = new Vector3(
-                Mathf.Lerp(warungSpec.min.x, warungSpec.max.x, 0.32f), new Layout(warungSpec).laneY + 0.2f, 0f);
+            player.transform.position = BusinessPlayerSpawn(warungSpec);
 
             var follow = camera.GetComponent<CameraFollow>();
             SetField(follow, "target", player.transform);
@@ -206,7 +205,7 @@ namespace Geprek.EditorTools
                 // pertama. Dulu +1.1 dari islandY mendarat nyaris tepat di tinggi papan
                 // nama stasiun (counter), jadi pemain selalu berdiri menutupi label.
                 Vector3 spawn = spec != null
-                    ? new Vector3(Mathf.Lerp(spec.min.x, spec.max.x, 0.32f), new Layout(spec).laneY + 0.2f, 0f)
+                    ? BusinessPlayerSpawn(spec)
                     : new Vector3(0f, -0.8f, 0f);
 
                 var spawnGo = Go("PlayerSpawn", root.transform, spawn);
@@ -223,6 +222,10 @@ namespace Geprek.EditorTools
         }
 
         /// <summary>Cari resep lokasi berdasarkan nama akar objeknya.</summary>
+        static Vector3 BusinessPlayerSpawn(BusinessSpec spec) => new(
+            spec.id == LocationId.Warung ? -4.125f : Mathf.Lerp(spec.min.x, spec.max.x, 0.32f),
+            new Layout(spec).laneY + 0.2f, 0f);
+
         static BusinessSpec SpecOf(string rootName)
         {
             if (rootName == LocationId.Warung.ToString()) return WarungSpec();

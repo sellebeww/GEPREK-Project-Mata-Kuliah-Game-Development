@@ -36,38 +36,115 @@ namespace Geprek.UI
         {
             _menuPanel = NewPanel("MainMenu");
 
-            var bg = UIFactory.Raw("Bg", _menuPanel, new Color(0.11f, 0.08f, 0.07f, 0.96f));
+            var bg = UIFactory.Raw("Bg", _menuPanel, new Color(0.12f, 0.07f, 0.04f));
             UIFactory.Stretch(bg.rectTransform);
 
-            var title = UIFactory.Label("Title", _menuPanel, "GEPREK!", UIStyle.FontTitle + 24, UIStyle.Gold, TextAnchor.MiddleCenter, FontStyle.Bold);
-            UIFactory.Anchor(title.rectTransform, new Vector2(0.5f, 1f), new Vector2(0.5f, 1f), new Vector2(0f, -110f), new Vector2(700f, 80f));
-            UIFactory.Outline(title, new Color(0.5f, 0.1f, 0.08f), new Vector2(3f, -3f));
+            var artwork = Resources.Load<Texture2D>("Art/geprek_menu_warung");
+            if (artwork != null)
+            {
+                var artRect = UIFactory.Rect("WarungIllustration", bg.transform);
+                UIFactory.Stretch(artRect);
+                var art = artRect.gameObject.AddComponent<RawImage>();
+                art.texture = artwork;
+                art.raycastTarget = false;
+                var fit = artRect.gameObject.AddComponent<AspectRatioFitter>();
+                fit.aspectMode = AspectRatioFitter.AspectMode.EnvelopeParent;
+                fit.aspectRatio = (float)artwork.width / artwork.height;
+            }
 
-            var sub = UIFactory.Label("Sub", _menuPanel, "Bangun bisnis ayam geprek dari warung ibu sampai punya cabang sendiri.",
-                                      UIStyle.FontBody, UIStyle.Cream, TextAnchor.MiddleCenter);
-            UIFactory.Anchor(sub.rectTransform, new Vector2(0.5f, 1f), new Vector2(0.5f, 1f), new Vector2(0f, -196f), new Vector2(760f, 50f));
+            var footer = UIFactory.Raw("FooterShade", _menuPanel, new Color(0.10f, 0.06f, 0.03f, 0.82f));
+            footer.rectTransform.anchorMin = Vector2.zero;
+            footer.rectTransform.anchorMax = new Vector2(1f, 0f);
+            footer.rectTransform.pivot = Vector2.zero;
+            footer.rectTransform.sizeDelta = new Vector2(0f, 48f);
+            footer.raycastTarget = false;
 
-            float y = -290f;
-            var newBtn = UIFactory.Button("NewGame", _menuPanel, "Mulai Baru", UIStyle.Chili, UIStyle.Cream, () =>
+            var card = UIFactory.Panel("MenuCard", _menuPanel, new Color(0.12f, 0.075f, 0.045f, 0.90f));
+            UIFactory.Anchor(card.rectTransform, new Vector2(0.055f, 0.53f), new Vector2(0f, 0.5f),
+                             Vector2.zero, new Vector2(430f, 568f));
+
+            var badge = UIFactory.Panel("Badge", card.transform, UIStyle.Gold);
+            UIFactory.Anchor(badge.rectTransform, new Vector2(0f, 1f), new Vector2(0f, 1f),
+                             new Vector2(32f, -30f), new Vector2(252f, 29f));
+            var badgeText = UIFactory.Label("Text", badge.transform, "DARI WARUNG, JADI CERITA", 12,
+                                            UIStyle.Ink, TextAnchor.MiddleCenter, FontStyle.Bold);
+            UIFactory.Stretch(badgeText.rectTransform);
+
+            var title = UIFactory.Label("Title", card.transform, "GEPREK!", 76, UIStyle.Gold,
+                                         TextAnchor.MiddleLeft, FontStyle.Bold);
+            UIFactory.Anchor(title.rectTransform, new Vector2(0f, 1f), new Vector2(0f, 1f),
+                             new Vector2(28f, -66f), new Vector2(378f, 94f));
+            UIFactory.Outline(title, UIStyle.ChiliDark, new Vector2(2f, -3f));
+
+            var sub = UIFactory.Label("Sub", card.transform,
+                "Racik sambal. Layani pelanggan.\nBesarkan warung ibu dengan caramu.",
+                19, UIStyle.Cream, TextAnchor.UpperLeft);
+            UIFactory.Anchor(sub.rectTransform, new Vector2(0f, 1f), new Vector2(0f, 1f),
+                             new Vector2(34f, -171f), new Vector2(362f, 66f));
+
+            var rule = UIFactory.Raw("GoldRule", card.transform, new Color(0.97f, 0.76f, 0.24f, 0.45f));
+            UIFactory.Anchor(rule.rectTransform, new Vector2(0f, 1f), new Vector2(0f, 1f),
+                             new Vector2(34f, -247f), new Vector2(362f, 2f));
+            rule.raycastTarget = false;
+
+            var newBtn = UIFactory.Button("NewGame", card.transform, "Mulai Baru", UIStyle.Chili, UIStyle.Cream, () =>
             {
                 Audio.AudioManager.Play(SfxId.Click);
-                Game.NewGame();
-            }, UIStyle.FontHeading);
-            UIFactory.Anchor(newBtn.image.rectTransform, new Vector2(0.5f, 1f), new Vector2(0.5f, 1f), new Vector2(0f, y), new Vector2(320f, 62f));
+                if (Game.HasSave) SetPanel(_newGameConfirmation, true);
+                else Game.NewGame();
+            }, 24);
+            UIFactory.Anchor(newBtn.image.rectTransform, new Vector2(0.5f, 1f), new Vector2(0.5f, 1f),
+                             new Vector2(0f, -274f), new Vector2(362f, 62f));
 
-            _continueButton = UIFactory.Button("Continue", _menuPanel, "Lanjutkan", UIStyle.Wood, UIStyle.Cream, () =>
+            _continueButton = UIFactory.Button("Continue", card.transform, "Lanjutkan", UIStyle.Wood, UIStyle.Cream, () =>
             {
                 Audio.AudioManager.Play(SfxId.Click);
                 Game.ContinueGame();
-            }, UIStyle.FontHeading);
-            UIFactory.Anchor(_continueButton.image.rectTransform, new Vector2(0.5f, 1f), new Vector2(0.5f, 1f), new Vector2(0f, y - 76f), new Vector2(320f, 62f));
+            }, 22);
+            UIFactory.Anchor(_continueButton.image.rectTransform, new Vector2(0.5f, 1f), new Vector2(0.5f, 1f),
+                             new Vector2(0f, -348f), new Vector2(362f, 58f));
 
-            var quit = UIFactory.Button("Quit", _menuPanel, "Keluar", new Color(0.30f, 0.24f, 0.21f), UIStyle.Cream, QuitGame);
-            UIFactory.Anchor(quit.image.rectTransform, new Vector2(0.5f, 1f), new Vector2(0.5f, 1f), new Vector2(0f, y - 152f), new Vector2(320f, 52f));
+            var quit = UIFactory.Button("Quit", card.transform, "Keluar", new Color(0.26f, 0.19f, 0.13f),
+                                        UIStyle.Cream, QuitGame);
+            UIFactory.Anchor(quit.image.rectTransform, new Vector2(0.5f, 1f), new Vector2(0.5f, 1f),
+                             new Vector2(0f, -418f), new Vector2(362f, 44f));
+
+            var controls = UIFactory.Label("Controls", card.transform,
+                "WASD / PANAH   Gerak     •     E / SPASI   Interaksi\nTahan untuk geprek  •  Kontrol sentuh tersedia", 13,
+                new Color(0.83f, 0.76f, 0.64f), TextAnchor.MiddleCenter);
+            UIFactory.Anchor(controls.rectTransform, new Vector2(0.5f, 0f), new Vector2(0.5f, 0f),
+                             new Vector2(0f, 22f), new Vector2(382f, 54f));
 
             var credit = UIFactory.Label("Credit", _menuPanel, "Kelompok 4 — Gading · Naufal · Vassel · Farrell",
-                                         UIStyle.FontSmall, new Color(0.75f, 0.70f, 0.64f), TextAnchor.MiddleCenter);
-            UIFactory.Anchor(credit.rectTransform, new Vector2(0.5f, 0f), new Vector2(0.5f, 0f), new Vector2(0f, 26f), new Vector2(700f, 24f));
+                                         13, UIStyle.Cream, TextAnchor.MiddleCenter);
+            UIFactory.Anchor(credit.rectTransform, new Vector2(0.5f, 0f), new Vector2(0.5f, 0f),
+                             new Vector2(0f, 12f), new Vector2(700f, 24f));
+
+            BuildNewGameConfirmation();
+        }
+
+        RectTransform _newGameConfirmation;
+
+        void BuildNewGameConfirmation()
+        {
+            _newGameConfirmation = NewPanel("ConfirmNewGame");
+            var content = Dialog(_newGameConfirmation, "Mulai cerita baru?", new Vector2(560f, 300f), out _);
+            var body = UIFactory.Label("Warning", content,
+                "Progres yang tersimpan akan diganti.\nYakin ingin memulai kembali dari warung ibu?",
+                20, UIStyle.Ink, TextAnchor.MiddleCenter);
+            UIFactory.Anchor(body.rectTransform, new Vector2(0.5f, 1f), new Vector2(0.5f, 1f),
+                             Vector2.zero, new Vector2(480f, 100f));
+            var cancel = UIFactory.Button("Cancel", content, "Kembali", UIStyle.Wood, UIStyle.Cream,
+                () => SetPanel(_newGameConfirmation, false));
+            UIFactory.Anchor(cancel.image.rectTransform, Vector2.zero, Vector2.zero,
+                             new Vector2(0f, 12f), new Vector2(225f, 52f));
+            var confirm = UIFactory.Button("Confirm", content, "Mulai Baru", UIStyle.Chili, UIStyle.Cream, () =>
+            {
+                SetPanel(_newGameConfirmation, false);
+                Game.NewGame();
+            });
+            UIFactory.Anchor(confirm.image.rectTransform, new Vector2(1f, 0f), new Vector2(1f, 0f),
+                             new Vector2(0f, 12f), new Vector2(225f, 52f));
         }
 
         void RefreshMainMenu()

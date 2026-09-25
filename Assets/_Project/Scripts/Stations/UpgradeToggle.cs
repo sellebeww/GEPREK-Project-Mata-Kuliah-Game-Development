@@ -10,6 +10,8 @@ namespace Geprek.Stations
     {
         [SerializeField] GameObject[] visuals;
         [SerializeField] bool startActive;
+        GameObject[] _childVisuals;
+        bool[] _childInitiallyActive;
 
         void Awake() => SetActiveState(startActive);
 
@@ -21,7 +23,21 @@ namespace Geprek.Stations
             }
             else
             {
-                foreach (var r in GetComponentsInChildren<SpriteRenderer>(true)) r.enabled = on;
+                if (_childVisuals == null)
+                {
+                    _childVisuals = new GameObject[transform.childCount];
+                    _childInitiallyActive = new bool[_childVisuals.Length];
+                    for (int i = 0; i < _childVisuals.Length; i++)
+                    {
+                        _childVisuals[i] = transform.GetChild(i).gameObject;
+                        _childInitiallyActive[i] = _childVisuals[i].activeSelf;
+                    }
+                }
+                // Include TextMesh labels, while preserving initially hidden effects.
+                // Renderer.enabled remains owned by cooking, highlights and progress bars.
+                for (int i = 0; i < _childVisuals.Length; i++)
+                    if (_childVisuals[i] != null)
+                        _childVisuals[i].SetActive(on && _childInitiallyActive[i]);
             }
 
             var col = GetComponent<Collider2D>();

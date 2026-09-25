@@ -26,6 +26,7 @@ namespace Geprek.Player
         IInteractable _holding;
         string _lastHint = "";
         bool _lastUsable;
+        Vector2 _facing = Vector2.down;
 
         public IInteractable Current => _current;
 
@@ -35,6 +36,14 @@ namespace Geprek.Player
         }
 
         public void SetRadius(float r) => radius = Mathf.Max(0.2f, r);
+
+        public void SetFacing(Vector2 direction)
+        {
+            if (direction.sqrMagnitude > 0.01f) _facing = direction.normalized;
+        }
+
+        static bool IsAvailable(IInteractable target) =>
+            target is MonoBehaviour component && component != null && component.isActiveAndEnabled;
 
         public void Scan()
         {
@@ -55,24 +64,30 @@ namespace Geprek.Player
                 if (col == null) continue;
 
                 var candidate = col.GetComponentInParent<IInteractable>();
-                if (candidate == null) continue;
+                if (!IsAvailable(candidate)) continue;
 
                 float dist = Vector2.SqrMagnitude((Vector2)candidate.Transform.position - (Vector2)transform.position);
                 // yang bisa dipakai selalu menang dari yang cuma dekat
                 float score = candidate.CanInteract(carry) ? dist : dist + 100f;
+                // Arah hadap membantu memilih stasiun berdekatan; sedikit toleransi
+                // untuk target lama mencegah sorotan berkedip saat pemain diam.
+                Vector2 direction = (Vector2)candidate.Transform.position - (Vector2)transform.position;
+                score -= Vector2.Dot(_facing, direction.normalized) * 0.2f;
+                if (ReferenceEquals(candidate, _current)) score -= 0.12f;
                 if (score < bestScore) { bestScore = score; best = candidate; }
             }
 
-            if (!ReferenceEquals(best, _current))
+            bool targetChanged = !ReferenceEquals(best, _current);
+            if (targetChanged)
             {
-                _current?.SetHighlighted(false);
+                if (IsAvailable(_current)) _current.SetHighlighted(false);
                 _current = best;
                 _current?.SetHighlighted(true);
             }
 
             string hint = _current != null ? _current.Hint(carry) : "";
             bool usable = _current != null && _current.CanInteract(carry);
-            if (hint != _lastHint || usable != _lastUsable)
+            if (targetChanged || hint != _lastHint || usable != _lastUsable)
             {
                 _lastHint = hint;
                 _lastUsable = usable;
@@ -82,18 +97,18 @@ namespace Geprek.Player
 
         public void PressInteract()
         {
-            if (_current == null) return;
+            if (!IsAvailable(_current) || !_current.CanInteract(carry)) return;
             if (_current.UsesHold(carry)) { _holding = _current; return; }
             if (_current.CanInteract(carry)) _current.Interact(carry);
         }
 
         public void TickHold(bool held, float deltaTime)
         {
-            if (_holding == null) return;
+            if (!IsAvailable(_holding)) { _holding = null; return; }
 
             // lepas tombol atau menjauh dari stasiun -> berhenti mengulek
             bool stillNear = ReferenceEquals(_holding, _current);
-            if (!held || !stillNear)
+            if (!held || !stillNear || !_holding.CanInteract(carry))
             {
                 _holding.HoldCancelled();
                 _holding = null;
@@ -104,9 +119,18 @@ namespace Geprek.Player
 
         public void ReleaseInteract()
         {
-            if (_holding == null) return;
-            _holding.HoldCancelled();
+            if (IsAvailable(_holding)) _holding.HoldCancelled();
             _holding = null;
+        }
+
+        void OnDisable()
+        {
+            ReleaseInteract();
+            if (IsAvailable(_current)) _current.SetHighlighted(false);
+            _current = null;
+            _lastHint = "";
+            _lastUsable = false;
+            TargetChanged?.Invoke(null, "", false);
         }
 
         void OnDrawGizmosSelected()

@@ -143,7 +143,7 @@ namespace Geprek.Stations
             if (carry == null) return false;
             if (_phase == Phase.Empty)
                 return carry.HasItem && carry.Held.def != null && carry.Held.def.CanCook;
-            return carry.IsEmpty;   // ambil hasil
+            return carry.IsEmpty && (_phase == Phase.Ready || _phase == Phase.Burnt);
         }
 
         public override string Hint(PlayerCarry carry)
