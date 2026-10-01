@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18559a986a4704289a78624945693c19, type: 3}
+  m_Name: Day_A1_1
+  m_EditorClassIdentifier: Assembly-CSharp::Geprek.Data.DayPlanDef
+  dayInArc: 1
+  title: Hari Pertama
+  briefing: 'Buka warung ibu. Kenali dulu alurnya: ambil ayam, goreng, geprek, susun,
+    antar.'
+  targetRevenue: 55000
+  totalCustomers: 7
+  spawnIntervalStart: 11
+  spawnIntervalEnd: 8
+  patienceMultiplier: 1.3
+  maxRecipeComplexity: 2
+  objectives:
+  - kind: 0
+    amount: 5
+    recipe: {fileID: 0}
+  hasLunchRush: 0
+  rushStart: 0.42
+  rushEnd: 0.6
+  rushSpawnScale: 0.62
+  rushPatienceScale: 0.95

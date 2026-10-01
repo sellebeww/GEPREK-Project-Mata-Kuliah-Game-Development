@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18559a986a4704289a78624945693c19, type: 3}
+  m_Name: Day_A3_4
+  m_EditorClassIdentifier: Assembly-CSharp::Geprek.Data.DayPlanDef
+  dayInArc: 4
+  title: Cabang Kedua
+  briefing: Kamu mulai memantau dua dapur sekaligus.
+  targetRevenue: 520000
+  totalCustomers: 39
+  spawnIntervalStart: 4
+  spawnIntervalEnd: 2.7
+  patienceMultiplier: 0.9
+  maxRecipeComplexity: 0
+  objectives:
+  - kind: 3
+    amount: 3
+    recipe: {fileID: 0}
+  - kind: 2
+    amount: 8
+    recipe: {fileID: 11400000, guid: 3a97961a175b94d718e59d61509f343d, type: 2}
+  hasLunchRush: 1
+  rushStart: 0.345
+  rushEnd: 0.675
+  rushSpawnScale: 0.4925
+  rushPatienceScale: 0.8825

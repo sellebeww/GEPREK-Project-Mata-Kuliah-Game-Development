@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b3cdf97a7e034ef7b2316ca4a035d8f, type: 3}
+  m_Name: Recipe_geprek_sambal_merah
+  m_EditorClassIdentifier: Assembly-CSharp::Geprek.Data.RecipeDef
+  id: geprek_sambal_merah
+  displayName: Geprek Sambal Merah
+  description: Diguyur sambal bawang merah yang pedasnya nampol.
+  icon: {fileID: 1595781921, guid: b2940a722af034fd4862b738da7251f7, type: 3}
+  components:
+  - {fileID: 11400000, guid: fead24e08687d41caac811ef8f677558, type: 2}
+  - {fileID: 11400000, guid: 208cee5d551364265a55572b5c3899ff, type: 2}
+  - {fileID: 11400000, guid: b1009a81e0b8f45cf99583c2e1ceb968, type: 2}
+  basePrice: 18000
+  xpReward: 10
+  unlockLevel: 1
+  unlockArc: 1
+  unlockCost: 0
+  fromParents: 0
+  patienceMultiplier: 1.05

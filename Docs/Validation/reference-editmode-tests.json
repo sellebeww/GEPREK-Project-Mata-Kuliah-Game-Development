@@ -1,0 +1,90 @@
+{
+  "status": "completed",
+  "duration": 0.8,
+  "summary": {
+    "total": 11,
+    "passed": 11,
+    "failed": 0,
+    "skipped": 0,
+    "inconclusive": 0
+  },
+  "results": [
+    {
+      "FullName": "Geprek.EditorTools.GeprekGameplayTests.DestroyedTargetCanBeReleasedSafely",
+      "Status": "Passed",
+      "Duration": 0.0273199,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "Geprek.EditorTools.GeprekGameplayTests.FacingSelectsNearbyStationAndDisabledStationsAreIgnored",
+      "Status": "Passed",
+      "Duration": 0.0055607,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "Geprek.EditorTools.GeprekGameplayTests.FryerDoesNotReleaseChickenBeforeReady",
+      "Status": "Passed",
+      "Duration": 0.0024371,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "Geprek.EditorTools.GeprekGameplayTests.FryerReleasesFinishedResult(\"Ready\",\"cooked\")",
+      "Status": "Passed",
+      "Duration": 0.0063006,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "Geprek.EditorTools.GeprekGameplayTests.FryerReleasesFinishedResult(\"Burnt\",\"burnt\")",
+      "Status": "Passed",
+      "Duration": 0.0004474,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "Geprek.EditorTools.GeprekGameplayTests.PrepKeepsIncomingQuality(0.45f)",
+      "Status": "Passed",
+      "Duration": 0.0092786,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "Geprek.EditorTools.GeprekGameplayTests.PrepKeepsIncomingQuality(0.82f)",
+      "Status": "Passed",
+      "Duration": 0.0004484,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "Geprek.EditorTools.GeprekGameplayTests.PrepKeepsIncomingQuality(1.0f)",
+      "Status": "Passed",
+      "Duration": 0.000351,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "Geprek.EditorTools.GeprekGameplayTests.SwitchingIdenticalHintsStillNotifiesTargetChange",
+      "Status": "Passed",
+      "Duration": 0.0017169,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "Geprek.EditorTools.GeprekReferenceTests.CookFinishesRequestedToppingBeforeReleasingBaseDish",
+      "Status": "Passed",
+      "Duration": 0.0075329,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "Geprek.EditorTools.GeprekReferenceTests.SeatedCustomerFacesTableAndStandingRestoresDirection",
+      "Status": "Passed",
+      "Duration": 0.0073021,
+      "Message": null,
+      "StackTrace": null
+    }
+  ]
+}

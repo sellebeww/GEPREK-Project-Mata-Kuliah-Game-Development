@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a7711a8258924647bfda306f17e3a77, type: 3}
+  m_Name: Skin_OfficeWoman
+  m_EditorClassIdentifier: Assembly-CSharp::Geprek.Data.CharacterSkin
+  displayName: OfficeWoman
+  framesPerDirection: 2
+  frames:
+  - {fileID: -1470245221, guid: 95f61246d96044e4094f1c5d6016ceb5, type: 3}
+  - {fileID: -1577064271, guid: 95f61246d96044e4094f1c5d6016ceb5, type: 3}
+  - {fileID: 1693807895, guid: 95f61246d96044e4094f1c5d6016ceb5, type: 3}
+  - {fileID: -998180092, guid: 95f61246d96044e4094f1c5d6016ceb5, type: 3}
+  - {fileID: -357955592, guid: 95f61246d96044e4094f1c5d6016ceb5, type: 3}
+  - {fileID: -593444937, guid: 95f61246d96044e4094f1c5d6016ceb5, type: 3}
+  - {fileID: -1495789632, guid: 95f61246d96044e4094f1c5d6016ceb5, type: 3}
+  - {fileID: -1311429242, guid: 95f61246d96044e4094f1c5d6016ceb5, type: 3}

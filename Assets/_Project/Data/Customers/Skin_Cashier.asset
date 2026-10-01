@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a7711a8258924647bfda306f17e3a77, type: 3}
+  m_Name: Skin_Cashier
+  m_EditorClassIdentifier: Assembly-CSharp::Geprek.Data.CharacterSkin
+  displayName: Cashier
+  framesPerDirection: 3
+  frames:
+  - {fileID: -733601062, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: -1102183900, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: -420995799, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: -988927950, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: 995098921, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: 894114009, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: 1957294107, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: -1412794205, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: 2035686853, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: 186546162, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: 416216492, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: -1524572163, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}

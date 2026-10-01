@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a7711a8258924647bfda306f17e3a77, type: 3}
+  m_Name: Skin_Chef
+  m_EditorClassIdentifier: Assembly-CSharp::Geprek.Data.CharacterSkin
+  displayName: Chef
+  framesPerDirection: 3
+  frames:
+  - {fileID: 652600870, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: -759804454, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: -1406008369, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: -1056920067, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: -649645089, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: 1844900809, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: -1289831442, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: -7678732, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: 98563504, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: -1137509713, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: 51766495, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}
+  - {fileID: 1060984332, guid: 27d739c9db2cf41b7ac4c0e51646fec2, type: 3}

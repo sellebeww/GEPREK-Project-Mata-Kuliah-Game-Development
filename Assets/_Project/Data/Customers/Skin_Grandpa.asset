@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a7711a8258924647bfda306f17e3a77, type: 3}
+  m_Name: Skin_Grandpa
+  m_EditorClassIdentifier: Assembly-CSharp::Geprek.Data.CharacterSkin
+  displayName: Grandpa
+  framesPerDirection: 2
+  frames:
+  - {fileID: 1766758921, guid: 95f61246d96044e4094f1c5d6016ceb5, type: 3}
+  - {fileID: -752149287, guid: 95f61246d96044e4094f1c5d6016ceb5, type: 3}
+  - {fileID: -1924414357, guid: 95f61246d96044e4094f1c5d6016ceb5, type: 3}
+  - {fileID: 120949072, guid: 95f61246d96044e4094f1c5d6016ceb5, type: 3}
+  - {fileID: -61721220, guid: 95f61246d96044e4094f1c5d6016ceb5, type: 3}
+  - {fileID: 2057350278, guid: 95f61246d96044e4094f1c5d6016ceb5, type: 3}
+  - {fileID: 1844303053, guid: 95f61246d96044e4094f1c5d6016ceb5, type: 3}
+  - {fileID: -1507940496, guid: 95f61246d96044e4094f1c5d6016ceb5, type: 3}

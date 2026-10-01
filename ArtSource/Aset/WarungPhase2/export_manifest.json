@@ -1,0 +1,164 @@
+[
+  {
+    "name": "mood_happy",
+    "sourceWidth": 1254,
+    "sourceHeight": 1254,
+    "crop": [
+      143,
+      139,
+      969,
+      974
+    ],
+    "width": 128,
+    "height": 128,
+    "padding": 6,
+    "preserveAspect": true,
+    "cropAlphaThreshold": 16,
+    "alpha": true,
+    "method": "nearest-neighbour"
+  },
+  {
+    "name": "mood_waiting",
+    "sourceWidth": 1254,
+    "sourceHeight": 1254,
+    "crop": [
+      136,
+      115,
+      983,
+      988
+    ],
+    "width": 128,
+    "height": 128,
+    "padding": 6,
+    "preserveAspect": true,
+    "cropAlphaThreshold": 16,
+    "alpha": true,
+    "method": "nearest-neighbour"
+  },
+  {
+    "name": "mood_angry",
+    "sourceWidth": 1254,
+    "sourceHeight": 1254,
+    "crop": [
+      156,
+      157,
+      944,
+      940
+    ],
+    "width": 128,
+    "height": 128,
+    "padding": 6,
+    "preserveAspect": true,
+    "cropAlphaThreshold": 16,
+    "alpha": true,
+    "method": "nearest-neighbour"
+  },
+  {
+    "name": "order_bubble",
+    "sourceWidth": 1448,
+    "sourceHeight": 1086,
+    "crop": [
+      103,
+      124,
+      1242,
+      830
+    ],
+    "width": 128,
+    "height": 96,
+    "padding": 2,
+    "preserveAspect": false,
+    "cropAlphaThreshold": 16,
+    "alpha": true,
+    "method": "nearest-neighbour"
+  },
+  {
+    "name": "patience_frame",
+    "sourceWidth": 2172,
+    "sourceHeight": 724,
+    "crop": [
+      103,
+      231,
+      1967,
+      268
+    ],
+    "width": 128,
+    "height": 32,
+    "padding": 1,
+    "preserveAspect": false,
+    "cropAlphaThreshold": 16,
+    "alpha": true,
+    "method": "nearest-neighbour"
+  },
+  {
+    "name": "patience_fill",
+    "sourceWidth": 2172,
+    "sourceHeight": 724,
+    "crop": [
+      92,
+      299,
+      1988,
+      135
+    ],
+    "width": 128,
+    "height": 16,
+    "padding": 0,
+    "preserveAspect": false,
+    "cropAlphaThreshold": 16,
+    "alpha": true,
+    "method": "nearest-neighbour"
+  },
+  {
+    "name": "spice_shelf",
+    "sourceWidth": 1254,
+    "sourceHeight": 1254,
+    "crop": [
+      181,
+      218,
+      893,
+      782
+    ],
+    "width": 128,
+    "height": 128,
+    "padding": 2,
+    "preserveAspect": true,
+    "cropAlphaThreshold": 16,
+    "alpha": true,
+    "method": "nearest-neighbour"
+  },
+  {
+    "name": "menu_board",
+    "sourceWidth": 1122,
+    "sourceHeight": 1402,
+    "crop": [
+      178,
+      167,
+      789,
+      1028
+    ],
+    "width": 128,
+    "height": 160,
+    "padding": 2,
+    "preserveAspect": true,
+    "cropAlphaThreshold": 16,
+    "alpha": true,
+    "method": "nearest-neighbour"
+  },
+  {
+    "name": "day_banner",
+    "sourceWidth": 2172,
+    "sourceHeight": 724,
+    "crop": [
+      30,
+      174,
+      2096,
+      406
+    ],
+    "width": 512,
+    "height": 128,
+    "padding": 1,
+    "preserveAspect": false,
+    "cropAlphaThreshold": 16,
+    "alpha": true,
+    "method": "nearest-neighbour"
+  }
+]

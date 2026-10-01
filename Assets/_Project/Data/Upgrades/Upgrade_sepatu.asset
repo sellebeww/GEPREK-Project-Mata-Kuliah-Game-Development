@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8499d5ae3147d4d5387a77a4805e2e6a, type: 3}
+  m_Name: Upgrade_sepatu
+  m_EditorClassIdentifier: Assembly-CSharp::Geprek.Data.UpgradeDef
+  id: sepatu
+  displayName: Sepatu Kerja
+  description: Jalan lebih cepat di dalam warung. +12% kecepatan per tingkat.
+  icon: {fileID: 1717332434, guid: b36b9f1eb93574939a099e220e62f1bf, type: 3}
+  kind: 0
+  baseCost: 25000
+  costGrowth: 1.7
+  valuePerLevel: 0.12
+  maxLevel: 3
+  unlockArc: 1

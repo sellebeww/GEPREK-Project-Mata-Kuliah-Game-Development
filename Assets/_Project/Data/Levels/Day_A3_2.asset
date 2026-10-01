@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18559a986a4704289a78624945693c19, type: 3}
+  m_Name: Day_A3_2
+  m_EditorClassIdentifier: Assembly-CSharp::Geprek.Data.DayPlanDef
+  dayInArc: 2
+  title: Ulasan Viral
+  briefing: Postingan pelangganmu viral. Bersiaplah.
+  targetRevenue: 410000
+  totalCustomers: 33
+  spawnIntervalStart: 4.6
+  spawnIntervalEnd: 3.1
+  patienceMultiplier: 0.95
+  maxRecipeComplexity: 0
+  objectives:
+  - kind: 4
+    amount: 15
+    recipe: {fileID: 0}
+  hasLunchRush: 1
+  rushStart: 0.39499998
+  rushEnd: 0.625
+  rushSpawnScale: 0.5775
+  rushPatienceScale: 0.9275

@@ -1,0 +1,40 @@
+{
+    "tier": 3,
+    "served": 3,
+    "revenue": 101000,
+    "wrongOrders": 0,
+    "seated": 9,
+    "state": "DayOperating",
+    "plate": "geprek_original",
+    "customerStates": [
+        "Angry",
+        "Eating",
+        "Happy",
+        "Leaving",
+        "Ordering",
+        "Paying",
+        "Queueing",
+        "Seating",
+        "Waiting"
+    ],
+    "poses": [
+        "Eating",
+        "Ordering",
+        "Seated",
+        "Standing"
+    ],
+    "jobs": [
+        "Kasir",
+        "Mengantar",
+        "Menggeprek",
+        "Menggoreng",
+        "Menyiapkan",
+        "Meracik",
+        "Siap kerja"
+    ],
+    "workers": [
+        "Sari — Pramusaji: Siap kerja / ",
+        "Dimas — Kasir: Kasir / ",
+        "Bimo — Juru Masak: Meracik / Sambal Ijo"
+    ]
+}

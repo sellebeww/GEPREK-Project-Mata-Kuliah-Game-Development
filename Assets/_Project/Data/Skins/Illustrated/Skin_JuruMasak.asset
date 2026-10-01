@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a7711a8258924647bfda306f17e3a77, type: 3}
+  m_Name: Skin_JuruMasak
+  m_EditorClassIdentifier: Assembly-CSharp::Geprek.Data.CharacterSkin
+  displayName: JuruMasak
+  framesPerDirection: 1
+  frames:
+  - {fileID: -1768149824, guid: 9745990edea894dcd8bcec18308dc046, type: 3}
+  - {fileID: 1520083832, guid: 9745990edea894dcd8bcec18308dc046, type: 3}
+  - {fileID: 475660471, guid: 9745990edea894dcd8bcec18308dc046, type: 3}
+  - {fileID: 369069675, guid: 9745990edea894dcd8bcec18308dc046, type: 3}
+  seatedRight: {fileID: -1783136383, guid: 9745990edea894dcd8bcec18308dc046, type: 3}
+  orderingRight: {fileID: -903879454, guid: 9745990edea894dcd8bcec18308dc046, type: 3}
+  portrait: {fileID: 0}
+  illustrated: 1

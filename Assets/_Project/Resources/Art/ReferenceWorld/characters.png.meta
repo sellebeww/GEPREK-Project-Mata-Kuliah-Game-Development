@@ -1,0 +1,1381 @@
+fileFormatVersion: 2
+guid: 9745990edea894dcd8bcec18308dc046
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3083089168873209362
+    second: characters_0
+  - first:
+      213: -517894308114096243
+    second: characters_1
+  - first:
+      213: 7755224123621818408
+    second: characters_2
+  - first:
+      213: -3557554893070573299
+    second: characters_3
+  - first:
+      213: -4256427906160430202
+    second: characters_4
+  - first:
+      213: -6066236442320969475
+    second: characters_5
+  - first:
+      213: 1893670189769602202
+    second: characters_6
+  - first:
+      213: -5691007311618604778
+    second: characters_7
+  - first:
+      213: -417436994572597314
+    second: characters_8
+  - first:
+      213: -7232779301871914677
+    second: characters_9
+  - first:
+      213: 7729768860333772239
+    second: characters_10
+  - first:
+      213: -3102994270238535240
+    second: characters_11
+  - first:
+      213: -4572274602858593414
+    second: characters_12
+  - first:
+      213: 1189779305756619486
+    second: characters_13
+  - first:
+      213: -1975635887328401948
+    second: characters_14
+  - first:
+      213: 4367732871754573918
+    second: characters_15
+  - first:
+      213: 8901077990765384427
+    second: characters_16
+  - first:
+      213: -919312135990662955
+    second: characters_17
+  - first:
+      213: 4306828662039877052
+    second: characters_18
+  - first:
+      213: 3538125613680756451
+    second: characters_19
+  - first:
+      213: -2976837118148077081
+    second: characters_20
+  - first:
+      213: 7565877224362775616
+    second: characters_21
+  - first:
+      213: 2243496752862105744
+    second: characters_22
+  - first:
+      213: -4031619653288768660
+    second: characters_23
+  - first:
+      213: 442113960596436644
+    second: characters_24
+  - first:
+      213: -3284978671773823301
+    second: characters_25
+  - first:
+      213: -7676043117880224163
+    second: characters_26
+  - first:
+      213: 2860487071760280893
+    second: characters_27
+  - first:
+      213: 939489211220940695
+    second: characters_28
+  - first:
+      213: 5731562298934000515
+    second: characters_29
+  - first:
+      213: 1569994384330951894
+    second: characters_30
+  - first:
+      213: 9158924008245724444
+    second: characters_31
+  - first:
+      213: -5465283732883496055
+    second: characters_32
+  - first:
+      213: -2093133780709834730
+    second: characters_33
+  - first:
+      213: -6603193462306882315
+    second: characters_34
+  - first:
+      213: 7033315285397903179
+    second: characters_35
+  - first:
+      213: 2093188768341758965
+    second: characters_36
+  - first:
+      213: 7744072722613937420
+    second: characters_37
+  - first:
+      213: 2231020222837286545
+    second: characters_38
+  - first:
+      213: 7609787605624061525
+    second: characters_39
+  - first:
+      213: -8879491853263213150
+    second: characters_40
+  - first:
+      213: 8262985221905841761
+    second: characters_41
+  - first:
+      213: 2011002775766109113
+    second: characters_42
+  - first:
+      213: -6878064802024223989
+    second: characters_43
+  - first:
+      213: -1509298647979629103
+    second: characters_44
+  - first:
+      213: -3889344650559148656
+    second: characters_45
+  - first:
+      213: 1062266681453288945
+    second: characters_46
+  - first:
+      213: -1981437635880020547
+    second: characters_47
+  - first:
+      213: -7365091535247084893
+    second: characters_48
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 145
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mahasiswa_0
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1272
+        width: 82
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0b81fc21d6954ba8aa6e78cf95eb643
+      internalID: -522244212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mahasiswa_1
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 1273
+        width: 83
+        height: 161
+      alignment: 9
+      pivot: {x: 0.5, y: 0.035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad03171d1b76e4a5da08bc7bdb1976cb
+      internalID: 1870023903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mahasiswa_2
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 1273
+        width: 88
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 862193e20704b400ba3714e9ba33baf3
+      internalID: -1405541380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mahasiswa_3
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 1271
+        width: 78
+        height: 163
+      alignment: 9
+      pivot: {x: 0.5, y: 0.035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52f67771191314b3b919b14d0e26ee91
+      internalID: 1156081615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mahasiswa_4
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 1272
+        width: 95
+        height: 144
+      alignment: 9
+      pivot: {x: 0.32, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac346e5cf0c794782bcac77da2c436c2
+      internalID: 1679252149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mahasiswa_5
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 1271
+        width: 104
+        height: 147
+      alignment: 9
+      pivot: {x: 0.32, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61ae8eeea17f3436ea466ebf59c60867
+      internalID: -703217849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pelanggan_0
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1094
+        width: 83
+        height: 166
+      alignment: 9
+      pivot: {x: 0.5, y: 0.035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1428a777c567b4dbba9ab10471304c9c
+      internalID: 1615536361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pelanggan_1
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 1095
+        width: 85
+        height: 165
+      alignment: 9
+      pivot: {x: 0.5, y: 0.035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a27d5a97fdc9b4e148ab5ae62c3bc50f
+      internalID: -1279261829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pelanggan_2
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 1095
+        width: 88
+        height: 164
+      alignment: 9
+      pivot: {x: 0.5, y: 0.035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50ec8adb291bf43e38aff3fdce9215d3
+      internalID: 1229657928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pelanggan_3
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 1093
+        width: 79
+        height: 166
+      alignment: 9
+      pivot: {x: 0.5, y: 0.035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7798d6aeea6aa4fd9a6e445527f6c295
+      internalID: 2054677338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pelanggan_4
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 1093
+        width: 96
+        height: 139
+      alignment: 9
+      pivot: {x: 0.32, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64aacdb6302704efc9b5274ee46ccd0b
+      internalID: -1980633729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pelanggan_5
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 1093
+        width: 104
+        height: 149
+      alignment: 9
+      pivot: {x: 0.32, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7450b8e80b7634fc7a83857ddd9722fa
+      internalID: -1552728523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mahasiswi_0
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 907
+        width: 84
+        height: 174
+      alignment: 9
+      pivot: {x: 0.5, y: 0.035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6612f02495a544a92bfa80acdb1467c7
+      internalID: 1486293976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mahasiswi_1
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 911
+        width: 93
+        height: 169
+      alignment: 9
+      pivot: {x: 0.5, y: 0.035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ec4bc9199388471cb752e66cf60ccf6
+      internalID: 898831758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mahasiswi_2
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 911
+        width: 91
+        height: 170
+      alignment: 9
+      pivot: {x: 0.5, y: 0.035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d88151f13cdef4519ada349e79f7c30e
+      internalID: 98620248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mahasiswi_3
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 908
+        width: 84
+        height: 175
+      alignment: 9
+      pivot: {x: 0.5, y: 0.035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da3a9590e9a0a431aa2a97b97d2cca12
+      internalID: -1300096614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mahasiswi_4
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 905
+        width: 110
+        height: 152
+      alignment: 9
+      pivot: {x: 0.32, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 992c9d48c8c8e46a68692eab2f435679
+      internalID: -142267419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mahasiswi_5
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 905
+        width: 109
+        height: 155
+      alignment: 9
+      pivot: {x: 0.32, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae7bd97f169434b3381a4390fa069316
+      internalID: -1691329285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pegawai_0
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 726
+        width: 85
+        height: 171
+      alignment: 9
+      pivot: {x: 0.5, y: 0.035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be82bbf8611ee493ea39618744ef2d1c
+      internalID: -1015899573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pegawai_1
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 725
+        width: 88
+        height: 176
+      alignment: 9
+      pivot: {x: 0.5, y: 0.035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c50ce623188544da4aa23c6ab0b75544
+      internalID: -1621646078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pegawai_2
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 725
+        width: 90
+        height: 175
+      alignment: 9
+      pivot: {x: 0.5, y: 0.035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7645643fbc08a4236a5d399eea622987
+      internalID: -939382352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pegawai_3
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 725
+        width: 82
+        height: 173
+      alignment: 9
+      pivot: {x: 0.5, y: 0.035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff6e42cec63714b3385b62eb314aa043
+      internalID: -955031997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pegawai_4
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 724
+        width: 102
+        height: 146
+      alignment: 9
+      pivot: {x: 0.32, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71d1506445a50485abb7671aa2ee1e76
+      internalID: -876421217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pegawai_5
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 724
+        width: 114
+        height: 154
+      alignment: 9
+      pivot: {x: 0.32, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eded460dc5174c7d9f0f9f9f6ac4f16
+      internalID: 1138425815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JuruMasak_0
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 543
+        width: 82
+        height: 178
+      alignment: 9
+      pivot: {x: 0.5, y: 0.035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17c779620c7434110b2a7ab559b810b6
+      internalID: -1768149824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JuruMasak_1
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 543
+        width: 95
+        height: 177
+      alignment: 9
+      pivot: {x: 0.5, y: 0.035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 029458f01e99247b083398d1118a67e6
+      internalID: 1520083832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JuruMasak_2
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 543
+        width: 94
+        height: 177
+      alignment: 9
+      pivot: {x: 0.5, y: 0.035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d003aa14393144d0929438b79f3ec13
+      internalID: 475660471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JuruMasak_3
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 543
+        width: 86
+        height: 177
+      alignment: 9
+      pivot: {x: 0.5, y: 0.035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5382dd6e35221447682621487272fd77
+      internalID: 369069675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JuruMasak_4
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 543
+        width: 105
+        height: 154
+      alignment: 9
+      pivot: {x: 0.32, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9c52f9ee5e174dc78ddd92a302e12a8
+      internalID: -1783136383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JuruMasak_5
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 543
+        width: 120
+        height: 159
+      alignment: 9
+      pivot: {x: 0.32, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 360ed427284744422ae2779356b71a86
+      internalID: -903879454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pramusaji_0
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 362
+        width: 79
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0364f36af3b944a786febba3200e117
+      internalID: 2143745491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pramusaji_1
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 362
+        width: 92
+        height: 158
+      alignment: 9
+      pivot: {x: 0.5, y: 0.035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a32fda0826a9418ca3c3d01c34f7a69
+      internalID: 1839275186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pramusaji_2
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 362
+        width: 90
+        height: 158
+      alignment: 9
+      pivot: {x: 0.5, y: 0.035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0710905a8568a4be2868417c318877a8
+      internalID: 1782410193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pramusaji_3
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 362
+        width: 80
+        height: 159
+      alignment: 9
+      pivot: {x: 0.5, y: 0.035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5458b2a05db8f481bbc542d997ec7192
+      internalID: -1763075702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pramusaji_4
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 362
+        width: 105
+        height: 137
+      alignment: 9
+      pivot: {x: 0.32, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1306f3652eb34e2f8fc544138484ace
+      internalID: -204290261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pramusaji_5
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 362
+        width: 115
+        height: 142
+      alignment: 9
+      pivot: {x: 0.32, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b759ba15a0ef34f85b13eac098644242
+      internalID: -1258054467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasir_0
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 184
+        width: 81
+        height: 165
+      alignment: 9
+      pivot: {x: 0.5, y: 0.035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 556df533a19df416fbe5ba14f3a56e6a
+      internalID: 1511543695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasir_1
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 182
+        width: 90
+        height: 164
+      alignment: 9
+      pivot: {x: 0.5, y: 0.035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21d5703ca2c1e47019878c02bf924d9d
+      internalID: -266355866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasir_2
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 183
+        width: 94
+        height: 164
+      alignment: 9
+      pivot: {x: 0.5, y: 0.035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 356676ecb69cd48328f4976ab2760a51
+      internalID: -1721759747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasir_3
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 183
+        width: 79
+        height: 163
+      alignment: 9
+      pivot: {x: 0.5, y: 0.035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3d622a5e537245789ff7708b4f09636
+      internalID: 296859713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasir_4
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 181
+        width: 103
+        height: 138
+      alignment: 9
+      pivot: {x: 0.32, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 519a00d5644054e85afb2d96532d2f47
+      internalID: -203824573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kasir_5
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 181
+        width: 112
+        height: 144
+      alignment: 9
+      pivot: {x: 0.32, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cea1765f21abd438893f72962db7fe48
+      internalID: -646032668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ibu_0
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 12
+        width: 84
+        height: 166
+      alignment: 9
+      pivot: {x: 0.5, y: 0.035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9afe1c9f7d91147b6b62982179c88efb
+      internalID: 907023851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ibu_1
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 14
+        width: 93
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cb5fa46f42524460a6460b61a1364af
+      internalID: -95137112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ibu_2
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 14
+        width: 94
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e703d3e71873d4b96921b515e6051834
+      internalID: -1787845593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ibu_3
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 12
+        width: 85
+        height: 166
+      alignment: 9
+      pivot: {x: 0.5, y: 0.035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 415f2943e8864488991f2d3596c9ca06
+      internalID: 615751478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ibu_4
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 9
+        width: 101
+        height: 140
+      alignment: 9
+      pivot: {x: 0.32, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1ec861e0a07b44909b41a058ae3c46a
+      internalID: 1193338041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ibu_5
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 7
+        width: 114
+        height: 149
+      alignment: 9
+      pivot: {x: 0.32, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4739a9c63fa614e3d9d22e3004536948
+      internalID: -208929538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 33fd60a4eb46042539c9dbef480b7e45
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Ibu_0: 907023851
+      Ibu_1: -95137112
+      Ibu_2: -1787845593
+      Ibu_3: 615751478
+      Ibu_4: 1193338041
+      Ibu_5: -208929538
+      JuruMasak_0: -1768149824
+      JuruMasak_1: 1520083832
+      JuruMasak_2: 475660471
+      JuruMasak_3: 369069675
+      JuruMasak_4: -1783136383
+      JuruMasak_5: -903879454
+      Kasir_0: 1511543695
+      Kasir_1: -266355866
+      Kasir_2: -1721759747
+      Kasir_3: 296859713
+      Kasir_4: -203824573
+      Kasir_5: -646032668
+      Mahasiswa_0: -522244212
+      Mahasiswa_1: 1870023903
+      Mahasiswa_2: -1405541380
+      Mahasiswa_3: 1156081615
+      Mahasiswa_4: 1679252149
+      Mahasiswa_5: -703217849
+      Mahasiswi_0: 1486293976
+      Mahasiswi_1: 898831758
+      Mahasiswi_2: 98620248
+      Mahasiswi_3: -1300096614
+      Mahasiswi_4: -142267419
+      Mahasiswi_5: -1691329285
+      Pegawai_0: -1015899573
+      Pegawai_1: -1621646078
+      Pegawai_2: -939382352
+      Pegawai_3: -955031997
+      Pegawai_4: -876421217
+      Pegawai_5: 1138425815
+      Pelanggan_0: 1615536361
+      Pelanggan_1: -1279261829
+      Pelanggan_2: 1229657928
+      Pelanggan_3: 2054677338
+      Pelanggan_4: -1980633729
+      Pelanggan_5: -1552728523
+      Pramusaji_0: 2143745491
+      Pramusaji_1: 1839275186
+      Pramusaji_2: 1782410193
+      Pramusaji_3: -1763075702
+      Pramusaji_4: -204290261
+      Pramusaji_5: -1258054467
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

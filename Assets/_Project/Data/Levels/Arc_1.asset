@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c3d0ae1593ac4a96932a560f9177a48, type: 3}
+  m_Name: Arc_1
+  m_EditorClassIdentifier: Assembly-CSharp::Geprek.Data.ArcDef
+  arcNumber: 1
+  title: 'Arc 1: Perintis'
+  intro: Warung ibu jadi tempat usaha pertamamu. Semua dikerjakan sendiri.
+  outro: Omzetmu sudah cukup untuk menyewa ruko. Saatnya naik kelas.
+  businessLocation: 0
+  days:
+  - {fileID: 11400000, guid: 9eef1cbe166a44b499b107d731a4a4de, type: 2}
+  - {fileID: 11400000, guid: c60b28d419f9546abbe00a2d886a6b31, type: 2}
+  - {fileID: 11400000, guid: 8960554f295ed44e8bb41de97f059f63, type: 2}
+  - {fileID: 11400000, guid: 26d1b59c37da14612ab036209b577fbb, type: 2}
+  - {fileID: 11400000, guid: bec3f5699546a4e328df6e8cf2c5ec19, type: 2}
+  arcRevenueTarget: 420000
+  minSatisfaction: 0.45

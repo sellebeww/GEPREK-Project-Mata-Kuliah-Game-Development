@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b3cdf97a7e034ef7b2316ca4a035d8f, type: 3}
+  m_Name: Recipe_geprek_komplit
+  m_EditorClassIdentifier: Assembly-CSharp::Geprek.Data.RecipeDef
+  id: geprek_komplit
+  displayName: Geprek Komplit
+  description: Sambal merah plus telur ceplok. Menu penutup arc, paling mahal dan
+    paling ribet.
+  icon: {fileID: 921491595, guid: b2940a722af034fd4862b738da7251f7, type: 3}
+  components:
+  - {fileID: 11400000, guid: fead24e08687d41caac811ef8f677558, type: 2}
+  - {fileID: 11400000, guid: 208cee5d551364265a55572b5c3899ff, type: 2}
+  - {fileID: 11400000, guid: b1009a81e0b8f45cf99583c2e1ceb968, type: 2}
+  - {fileID: 11400000, guid: 970414fab70fa42ca88bf05d10af3553, type: 2}
+  basePrice: 38000
+  xpReward: 28
+  unlockLevel: 7
+  unlockArc: 2
+  unlockCost: 0
+  fromParents: 1
+  patienceMultiplier: 0.85
