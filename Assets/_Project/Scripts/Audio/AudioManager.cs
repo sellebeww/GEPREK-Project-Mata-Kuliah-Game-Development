@@ -50,15 +50,30 @@ namespace Geprek.Audio
         public float MusicVolume
         {
             get => musicVolume;
-            set { musicVolume = Mathf.Clamp01(value); if (musicSource != null) musicSource.volume = musicVolume; }
+            set
+            {
+                musicVolume = Mathf.Clamp01(value);
+                if (musicSource != null) musicSource.volume = musicVolume;
+                PlayerPrefs.SetFloat(MusicKey, musicVolume);
+            }
         }
 
-        public float SfxVolume { get => sfxVolume; set => sfxVolume = Mathf.Clamp01(value); }
+        public float SfxVolume
+        {
+            get => sfxVolume;
+            set { sfxVolume = Mathf.Clamp01(value); PlayerPrefs.SetFloat(SfxKey, sfxVolume); }
+        }
+
+        const string MusicKey = "geprek.vol.music";
+        const string SfxKey = "geprek.vol.sfx";
 
         void Awake()
         {
             if (Instance != null && Instance != this) { Destroy(gameObject); return; }
             Instance = this;
+
+            musicVolume = Mathf.Clamp01(PlayerPrefs.GetFloat(MusicKey, musicVolume));
+            sfxVolume = Mathf.Clamp01(PlayerPrefs.GetFloat(SfxKey, sfxVolume));
 
             foreach (var e in sfx) if (e != null) _map[e.id] = e;
 

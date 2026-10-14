@@ -183,6 +183,7 @@ namespace Geprek.UI
             var label = Label("Label", img.transform, caption, fontSize, fg, TextAnchor.MiddleCenter, FontStyle.Bold);
             Stretch(label.rectTransform, 6f);
 
+            btn.onClick.AddListener(() => Audio.AudioManager.Play(Core.SfxId.Click));
             if (onClick != null) btn.onClick.AddListener(() => onClick());
             return btn;
         }
