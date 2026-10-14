@@ -56,6 +56,7 @@ namespace Geprek.Core
         /// save file yang sudah ada dengan data kosong lewat OnApplicationQuit.
         /// </summary>
         bool _sessionStarted;
+        PlayerProgress _dayStartProgress;
 
         /// <summary>True selama jam sibuk hari ini. Spawner dan UI membacanya.</summary>
         public bool IsLunchRush => _lunchRush;
@@ -127,6 +128,7 @@ namespace Geprek.Core
         public void NewGame()
         {
             _sessionStarted = true;
+            _dayStartProgress = null;
             SaveSystem.Delete();
             Progress = new PlayerProgress { money = Config.startingMoney };
             Progress.arcStats.Reset(1);
@@ -155,16 +157,25 @@ namespace Geprek.Core
         public void ContinueGame()
         {
             var loaded = SaveSystem.Load();
-            if (loaded == null) { NewGame(); return; }
+            if (loaded == null || database.GetArc(loaded.arcNumber) == null)
+            {
+                GameEvents.RaiseToast("Save tidak dapat dibaca. Data asli tetap disimpan.");
+                return;
+            }
             _sessionStarted = true;
+            _dayStartProgress = null;
             Progress = loaded;
             GameEvents.RaiseMoney(Progress.money, 0);
             GameEvents.RaiseXp(Progress.xp, Progress.XpToNext(Config), Progress.level);
             GameEvents.RaiseReputation(Progress.reputation);
-            SetState(GameState.DayBriefing);
+            if (Progress.storyCompleted) SetState(GameState.GameOver);
+            else if (CurrentArc != null && Progress.dayInArc > CurrentArc.DayCount) ShowArcReport();
+            else if (Progress.dayCompleted) GoHomeForNight();
+            else SetState(GameState.DayBriefing);
         }
 
-        public void SaveNow() => SaveSystem.Save(Progress);
+        // World/cooking state is not serialized: active shifts resume at their opening checkpoint.
+        public bool SaveNow() => SaveSystem.Save(_dayStartProgress ?? Progress);
 
         public void BackToMenu()
         {
@@ -183,6 +194,9 @@ namespace Geprek.Core
             if (plan == null) { Debug.LogError("[Geprek] Rencana hari tidak ditemukan."); return; }
 
             locations?.Show(CurrentArc.businessLocation, snapPlayer: true);
+            ActiveBusiness?.ResetKitchen();
+            var player = FindAnyObjectByType<Player.PlayerController>();
+            player?.Carry?.Clear();
 
             // hari pertama: Ibu tunjukkan alur dapur dulu sebelum jam operasional jalan
             if (!Progress.tutorialSeen)
@@ -198,6 +212,7 @@ namespace Geprek.Core
 
         void StartOperatingHours(DayPlanDef plan)
         {
+            _dayStartProgress = JsonUtility.FromJson<PlayerProgress>(JsonUtility.ToJson(Progress));
             DayProgress = 0f;
             _lunchRush = false;
 
@@ -246,6 +261,8 @@ namespace Geprek.Core
         {
             if (_closingRoutine != null) { StopCoroutine(_closingRoutine); _closingRoutine = null; }
 
+            spawner?.ClearAll();
+
             // cabang menyetor hasil harian sebelum biaya dihitung
             Today.branchIncome = Progress.BranchIncome();
             if (Today.branchIncome > 0)
@@ -261,6 +278,8 @@ namespace Geprek.Core
             Progress.lifetimeRevenue += Today.revenue;
             Progress.lifetimeServed += Today.served;
             Progress.arcStats.Accumulate(Today);
+            Progress.dayCompleted = true;
+            _dayStartProgress = null;
 
             SetState(GameState.DayReport);
             GameEvents.RaiseDayEnded(Today);
@@ -270,6 +289,7 @@ namespace Geprek.Core
         /// <summary>Dipanggil tombol "Lanjut" di laporan harian.</summary>
         public void GoHomeForNight()
         {
+            spawner?.ClearAll();
             locations?.Show(LocationId.Home, snapPlayer: true);
             SetState(GameState.NightHome);
         }
@@ -277,6 +297,8 @@ namespace Geprek.Core
         /// <summary>Dipanggil dari kasur. Menutup hari dan menyiapkan hari berikutnya.</summary>
         public void Sleep()
         {
+            if (State != GameState.NightHome) return;
+            Progress.dayCompleted = false;
             Progress.totalDayCount++;
             Progress.dayInArc++;
             SaveNow();
@@ -284,10 +306,7 @@ namespace Geprek.Core
             var arc = CurrentArc;
             if (arc != null && Progress.dayInArc > arc.DayCount)
             {
-                SetState(GameState.ArcReport);
-                bool passed = Progress.arcStats.revenue >= arc.arcRevenueTarget
-                              && Progress.arcStats.AverageSatisfaction >= arc.minSatisfaction;
-                GameEvents.RaiseArcEnded(arc, Progress.arcStats, passed);
+                ShowArcReport();
             }
             else
             {
@@ -295,9 +314,20 @@ namespace Geprek.Core
             }
         }
 
+        void ShowArcReport()
+        {
+            var arc = CurrentArc;
+            if (arc == null) return;
+            SetState(GameState.ArcReport);
+            GameEvents.RaiseArcEnded(arc, Progress.arcStats,
+                Progress.arcStats.revenue >= arc.arcRevenueTarget &&
+                Progress.arcStats.AverageSatisfaction >= arc.minSatisfaction);
+        }
+
         /// <summary>Dipanggil tombol di laporan arc.</summary>
         public void AdvanceAfterArcReport(bool passed)
         {
+            if (State != GameState.ArcReport) return;
             var arc = CurrentArc;
             if (passed && database.GetArc(Progress.arcNumber + 1) != null)
             {
@@ -313,6 +343,7 @@ namespace Geprek.Core
 
             if (passed)
             {
+                Progress.storyCompleted = true;
                 SaveNow();
                 PlayCutsceneThen(CutsceneId.Ending, () => SetState(GameState.GameOver));
                 return;
@@ -331,13 +362,14 @@ namespace Geprek.Core
 
         public void AddMoney(int delta, bool silent = false)
         {
-            Progress.money = Mathf.Max(0, Progress.money + delta);
-            GameEvents.RaiseMoney(Progress.money, silent ? 0 : delta);
+            int previous = Progress.money;
+            Progress.money = (int)System.Math.Clamp((long)previous + delta, 0L, int.MaxValue);
+            GameEvents.RaiseMoney(Progress.money, silent ? 0 : Progress.money - previous);
         }
 
         public bool TrySpend(int amount)
         {
-            if (amount > Progress.money) return false;
+            if (amount < 0 || amount > Progress.money) return false;
             AddMoney(-amount);
             return true;
         }
@@ -460,6 +492,14 @@ namespace Geprek.Core
             if (stars > 0 && AllObjectivesMet()) stars++;
             if (stars > 1 && Today.served > 0 && Today.AverageSatisfaction >= 0.8f) stars++;
             return stars;
+        }
+
+        // Jendela kehilangan fokus di tengah shift: jeda agar kesabaran pelanggan tidak terkuras.
+        // Dilewati di Editor supaya klik ke jendela lain / otomasi tes tidak menjeda Play Mode.
+        void OnApplicationFocus(bool focused)
+        {
+            if (focused || Application.isEditor) return;
+            if (State is GameState.DayOperating or GameState.DayClosing) Pause();
         }
 
         void OnApplicationPause(bool paused) { if (paused && _sessionStarted) SaveNow(); }

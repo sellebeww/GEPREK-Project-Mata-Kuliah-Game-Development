@@ -52,6 +52,7 @@ namespace Geprek.Stations
         void Update()
         {
             if (_phase == Phase.Empty || _input == null) return;
+            if (Game != null && Game.State is not (GameState.DayOperating or GameState.DayClosing)) return;
 
             float speed = Game != null ? Game.CookSpeedMultiplier : 1f;
             _timer += Time.deltaTime * speed;
@@ -215,6 +216,8 @@ namespace Geprek.Stations
 
             ClearStation();
         }
+
+        public void ResetForDay() => ClearStation();
 
         void ClearStation()
         {

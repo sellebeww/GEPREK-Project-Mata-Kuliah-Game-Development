@@ -1,3 +1,4 @@
+using System;
 using Geprek.Core;
 using Geprek.Data;
 using Geprek.Utils;
@@ -66,11 +67,11 @@ namespace Geprek.UI
             var badge = UIFactory.Panel("Badge", card.transform, UIStyle.Gold);
             UIFactory.Anchor(badge.rectTransform, new Vector2(0f, 1f), new Vector2(0f, 1f),
                              new Vector2(32f, -30f), new Vector2(252f, 29f));
-            var badgeText = UIFactory.Label("Text", badge.transform, "DARI WARUNG, JADI CERITA", 12,
+            var badgeText = UIFactory.Label("Text", badge.transform, "DARI WARUNG, JADI CERITA", UIStyle.FontCaption,
                                             UIStyle.Ink, TextAnchor.MiddleCenter, FontStyle.Bold);
             UIFactory.Stretch(badgeText.rectTransform);
 
-            var title = UIFactory.Label("Title", card.transform, "GEPREK!", 76, UIStyle.Gold,
+            var title = UIFactory.Label("Title", card.transform, "GEPREK!", UIStyle.FontDisplay, UIStyle.Gold,
                                          TextAnchor.MiddleLeft, FontStyle.Bold);
             UIFactory.Anchor(title.rectTransform, new Vector2(0f, 1f), new Vector2(0f, 1f),
                              new Vector2(28f, -66f), new Vector2(378f, 94f));
@@ -78,7 +79,7 @@ namespace Geprek.UI
 
             var sub = UIFactory.Label("Sub", card.transform,
                 "Racik sambal. Layani pelanggan.\nBesarkan warung ibu dengan caramu.",
-                19, UIStyle.Cream, TextAnchor.UpperLeft);
+                UIStyle.FontBody, UIStyle.Cream, TextAnchor.UpperLeft);
             UIFactory.Anchor(sub.rectTransform, new Vector2(0f, 1f), new Vector2(0f, 1f),
                              new Vector2(34f, -171f), new Vector2(362f, 66f));
 
@@ -89,18 +90,16 @@ namespace Geprek.UI
 
             var newBtn = UIFactory.Button("NewGame", card.transform, "Mulai Baru", UIStyle.Chili, UIStyle.Cream, () =>
             {
-                Audio.AudioManager.Play(SfxId.Click);
                 if (Game.HasSave) SetPanel(_newGameConfirmation, true);
                 else Game.NewGame();
-            }, 24);
+            }, UIStyle.FontHeading);
             UIFactory.Anchor(newBtn.image.rectTransform, new Vector2(0.5f, 1f), new Vector2(0.5f, 1f),
                              new Vector2(0f, -274f), new Vector2(362f, 62f));
 
             _continueButton = UIFactory.Button("Continue", card.transform, "Lanjutkan", UIStyle.Wood, UIStyle.Cream, () =>
             {
-                Audio.AudioManager.Play(SfxId.Click);
                 Game.ContinueGame();
-            }, 22);
+            }, UIStyle.FontLead);
             UIFactory.Anchor(_continueButton.image.rectTransform, new Vector2(0.5f, 1f), new Vector2(0.5f, 1f),
                              new Vector2(0f, -348f), new Vector2(362f, 58f));
 
@@ -110,13 +109,13 @@ namespace Geprek.UI
                              new Vector2(0f, -418f), new Vector2(362f, 44f));
 
             var controls = UIFactory.Label("Controls", card.transform,
-                "WASD / PANAH   Gerak     •     E / SPASI   Interaksi\nTahan untuk geprek  •  Kontrol sentuh tersedia", 13,
+                "WASD / PANAH   Gerak     •     E / SPASI   Interaksi\nTahan untuk geprek  •  Kontrol sentuh tersedia", UIStyle.FontCaption,
                 new Color(0.83f, 0.76f, 0.64f), TextAnchor.MiddleCenter);
             UIFactory.Anchor(controls.rectTransform, new Vector2(0.5f, 0f), new Vector2(0.5f, 0f),
                              new Vector2(0f, 22f), new Vector2(382f, 54f));
 
             var credit = UIFactory.Label("Credit", _menuPanel, "Gading · Naufal · Vassel · Farrell",
-                                         13, UIStyle.Cream, TextAnchor.MiddleCenter);
+                                         UIStyle.FontCaption, UIStyle.Cream, TextAnchor.MiddleCenter);
             UIFactory.Anchor(credit.rectTransform, new Vector2(0.5f, 0f), new Vector2(0.5f, 0f),
                              new Vector2(0f, 12f), new Vector2(700f, 24f));
 
@@ -131,7 +130,7 @@ namespace Geprek.UI
             var content = Dialog(_newGameConfirmation, "Mulai cerita baru?", new Vector2(560f, 300f), out _);
             var body = UIFactory.Label("Warning", content,
                 "Progres yang tersimpan akan diganti.\nYakin ingin memulai kembali dari warung ibu?",
-                20, UIStyle.Ink, TextAnchor.MiddleCenter);
+                UIStyle.FontBody, UIStyle.Ink, TextAnchor.MiddleCenter);
             UIFactory.Anchor(body.rectTransform, new Vector2(0.5f, 1f), new Vector2(0.5f, 1f),
                              Vector2.zero, new Vector2(480f, 100f));
             var cancel = UIFactory.Button("Cancel", content, "Kembali", UIStyle.Wood, UIStyle.Cream,
@@ -173,11 +172,13 @@ namespace Geprek.UI
             var content = Dialog(_briefPanel, "Hari Baru", new Vector2(680f, 500f), out _briefTitle);
 
             _briefBody = UIFactory.Label("Body", content, "", UIStyle.FontBody, UIStyle.Ink, TextAnchor.UpperLeft);
+            _briefBody.resizeTextForBestFit = true;
+            _briefBody.resizeTextMinSize = UIStyle.FontCaption;
+            _briefBody.resizeTextMaxSize = UIStyle.FontBody;
             UIFactory.Anchor(_briefBody.rectTransform, new Vector2(0.5f, 1f), new Vector2(0.5f, 1f), new Vector2(0f, -8f), new Vector2(600f, 290f));
 
             var open = UIFactory.Button("Open", content, "Buka Warung", UIStyle.Leaf, Color.white, () =>
             {
-                Audio.AudioManager.Play(SfxId.Click);
                 Game.BeginDay();
             }, UIStyle.FontHeading);
             UIFactory.Anchor(open.image.rectTransform, new Vector2(0.5f, 0f), new Vector2(0.5f, 0f), new Vector2(0f, 14f), new Vector2(300f, 58f));
@@ -220,11 +221,10 @@ namespace Geprek.UI
         void BuildPause()
         {
             _pausePanel = NewPanel("Pause");
-            var content = Dialog(_pausePanel, "Jeda", new Vector2(520f, 400f), out _);
+            var content = Dialog(_pausePanel, "Jeda", new Vector2(520f, 500f), out _);
 
             var resume = UIFactory.Button("Resume", content, "Lanjut Main", UIStyle.Leaf, Color.white, () =>
             {
-                Audio.AudioManager.Play(SfxId.Click);
                 Game.Resume();
             }, UIStyle.FontHeading);
             UIFactory.Anchor(resume.image.rectTransform, new Vector2(0.5f, 1f), new Vector2(0.5f, 1f), new Vector2(0f, -10f), new Vector2(340f, 56f));
@@ -234,18 +234,24 @@ namespace Geprek.UI
 
             var save = UIFactory.Button("Save", content, "Simpan Sekarang", UIStyle.Wood, UIStyle.Cream, () =>
             {
-                Game.SaveNow();
-                ShowToast("Kemajuan tersimpan.", icons.check);
+                bool saved = Game.SaveNow();
+                ShowToast(saved ? "Tersimpan. Hari aktif diulang dari awal saat lanjut." : "Gagal menyimpan. Coba lagi.",
+                    saved ? icons.check : icons.alert);
             });
             UIFactory.Anchor(save.image.rectTransform, new Vector2(0.5f, 1f), new Vector2(0.5f, 1f), new Vector2(0f, -134f), new Vector2(340f, 48f));
 
             var menu = UIFactory.Button("Menu", content, "Simpan & Keluar ke Menu", new Color(0.55f, 0.28f, 0.24f), UIStyle.Cream, () =>
             {
-                Game.SaveNow();
+                if (!Game.SaveNow()) { ShowToast("Gagal menyimpan. Coba lagi.", icons.alert); return; }
                 Game.Resume();
                 Game.BackToMenu();
             });
             UIFactory.Anchor(menu.image.rectTransform, new Vector2(0.5f, 1f), new Vector2(0.5f, 1f), new Vector2(0f, -192f), new Vector2(340f, 48f));
+
+            BuildVolumeRow(content, "Musik", -256f, () => Audio.AudioManager.Instance?.MusicVolume ?? 0f,
+                           v => { if (Audio.AudioManager.Instance != null) Audio.AudioManager.Instance.MusicVolume = v; });
+            BuildVolumeRow(content, "Efek", -308f, () => Audio.AudioManager.Instance?.SfxVolume ?? 0f,
+                           v => { if (Audio.AudioManager.Instance != null) Audio.AudioManager.Instance.SfxVolume = v; });
 
             _pauseHint = UIFactory.Label("Hint", content, "Tekan Esc untuk menutup.", UIStyle.FontSmall, UIStyle.InkSoft, TextAnchor.MiddleCenter);
             UIFactory.Anchor(_pauseHint.rectTransform, new Vector2(0.5f, 0f), new Vector2(0.5f, 0f), new Vector2(0f, 12f), new Vector2(400f, 24f));
@@ -253,9 +259,31 @@ namespace Geprek.UI
 
         Text _pauseHint;
 
+        /// <summary>Baris pengatur volume: label, tombol kurang, bar level, tombol tambah (langkah 10%).</summary>
+        void BuildVolumeRow(RectTransform parent, string caption, float y, Func<float> get, Action<float> set)
+        {
+            var top = new Vector2(0.5f, 1f);
+            var label = UIFactory.Label(caption, parent, caption, UIStyle.FontBody, UIStyle.Ink, TextAnchor.MiddleLeft, FontStyle.Bold);
+            UIFactory.Anchor(label.rectTransform, top, top, new Vector2(-132f, y), new Vector2(80f, 44f));
+
+            var fill = UIFactory.Bar(caption + "Bar", parent, new Color(0.80f, 0.76f, 0.68f), UIStyle.Leaf, out var bg);
+            UIFactory.Anchor(bg.rectTransform, top, top, new Vector2(42f, y - 10f), new Vector2(130f, 24f));
+
+            void Apply(float v) { set(Mathf.Clamp01(Mathf.Round(v * 10f) / 10f)); fill.fillAmount = get(); }
+            var minus = UIFactory.Button(caption + "Minus", parent, "\u2212", UIStyle.Wood, UIStyle.Cream, () => Apply(get() - 0.1f), UIStyle.FontHeading);
+            UIFactory.Anchor(minus.image.rectTransform, top, top, new Vector2(-50f, y), new Vector2(44f, 44f));
+            var plus = UIFactory.Button(caption + "Plus", parent, "+", UIStyle.Wood, UIStyle.Cream, () => Apply(get() + 0.1f), UIStyle.FontHeading);
+            UIFactory.Anchor(plus.image.rectTransform, top, top, new Vector2(148f, y), new Vector2(44f, 44f));
+
+            _volumeSyncs.Add(() => fill.fillAmount = get());
+        }
+
+        readonly System.Collections.Generic.List<Action> _volumeSyncs = new();
+
         void RefreshPause()
         {
             if (_pauseHint == null || Game == null) return;
+            foreach (var sync in _volumeSyncs) sync();
             _pauseHint.text = $"Uang {MathUtil.ToRupiah(Game.Progress.money)} · Level {Game.Progress.level} · Esc untuk menutup";
         }
 
@@ -266,10 +294,10 @@ namespace Geprek.UI
             _reportPanel = NewPanel("DayReport");
             var content = Dialog(_reportPanel, "Laporan Hari Ini", new Vector2(700f, 540f), out _reportTitle);
 
-            _reportStars = UIFactory.Label("Stars", content, "", UIStyle.FontTitle - 6, UIStyle.Gold,
+            _reportStars = UIFactory.Label("Stars", content, "", UIStyle.FontTitle, UIStyle.Gold,
                                            TextAnchor.MiddleCenter, FontStyle.Bold);
             UIFactory.Anchor(_reportStars.rectTransform, new Vector2(0.5f, 1f), new Vector2(0.5f, 1f),
-                             new Vector2(0f, -2f), new Vector2(320f, 46f));
+                             new Vector2(0f, -2f), new Vector2(320f, 52f));
             UIFactory.Outline(_reportStars, new Color(0.45f, 0.30f, 0.08f, 0.9f), new Vector2(2f, -2f));
 
             _reportGradeBg = UIFactory.Panel("GradeBg", content, UIStyle.Gold, UIFactory.Circle);
@@ -280,11 +308,13 @@ namespace Geprek.UI
             UIFactory.Stretch(_reportGrade.rectTransform);
 
             _reportBody = UIFactory.Label("Body", content, "", UIStyle.FontBody, UIStyle.Ink, TextAnchor.UpperLeft);
+            _reportBody.resizeTextForBestFit = true;
+            _reportBody.resizeTextMinSize = UIStyle.FontCaption;
+            _reportBody.resizeTextMaxSize = UIStyle.FontBody;
             UIFactory.Anchor(_reportBody.rectTransform, new Vector2(0f, 1f), new Vector2(0f, 1f), new Vector2(0f, -52f), new Vector2(540f, 330f));
 
             var next = UIFactory.Button("Next", content, "Pulang ke Rumah", UIStyle.Leaf, Color.white, () =>
             {
-                Audio.AudioManager.Play(SfxId.Click);
                 Game.GoHomeForNight();
             }, UIStyle.FontHeading);
             UIFactory.Anchor(next.image.rectTransform, new Vector2(0.5f, 0f), new Vector2(0.5f, 0f), new Vector2(0f, 14f), new Vector2(320f, 58f));
@@ -293,6 +323,7 @@ namespace Geprek.UI
         void OnDayEnded(DayStats s)
         {
             if (_reportTitle == null) return;
+            Audio.AudioManager.Play(SfxId.DayEnd);
             _reportTitle.text = $"Laporan Hari {s.dayNumber}";
             _reportGrade.text = s.Grade;
             _reportGradeBg.color = s.TargetMet ? UIStyle.Gold : new Color(0.80f, 0.55f, 0.50f);
@@ -345,11 +376,13 @@ namespace Geprek.UI
             var content = Dialog(_arcPanel, "Laporan ke Dosen", new Vector2(680f, 470f), out _arcTitle);
 
             _arcBody = UIFactory.Label("Body", content, "", UIStyle.FontBody, UIStyle.Ink, TextAnchor.UpperLeft);
+            _arcBody.resizeTextForBestFit = true;
+            _arcBody.resizeTextMinSize = UIStyle.FontCaption;
+            _arcBody.resizeTextMaxSize = UIStyle.FontBody;
             UIFactory.Anchor(_arcBody.rectTransform, new Vector2(0.5f, 1f), new Vector2(0.5f, 1f), new Vector2(0f, -6f), new Vector2(600f, 300f));
 
             _arcButton = UIFactory.Button("Next", content, "Lanjut", UIStyle.Leaf, Color.white, () =>
             {
-                Audio.AudioManager.Play(SfxId.Click);
                 Game.AdvanceAfterArcReport(_arcPassed);
             }, UIStyle.FontHeading);
             UIFactory.Anchor(_arcButton.image.rectTransform, new Vector2(0.5f, 0f), new Vector2(0.5f, 0f), new Vector2(0f, 14f), new Vector2(320f, 58f));

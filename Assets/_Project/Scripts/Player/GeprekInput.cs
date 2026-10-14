@@ -28,7 +28,10 @@ namespace Geprek.Player
         // ---- dipanggil UI ----
         public void SetVirtualMove(Vector2 v) => _virtualMove = Vector2.ClampMagnitude(v, 1f);
         public void PressInteract() { _virtualInteractDown = true; _virtualInteractHeld = true; }
-        public void ReleaseInteract() => _virtualInteractHeld = false;
+        public void ReleaseInteract() { _virtualInteractHeld = false; _virtualInteractDown = false; }
+        public void ResetVirtualInput() { _virtualMove = Vector2.zero; ReleaseInteract(); }
+        void OnApplicationFocus(bool focused) { if (!focused) ResetVirtualInput(); }
+        void OnDisable() => ResetVirtualInput();
 
         // ---- dibaca gameplay ----
 

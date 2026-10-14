@@ -28,6 +28,14 @@ namespace Geprek.World
         public PlateStation Plate => plateStation;
         public Progression.StaffDirector Staff => staffDirector;
 
+        public void ResetKitchen()
+        {
+            foreach (var station in GetComponentsInChildren<CookStation>(true)) station.ResetForDay();
+            foreach (var station in GetComponentsInChildren<PrepStation>(true)) station.ResetForDay();
+            foreach (var station in GetComponentsInChildren<PlateStation>(true)) station.DumpPlate();
+            foreach (var worker in GetComponentsInChildren<Progression.StaffWorker>(true)) worker.ResetForDay();
+        }
+
         /// <summary>Nyalakan penggorengan tambahan sebanyak yang sudah dibeli.</summary>
         public void RefreshFryers(int extraUnlocked)
         {

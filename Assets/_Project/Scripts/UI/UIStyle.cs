@@ -20,10 +20,14 @@ namespace Geprek.UI
         public static readonly Color Dim = new(0f, 0f, 0f, 0.62f);
         public static readonly Color NightTint = new(0.16f, 0.18f, 0.38f, 0.42f);
 
-        public const int FontTitle = 44;
-        public const int FontHeading = 26;
-        public const int FontBody = 18;
-        public const int FontSmall = 15;
+        // skala tipografi baku: pakai konstanta ini, jangan angka mentah
+        public const int FontDisplay = 76;  // logo menu utama
+        public const int FontTitle = 44;    // nilai/huruf besar (grade, bintang)
+        public const int FontHeading = 26;  // judul panel, tombol utama
+        public const int FontLead = 22;     // sorotan: nama pesanan, dialog, tombol sekunder
+        public const int FontBody = 18;     // teks isi dan tombol biasa
+        public const int FontSmall = 15;    // keterangan
+        public const int FontCaption = 13;  // catatan kecil, kredit, batas bawah auto-fit
 
         static Font _font;
 

@@ -1,0 +1,12 @@
+PASS Escape resumes game and time
+PASS Negative spend rejected
+PASS Money overflow saturates safely
+PASS Opening checkpoint saved
+PASS Raw chicken enters fryer
+PASS Early pickup blocked
+PASS Fryer gives cooked chicken
+PASS Prep gives geprek
+PASS Requested recipe matches assembled plate
+PASS Serving consumes dish and pays once
+PASS Repeated serving cannot pay twice
+PASS Selected customer supplies the order card

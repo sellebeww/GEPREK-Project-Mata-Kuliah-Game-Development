@@ -50,6 +50,7 @@ namespace Geprek.Player
             _frozen = frozen;
             if (frozen)
             {
+                _input?.ResetVirtualInput();
                 _mover.Stop();
                 animator?.SetMoving(false);
                 interactor?.ReleaseInteract();

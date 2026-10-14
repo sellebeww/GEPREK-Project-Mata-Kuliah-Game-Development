@@ -123,6 +123,8 @@ namespace Geprek.Stations
             if (pestle != null) pestle.localPosition = _pestleHome;
         }
 
+        public void ResetForDay() => Clear();
+
         void Clear()
         {
             _input = null;

@@ -25,6 +25,8 @@ namespace Geprek.Progression
         public int lifetimeRevenue;
         public int lifetimeServed;
         public bool tutorialSeen;
+        public bool dayCompleted;
+        public bool storyCompleted;
 
         public List<string> unlockedRecipes = new();
         public List<UpgradeEntry> upgrades = new();

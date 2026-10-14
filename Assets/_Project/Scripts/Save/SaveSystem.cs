@@ -33,9 +33,9 @@ namespace Geprek.Save
         static string Path => System.IO.Path.Combine(Application.persistentDataPath, FileName);
 #endif
 
-        public static bool HasSave => File.Exists(Path);
+        public static bool HasSave => File.Exists(Path) || File.Exists(Path + ".bak");
 
-        public static void Save(PlayerProgress progress)
+        public static bool Save(PlayerProgress progress)
         {
             try
             {
@@ -44,32 +44,64 @@ namespace Geprek.Save
                     progress = progress,
                     savedAtUtc = DateTime.UtcNow.ToString("o")
                 };
-                File.WriteAllText(Path, JsonUtility.ToJson(data, true));
+                if (progress == null) throw new ArgumentNullException(nameof(progress));
+                string path = Path;
+                Directory.CreateDirectory(System.IO.Path.GetDirectoryName(path));
+                string temporary = path + ".tmp";
+                using (var stream = new FileStream(temporary, FileMode.Create, FileAccess.Write, FileShare.None))
+                {
+                    byte[] bytes = System.Text.Encoding.UTF8.GetBytes(JsonUtility.ToJson(data, true));
+                    stream.Write(bytes, 0, bytes.Length);
+                    stream.Flush(true);
+                }
+                if (File.Exists(path)) File.Replace(temporary, path, path + ".bak");
+                else File.Move(temporary, path);
+                return true;
             }
             catch (Exception e)
             {
                 Debug.LogWarning($"[Geprek] Gagal menyimpan: {e.Message}");
+                return false;
             }
         }
 
         public static PlayerProgress Load()
         {
-            try
+            foreach (string path in new[] { Path, Path + ".bak" })
             {
-                if (!File.Exists(Path)) return null;
-                var data = JsonUtility.FromJson<SaveData>(File.ReadAllText(Path));
-                return data?.progress;
+                if (!File.Exists(path)) continue;
+                try
+                {
+                    string json = File.ReadAllText(path);
+                    // JsonUtility can materialize a default class for an explicit null object.
+                    if (!System.Text.RegularExpressions.Regex.IsMatch(json, "\"progress\"\\s*:\\s*\\{"))
+                        throw new InvalidDataException("Data kemajuan tidak ditemukan.");
+                    var data = JsonUtility.FromJson<SaveData>(json);
+                    var p = data?.progress;
+                    if (data == null || data.version != 1 || p == null || p.level < 1 ||
+                        p.arcNumber < 1 || p.dayInArc < 1 || p.unlockedRecipes == null ||
+                        p.upgrades == null || p.staff == null || p.branches == null ||
+                        p.parentTopicsSeen == null || p.arcStats == null ||
+                        p.upgrades.Exists(x => x == null) || p.staff.Exists(x => x == null) ||
+                        p.branches.Exists(x => x == null))
+                        throw new InvalidDataException("Data kemajuan tidak lengkap.");
+                    return p;
+                }
+                catch (Exception e)
+                {
+                    Debug.LogWarning($"[Geprek] Gagal memuat save: {e.Message}");
+                }
             }
-            catch (Exception e)
-            {
-                Debug.LogWarning($"[Geprek] Gagal memuat save: {e.Message}");
-                return null;
-            }
+            return null;
         }
 
         public static void Delete()
         {
-            try { if (File.Exists(Path)) File.Delete(Path); }
+            try
+            {
+                foreach (string path in new[] { Path, Path + ".bak", Path + ".tmp" })
+                    if (File.Exists(path)) File.Delete(path);
+            }
             catch (Exception e) { Debug.LogWarning($"[Geprek] Gagal menghapus save: {e.Message}"); }
         }
     }

@@ -11,6 +11,7 @@ namespace Geprek.UI
     public partial class UIRoot
     {
         RectTransform _shopList, _bookList;
+        bool _resumeAfterBook;
         Text _shopMoney, _shopTabTitle;
         enum ShopTab { Upgrade, Recipe, Staff }
         ShopTab _shopTab = ShopTab.Upgrade;
@@ -269,6 +270,11 @@ namespace Geprek.UI
         {
             var game = Game;
             if (game == null || _bookList == null) return;
+            if (game.State is GameState.DayOperating or GameState.DayClosing)
+            {
+                game.Pause();
+                _resumeAfterBook = true;
+            }
 
             for (int i = _bookList.childCount - 1; i >= 0; i--) Destroy(_bookList.GetChild(i).gameObject);
 

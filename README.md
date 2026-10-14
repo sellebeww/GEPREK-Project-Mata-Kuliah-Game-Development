@@ -8,6 +8,7 @@ milik ibunya, pindah ke ruko, lalu membuka restoran dengan cabang.
 - **Scene utama:** `Assets/_Project/Scenes/Main.unity`
 - **Dokumen sumber:** `Arahan.md`
 - **Desain referensi & cutscene baru:** [panduan dan hasil uji](Docs/REFERENCE_WORLD.md)
+- **Audit & perbaikan 9 Oktober 2026:** [hasil, perubahan, dan checklist Play Mode](Docs/AUDIT_20261009.md)
 - **CLI dan MCP resmi Unity:** [konfigurasi dan pemeriksaan koneksi](Docs/UNITY_TOOLING.md)
 
 ---
@@ -163,7 +164,8 @@ Ketiganya adalah peta terpisah yang dibangun dari satu pembangun yang sama
 - 15 efek suara untuk memasak, melayani, uang, upgrade, dan notifikasi.
 
 **Lain-lain**
-- Simpan otomatis ke JSON di `Application.persistentDataPath/geprek_save.json`.
+- Simpan otomatis ke JSON di `Application.persistentDataPath/geprek_save.json`, dengan cadangan `.bak`.
+- Save saat jam operasional melanjutkan dari awal shift (checkpoint), bukan posisi pelanggan/masakan saat itu. Save sesudah laporan melanjutkan di rumah dengan hasil hari tetap tersimpan.
 - Kontrol sentuh (joystick + tombol) dan keyboard, sesuai target platform di GDD.
 
 ---

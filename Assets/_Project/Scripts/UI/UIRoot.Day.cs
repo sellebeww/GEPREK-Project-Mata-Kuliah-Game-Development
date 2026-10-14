@@ -16,6 +16,7 @@ namespace Geprek.UI
         RectTransform _rushBanner;
         Image _rushWindow;
         float _rushTimer;
+        float _objectiveRefreshTimer;
         bool _rushActive;
 
         const int MaxObjectiveRows = 2;
@@ -156,8 +157,12 @@ namespace Geprek.UI
                 if (_rushTimer <= 0f) _rushBanner.gameObject.SetActive(false);
             }
 
-            if (Game != null && Game.State is GameState.DayOperating or GameState.DayClosing)
+            _objectiveRefreshTimer -= dt;
+            if (_objectiveRefreshTimer <= 0f && Game != null && Game.State is GameState.DayOperating or GameState.DayClosing)
+            {
+                _objectiveRefreshTimer = .2f;
                 RefreshObjectives();
+            }
         }
 
     }

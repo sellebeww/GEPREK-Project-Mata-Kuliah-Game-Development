@@ -62,7 +62,7 @@ namespace Geprek.EditorTools
             IsolateSave();
             var game = GameManager.Instance;
             if (game == null) throw new InvalidOperationException("Buka Main.unity.");
-            if (UnityEngine.Object.FindFirstObjectByType<CutsceneDirector>().IsPlaying)
+            if (UnityEngine.Object.FindAnyObjectByType<CutsceneDirector>().IsPlaying)
                 throw new InvalidOperationException("Selesaikan cutscene atau mulai ulang Play Mode.");
             if (observing) WriteReport();
             game.BackToMenu();

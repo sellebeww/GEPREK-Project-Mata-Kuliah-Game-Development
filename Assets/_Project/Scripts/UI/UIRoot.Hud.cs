@@ -29,6 +29,7 @@ namespace Geprek.UI
             BuildInteractControls();
             BuildJoystick();
             BuildToast();
+            BuildOrderCard();
 
             _hud.gameObject.SetActive(false);
         }
@@ -46,7 +47,9 @@ namespace Geprek.UI
 
             label = UIFactory.Label("Text", rt, text, UIStyle.FontBody, fg, TextAnchor.MiddleLeft, FontStyle.Bold);
             UIFactory.Anchor(label.rectTransform, new Vector2(0f, 0.5f), new Vector2(0f, 0.5f), new Vector2(40f, 0f), new Vector2(width - 46f, height - 6f));
-            label.horizontalOverflow = HorizontalWrapMode.Overflow;
+            label.resizeTextForBestFit = true;
+            label.resizeTextMinSize = UIStyle.FontCaption;
+            label.resizeTextMaxSize = UIStyle.FontBody;
             return rt;
         }
 
@@ -73,7 +76,7 @@ namespace Geprek.UI
             _xpFill = UIFactory.Bar("XpBar", left, new Color(0.80f, 0.76f, 0.68f), UIStyle.Leaf, out var xpBg);
             UIFactory.Anchor(xpBg.rectTransform, new Vector2(0f, 1f), new Vector2(0f, 1f), new Vector2(colX, gapY + 4f), new Vector2(colW, 12f));
 
-            var xpLabel = UIFactory.Label("XpHint", left, "XP", UIStyle.FontSmall - 2, UIStyle.Cream, TextAnchor.MiddleLeft, FontStyle.Bold);
+            var xpLabel = UIFactory.Label("XpHint", left, "XP", UIStyle.FontCaption, UIStyle.Cream, TextAnchor.MiddleLeft, FontStyle.Bold);
             UIFactory.Anchor(xpLabel.rectTransform, new Vector2(0f, 1f), new Vector2(0f, 1f), new Vector2(colX + 6f, gapY + 4f), new Vector2(40f, 12f));
 
             // kanan: antrean, buku resep, jeda
@@ -112,7 +115,10 @@ namespace Geprek.UI
 
             _dayText = UIFactory.Label("Day", box.transform, "Hari 1", UIStyle.FontSmall, UIStyle.InkSoft, TextAnchor.UpperLeft, FontStyle.Bold);
             UIFactory.Anchor(_dayText.rectTransform, new Vector2(0f, 1f), new Vector2(0f, 1f), new Vector2(48f, -9f), new Vector2(236f, 20f));
-            _dayText.horizontalOverflow = HorizontalWrapMode.Overflow;
+            _dayText.resizeTextForBestFit = true;
+            _dayText.resizeTextMinSize = UIStyle.FontCaption;
+            _dayText.resizeTextMaxSize = UIStyle.FontSmall;
+            _dayText.rectTransform.sizeDelta = new Vector2(216f, 20f);
 
             _clockText = UIFactory.Label("Clock", box.transform, "09:00", UIStyle.FontHeading, UIStyle.Ink, TextAnchor.UpperRight, FontStyle.Bold);
             UIFactory.Anchor(_clockText.rectTransform, new Vector2(1f, 1f), new Vector2(1f, 1f), new Vector2(-12f, -6f), new Vector2(120f, 28f));
@@ -177,7 +183,8 @@ namespace Geprek.UI
 
         void BuildToast()
         {
-            var box = UIFactory.Panel("Toast", _hud, new Color(0.16f, 0.12f, 0.10f, 0.92f));
+            var box = UIFactory.Panel("Toast", _screen, new Color(0.16f, 0.12f, 0.10f, 0.92f));
+            box.raycastTarget = false;
             _toastBox = box.rectTransform;
             UIFactory.Anchor(_toastBox, new Vector2(0.5f, 1f), new Vector2(0.5f, 1f), new Vector2(0f, -146f), new Vector2(600f, 46f));
 
@@ -187,7 +194,7 @@ namespace Geprek.UI
             _toastText = UIFactory.Label("Text", _toastBox, "", UIStyle.FontBody, UIStyle.Cream, TextAnchor.MiddleLeft);
             UIFactory.Stretch(_toastText.rectTransform, 8f);
             _toastText.resizeTextForBestFit = true;
-            _toastText.resizeTextMinSize = 14;
+            _toastText.resizeTextMinSize = UIStyle.FontCaption;
             _toastText.resizeTextMaxSize = UIStyle.FontBody;
 
             _toastBox.gameObject.SetActive(false);
@@ -293,6 +300,7 @@ namespace Geprek.UI
                 _toastIcon.enabled = icon != null;
             }
             _toastBox.gameObject.SetActive(true);
+            _toastBox.SetAsLastSibling();
             _toastTimer = duration;
         }
 

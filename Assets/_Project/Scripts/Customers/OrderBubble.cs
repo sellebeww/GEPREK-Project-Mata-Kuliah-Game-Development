@@ -18,7 +18,30 @@ namespace Geprek.Customers
         [SerializeField] Sprite moodAnnoyed;
         [SerializeField] Sprite moodAngry;
 
-        void Awake() => Hide();
+        WorldLabel _fallback;
+
+        void Awake()
+        {
+            if (background != null) background.transform.localScale *= 1.35f;
+            if (dishIcon != null)
+            {
+                dishIcon.transform.localScale *= 1.85f;
+                dishIcon.transform.localPosition = new Vector3(-0.08f, 0.13f, 0f);
+            }
+            if (moodIcon != null) moodIcon.transform.localPosition = new Vector3(0.42f, 0.27f, 0f);
+            if (patienceBar != null)
+            {
+                patienceBar.transform.localPosition = new Vector3(0f, -0.24f, 0f);
+                patienceBar.transform.localScale = new Vector3(1.35f, 1f, 1f);
+            }
+            if (root != null)
+            {
+                _fallback = WorldLabel.Create(root.transform, "?", new Vector3(-0.08f, .13f, 0f),
+                    .12f, new Color(.28f, .16f, .1f), 1005);
+                _fallback.gameObject.SetActive(false);
+            }
+            Hide();
+        }
 
         public void Hide()
         {
@@ -32,6 +55,7 @@ namespace Geprek.Customers
             if (dishIcon != null) { dishIcon.sprite = dish; dishIcon.enabled = dish != null; }
             if (background != null) background.enabled = true;
             patienceBar?.SetVisible(true);
+            if (_fallback != null) _fallback.gameObject.SetActive(dish == null);
             SetPatience(1f);
         }
 
@@ -51,6 +75,7 @@ namespace Geprek.Customers
         /// <summary>Tampilkan satu ikon saja, misalnya saat pelanggan marah atau senang.</summary>
         public void ShowReaction(Sprite icon)
         {
+            if (_fallback != null) _fallback.gameObject.SetActive(icon == null);
             if (root != null) root.SetActive(true);
             if (background != null) background.enabled = true;
             if (dishIcon != null) { dishIcon.sprite = icon; dishIcon.enabled = icon != null; }

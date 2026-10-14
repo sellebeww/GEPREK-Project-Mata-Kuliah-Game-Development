@@ -20,6 +20,14 @@ namespace Geprek.UI
         Canvas _canvas;
         Vector2 _origin;
         bool _active;
+        int _pointerId;
+
+        void OnDisable()
+        {
+            _active = false;
+            GeprekInput.Instance?.SetVirtualMove(Vector2.zero);
+            if (hideWhenIdle) SetVisible(false);
+        }
 
         public void Setup(RectTransform ringRt, RectTransform knobRt, float r)
         {
@@ -43,6 +51,8 @@ namespace Geprek.UI
 
         public void OnPointerDown(PointerEventData e)
         {
+            if (_active || e.button != PointerEventData.InputButton.Left) return;
+            _pointerId = e.pointerId;
             _active = true;
             SetVisible(true);
             _origin = ToLocal(e);
@@ -52,7 +62,7 @@ namespace Geprek.UI
 
         public void OnDrag(PointerEventData e)
         {
-            if (!_active) return;
+            if (!_active || e.pointerId != _pointerId) return;
 
             Vector2 local = ToLocal(e);
             Vector2 delta = Vector2.ClampMagnitude(local - _origin, radius);
@@ -63,6 +73,7 @@ namespace Geprek.UI
 
         public void OnPointerUp(PointerEventData e)
         {
+            if (!_active || e.pointerId != _pointerId) return;
             _active = false;
             GeprekInput.Instance?.SetVirtualMove(Vector2.zero);
             if (knob != null && ring != null) knob.anchoredPosition = ring.anchoredPosition;

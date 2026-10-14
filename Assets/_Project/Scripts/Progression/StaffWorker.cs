@@ -49,6 +49,7 @@ namespace Geprek.Progression
         float _unclaimedSince;
         static readonly System.Collections.Generic.Dictionary<Component, StaffWorker> Claims = new();
         TextMesh _nameplate;
+        string _displayedStatus, _displayedName;
         readonly System.Collections.Generic.Queue<Vector3> _route = new();
         Vector3 _routeDestination = Vector3.positiveInfinity;
         public string WorkStatus => Role == StaffRole.Cashier ? "Kasir" : _job switch {
@@ -66,6 +67,23 @@ namespace Geprek.Progression
                 if (Claims[key] == this || Claims[key] == null) Claims.Remove(key);
         }
         void OnDisable() => ReleaseClaims();
+
+        public void ResetForDay()
+        {
+            ReleaseClaims();
+            carry?.Clear();
+            _job = Job.Idle;
+            _target = null;
+            _recipe = null;
+            _fryer = null;
+            _cobek = null;
+            _unclaimedDish = null;
+            _route.Clear();
+            _routeDestination = Vector3.positiveInfinity;
+            _timer = thinkDelay;
+            if (idleSpot != null) transform.position = idleSpot.position;
+            animator?.SetPose(CharacterPose.Standing);
+        }
 
         GameManager Game => GameManager.Instance;
         StaffRole Role => _member != null ? _member.role : StaffRole.Server;
@@ -100,7 +118,12 @@ namespace Geprek.Progression
         {
             var game = Game;
             bool working = game != null && (game.IsOperating || game.State == GameState.DayClosing);
-            if (_nameplate != null) _nameplate.text = _member.displayName + " · " + WorkStatus;
+            if (_nameplate != null && _member != null && (_displayedStatus != WorkStatus || _displayedName != _member.displayName))
+            {
+                _displayedStatus = WorkStatus;
+                _displayedName = _member.displayName;
+                _nameplate.text = _displayedName + " · " + _displayedStatus;
+            }
 
             if (!working || Role == StaffRole.Cashier)
             {
@@ -222,12 +245,16 @@ namespace Geprek.Progression
                     if (Walk(_moveTo))
                     {
                         _fryer.Interact(carry);
+                        if (carry.HasItem) { ReturnHome(); break; }
+                        _holdTimeout = 30f;
                         _job = Job.WaitFryer;
                         _timer = 0.5f;
                     }
                     break;
 
                 case Job.WaitFryer:
+                    _holdTimeout -= Time.deltaTime;
+                    if (_fryer == null || !_fryer.IsBusy || _holdTimeout <= 0f) { ReturnHome(); break; }
                     Walk(_moveTo);
                     animator?.SetPose(CharacterPose.Working);
                     // tunggu di dekat penggorengan sampai matang, lalu langsung angkat

@@ -107,7 +107,7 @@ namespace Geprek.Customers
         {
             State = CustomerState.Queueing;
             WalkTo(path);
-            _target = spot;
+
         }
 
         // ------------------------------------------------------------- siklus
@@ -303,7 +303,7 @@ namespace Geprek.Customers
 
             _lastSatisfaction = satisfaction;
             _game.RecordServed(outcome, pay, satisfaction, Order.xpReward, Order);
-            Audio.AudioManager.Play(SfxId.Coin);
+            Audio.AudioManager.Play(SfxId.Serve);
 
             JuiceDirector.DoPopup($"+{MathUtil.ToRupiah(pay)}", _spawner != null ? _spawner.CoinSprite : null,
                                   head, new Color(1f, 0.83f, 0.32f));

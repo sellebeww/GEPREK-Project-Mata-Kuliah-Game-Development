@@ -151,6 +151,7 @@ namespace Geprek.UI
         void Update()
         {
             TickToast(Time.unscaledDeltaTime);
+            TickOrderCard(Time.unscaledDeltaTime);
             TickPopups(Time.unscaledDeltaTime);
             TickDayLayer(Time.unscaledDeltaTime);
             TickCutscene(Time.unscaledDeltaTime);
@@ -185,7 +186,7 @@ namespace Geprek.UI
             var scaler = gameObject.GetComponent<CanvasScaler>() ?? gameObject.AddComponent<CanvasScaler>();
             scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
             scaler.referenceResolution = new Vector2(1280f, 720f);
-            scaler.screenMatchMode = CanvasScaler.ScreenMatchMode.MatchWidthOrHeight;
+            scaler.screenMatchMode = CanvasScaler.ScreenMatchMode.Expand;
             scaler.matchWidthOrHeight = 0.5f;
 
             if (gameObject.GetComponent<GraphicRaycaster>() == null)
@@ -223,6 +224,7 @@ namespace Geprek.UI
 
         void CloseTopModal()
         {
+            _modals.Sort((a, b) => a.GetSiblingIndex().CompareTo(b.GetSiblingIndex()));
             for (int i = _modals.Count - 1; i >= 0; i--)
             {
                 if (_modals[i] != null && _modals[i].gameObject.activeSelf)
@@ -230,6 +232,7 @@ namespace Geprek.UI
                     // panel alur utama tidak boleh ditutup sembarangan
                     if (_modals[i] == _menuPanel || _modals[i] == _briefPanel ||
                         _modals[i] == _reportPanel || _modals[i] == _arcPanel || _modals[i] == _overPanel) return;
+                    if (_modals[i] == _pausePanel) { Game?.Resume(); return; }
                     SetPanel(_modals[i], false);
                     return;
                 }
@@ -240,6 +243,11 @@ namespace Geprek.UI
         {
             if (panel == null) return;
             panel.gameObject.SetActive(on);
+            if (panel == _bookPanel && !on && _resumeAfterBook)
+            {
+                _resumeAfterBook = false;
+                Game?.Resume();
+            }
             RefreshDimmer();
             if (on) panel.SetAsLastSibling();
             RefreshPlayerFreeze();

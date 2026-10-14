@@ -61,12 +61,12 @@ namespace Geprek.UI
             UIFactory.Anchor(_cutSpeaker.rectTransform, new Vector2(0f, 1f), new Vector2(0f, 1f),
                              new Vector2(136f, -14f), new Vector2(600f, 30f));
 
-            _cutText = UIFactory.Label("Text", _cutsceneBox, "", 23, UIStyle.Cream, TextAnchor.UpperLeft);
+            _cutText = UIFactory.Label("Text", _cutsceneBox, "", UIStyle.FontLead, UIStyle.Cream, TextAnchor.UpperLeft);
             UIFactory.Anchor(_cutText.rectTransform, new Vector2(0f, 1f), new Vector2(0f, 1f),
                              new Vector2(136f, -48f), new Vector2(835f, 86f));
 
             _cutHint = UIFactory.Label("Hint", _cutsceneBox, "KLIK / SPASI  ·  lanjut",
-                                       UIStyle.FontSmall - 1, new Color(.83f,.76f,.61f), TextAnchor.MiddleRight);
+                                       UIStyle.FontCaption, new Color(.83f,.76f,.61f), TextAnchor.MiddleRight);
             UIFactory.Anchor(_cutHint.rectTransform, new Vector2(1f, 0f), new Vector2(1f, 0f),
                              new Vector2(-16f, 8f), new Vector2(320f, 20f));
 
@@ -97,12 +97,12 @@ namespace Geprek.UI
             _titleGroup.interactable = false;
             _titleGroup.alpha = 0f;
 
-            _titleMain = UIFactory.Label("Main", _titleCard, "", 26, UIStyle.Chili,
+            _titleMain = UIFactory.Label("Main", _titleCard, "", UIStyle.FontHeading, UIStyle.Chili,
                                          TextAnchor.MiddleCenter, FontStyle.Bold);
             UIFactory.Anchor(_titleMain.rectTransform, new Vector2(0.5f, 1f), new Vector2(0.5f, 1f),
                              new Vector2(0f, -8f), new Vector2(470f, 30f));
 
-            _titleSub = UIFactory.Label("Sub", _titleCard, "", 15, UIStyle.Ink,
+            _titleSub = UIFactory.Label("Sub", _titleCard, "", UIStyle.FontSmall, UIStyle.Ink,
                                         TextAnchor.MiddleCenter);
             UIFactory.Anchor(_titleSub.rectTransform, new Vector2(0.5f, 1f), new Vector2(0.5f, 1f),
                              new Vector2(0f, -34f), new Vector2(470f, 18f));
@@ -119,7 +119,7 @@ namespace Geprek.UI
             _cutFade.raycastTarget = false;
             _cutFade.rectTransform.SetSiblingIndex(2);
 
-            _cinematicCaption = UIFactory.Label("Location", _cutsceneLayer, "", 16, UIStyle.Cream, TextAnchor.MiddleLeft, FontStyle.Bold);
+            _cinematicCaption = UIFactory.Label("Location", _cutsceneLayer, "", UIStyle.FontSmall, UIStyle.Cream, TextAnchor.MiddleLeft, FontStyle.Bold);
             UIFactory.Anchor(_cinematicCaption.rectTransform,new(0,1),new(0,1),new(30,-22),new(700,30));
             _cinematicCaption.raycastTarget = false;
 

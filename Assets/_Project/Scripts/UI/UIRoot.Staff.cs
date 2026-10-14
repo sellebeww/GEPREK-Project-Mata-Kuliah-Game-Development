@@ -131,7 +131,6 @@ namespace Geprek.UI
         void FireStaff(GameManager game, StaffMember member)
         {
             game.Progress.staff.Remove(member);
-            Audio.AudioManager.Play(SfxId.Click);
             ShowToast($"{member.displayName} berhenti bekerja.", null);
             GameEvents.RaiseStaffChanged();
             game.SaveNow();

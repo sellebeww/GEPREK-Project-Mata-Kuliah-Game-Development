@@ -37,7 +37,7 @@ namespace Geprek.UI
                 var icon = UIFactory.Icon("Icon", root, null, new Vector2(26f, 26f));
                 UIFactory.Anchor(icon.rectTransform, new Vector2(0.5f, 0.5f), new Vector2(1f, 0.5f), new Vector2(-6f, 0f), new Vector2(26f, 26f));
 
-                var label = UIFactory.Label("Text", root, "", UIStyle.FontHeading - 2, Color.white, TextAnchor.MiddleLeft, FontStyle.Bold);
+                var label = UIFactory.Label("Text", root, "", UIStyle.FontLead, Color.white, TextAnchor.MiddleLeft, FontStyle.Bold);
                 UIFactory.Anchor(label.rectTransform, new Vector2(0.5f, 0.5f), new Vector2(0f, 0.5f), new Vector2(2f, 0f), new Vector2(230f, 34f));
                 UIFactory.Outline(label, new Color(0.10f, 0.07f, 0.06f, 0.95f), new Vector2(2f, -2f));
 
