@@ -9,7 +9,7 @@ namespace Geprek.UI
         public static readonly Color Ink = new(0.16f, 0.12f, 0.10f);
         public static readonly Color InkSoft = new(0.36f, 0.30f, 0.26f);
         public static readonly Color Cream = new(0.98f, 0.95f, 0.88f);
-        public static readonly Color Panel = new(0.99f, 0.96f, 0.90f, 0.98f);
+        public static readonly Color Panel = new(0.99f, 0.96f, 0.90f, 1f);
         public static readonly Color PanelDark = new(0.20f, 0.15f, 0.13f, 0.95f);
         public static readonly Color Wood = new(0.55f, 0.36f, 0.22f);
         public static readonly Color Chili = new(0.85f, 0.26f, 0.22f);

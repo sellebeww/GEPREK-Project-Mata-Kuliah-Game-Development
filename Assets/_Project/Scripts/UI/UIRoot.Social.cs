@@ -58,7 +58,7 @@ namespace Geprek.UI
                           0, icons.growth);
 
             AddSocialCard(SocialAction.InviteVlogger, "Undang Food Vlogger",
-                          "Besok food vlogger mampir. Pelayanan sempurna = reputasi melonjak,\ngagal = reputasi turun.",
+                          "Vlogger mampir besok. Layanan sempurna: reputasi melonjak, gagal: turun.",
                           SocialMediaSystem.VloggerCost, icons.star);
 
             var p = game.Progress;

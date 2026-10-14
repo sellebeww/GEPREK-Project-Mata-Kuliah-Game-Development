@@ -337,16 +337,16 @@ namespace Geprek.UI
 
             _reportBody.text =
                 $"{status}\n" + ObjectiveLines(s) + "\n" +
-                $"Omzet            : <b>{MathUtil.ToRupiah(s.revenue)}</b>  (target {MathUtil.ToRupiah(s.targetRevenue)})\n" +
+                $"Omzet: <b>{MathUtil.ToRupiah(s.revenue)}</b>  (target {MathUtil.ToRupiah(s.targetRevenue)})\n" +
                 (s.branchIncome > 0 ? $"  (termasuk setoran cabang {MathUtil.ToRupiah(s.branchIncome)})\n" : "") +
-                $"Biaya operasional : -{MathUtil.ToRupiah(s.expenses)}\n" +
-                $"Laba bersih      : <b>{MathUtil.ToRupiah(s.Profit)}</b>\n\n" +
-                $"Pelanggan dilayani : {s.served} dari {s.TotalCustomers}\n" +
-                $"Pelayanan sempurna : {s.perfect}   ·   Telat: {s.late}\n" +
-                $"Kabur / tak kebagian tempat : {s.abandoned} / {s.turnedAway}\n" +
-                $"Salah menu : {s.wrongOrders}   ·   Bahan terbuang: {s.wasted}\n\n" +
-                $"Kepuasan rata-rata : {Mathf.RoundToInt(s.AverageSatisfaction * 100f)}%\n" +
-                $"XP didapat : +{s.xpGained}";
+                $"Biaya operasional: -{MathUtil.ToRupiah(s.expenses)}\n" +
+                $"Laba bersih: <b>{MathUtil.ToRupiah(s.Profit)}</b>\n\n" +
+                $"Pelanggan dilayani: {s.served} dari {s.TotalCustomers}\n" +
+                $"Pelayanan sempurna: {s.perfect}   ·   Telat: {s.late}\n" +
+                $"Kabur / tak kebagian tempat: {s.abandoned} / {s.turnedAway}\n" +
+                $"Salah menu: {s.wrongOrders}   ·   Bahan terbuang: {s.wasted}\n\n" +
+                $"Kepuasan rata-rata: {Mathf.RoundToInt(s.AverageSatisfaction * 100f)}%\n" +
+                $"XP didapat: +{s.xpGained}";
         }
 
 
@@ -385,7 +385,7 @@ namespace Geprek.UI
             {
                 Game.AdvanceAfterArcReport(_arcPassed);
             }, UIStyle.FontHeading);
-            UIFactory.Anchor(_arcButton.image.rectTransform, new Vector2(0.5f, 0f), new Vector2(0.5f, 0f), new Vector2(0f, 14f), new Vector2(320f, 58f));
+            UIFactory.Anchor(_arcButton.image.rectTransform, new Vector2(0.5f, 0f), new Vector2(0.5f, 0f), new Vector2(0f, 14f), new Vector2(440f, 58f));
         }
 
         Button _arcButton;
@@ -403,13 +403,13 @@ namespace Geprek.UI
 
             _arcBody.text =
                 $"{verdict}\n\n" +
-                $"Total omzet arc : <b>{MathUtil.ToRupiah(stats.revenue)}</b> " +
+                $"Total omzet arc: <b>{MathUtil.ToRupiah(stats.revenue)}</b> " +
                 $"(target {MathUtil.ToRupiah(arc.arcRevenueTarget)})\n" +
-                $"Pelanggan dilayani : {stats.served}\n" +
-                $"Pelanggan hilang : {stats.lost}\n" +
-                $"Kepuasan rata-rata : {Mathf.RoundToInt(stats.AverageSatisfaction * 100f)}% " +
+                $"Pelanggan dilayani: {stats.served}\n" +
+                $"Pelanggan hilang: {stats.lost}\n" +
+                $"Kepuasan rata-rata: {Mathf.RoundToInt(stats.AverageSatisfaction * 100f)}% " +
                 $"(minimal {Mathf.RoundToInt(arc.minSatisfaction * 100f)}%)\n" +
-                $"Hari dijalani : {stats.daysPlayed}\n\n" +
+                $"Hari dijalani: {stats.daysPlayed}\n\n" +
                 $"<i>{(passed ? arc.outro : "Perbaiki kecepatan pelayanan dan tambah kapasitas tempat duduk.")}</i>";
 
             if (_arcButton != null)
@@ -457,10 +457,10 @@ namespace Geprek.UI
             _overBody.text =
                 "Dari warung kecil milik ibu, bisnis ayam geprekmu tumbuh sampai punya cabang sendiri. " +
                 "Tugas kuliahmu selesai dengan nilai penuh.\n\n" +
-                $"Total omzet sepanjang permainan : <b>{MathUtil.ToRupiah(p.lifetimeRevenue)}</b>\n" +
-                $"Pelanggan dilayani : {p.lifetimeServed}\n" +
-                $"Level memasak akhir : {p.level}\n" +
-                $"Reputasi akhir : {Mathf.RoundToInt(p.reputation * 100f)}%";
+                $"Total omzet sepanjang permainan: <b>{MathUtil.ToRupiah(p.lifetimeRevenue)}</b>\n" +
+                $"Pelanggan dilayani: {p.lifetimeServed}\n" +
+                $"Level memasak akhir: {p.level}\n" +
+                $"Reputasi akhir: {Mathf.RoundToInt(p.reputation * 100f)}%";
         }
 
         // ---------------------------------------------------------------- dialog

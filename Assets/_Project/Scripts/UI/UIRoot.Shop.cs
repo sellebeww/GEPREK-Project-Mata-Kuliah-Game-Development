@@ -71,7 +71,7 @@ namespace Geprek.UI
         void BuildShop()
         {
             _shopPanel = NewPanel("Shop");
-            var content = Dialog(_shopPanel, "Toko & Upgrade", new Vector2(860f, 560f), out _shopTabTitle);
+            var content = Dialog(_shopPanel, "Toko & Upgrade", new Vector2(860f, 590f), out _shopTabTitle);
 
             _shopMoney = UIFactory.Label("Money", content, "", UIStyle.FontBody, UIStyle.Ink, TextAnchor.UpperRight, FontStyle.Bold);
             UIFactory.Anchor(_shopMoney.rectTransform, new Vector2(1f, 1f), new Vector2(1f, 1f), new Vector2(0f, -4f), new Vector2(300f, 26f));
@@ -88,7 +88,7 @@ namespace Geprek.UI
                                          () => { _shopTab = ShopTab.Staff; RefreshShop(); });
             UIFactory.Anchor(_tabStaff.image.rectTransform, new Vector2(0f, 1f), new Vector2(0f, 1f), new Vector2(316f, -2f), new Vector2(160f, 40f));
 
-            _shopList = ScrollArea(content, new Vector2(0f, -50f), new Vector2(800f, 380f));
+            _shopList = ScrollArea(content, new Vector2(0f, -50f), new Vector2(800f, 368f));
 
             var close = UIFactory.Button("Close", content, "Tutup", UIStyle.Wood, UIStyle.Cream, () => SetPanel(_shopPanel, false));
             UIFactory.Anchor(close.image.rectTransform, new Vector2(0.5f, 0f), new Vector2(0.5f, 0f), new Vector2(0f, 4f), new Vector2(240f, 48f));
@@ -234,7 +234,7 @@ namespace Geprek.UI
         void EmptyNote(RectTransform parent, string message)
         {
             var note = UIFactory.Label("Empty", parent, message, UIStyle.FontBody, UIStyle.InkSoft, TextAnchor.MiddleCenter);
-            UIFactory.Size(note.gameObject, -1, 90f);
+            UIFactory.Size(note.gameObject, -1, 220f);
         }
 
         static string Ingredients(RecipeDef r)
@@ -253,14 +253,14 @@ namespace Geprek.UI
         void BuildRecipeBook()
         {
             _bookPanel = NewPanel("RecipeBook");
-            var content = Dialog(_bookPanel, "Buku Resep", new Vector2(860f, 560f), out _);
+            var content = Dialog(_bookPanel, "Buku Resep", new Vector2(860f, 590f), out _);
 
             var hint = UIFactory.Label("Hint", content,
                 "Urutan memasak: ambil ayam → goreng → geprek di cobek → susun di meja penyajian → antar ke pelanggan.",
                 UIStyle.FontSmall, UIStyle.InkSoft, TextAnchor.UpperLeft);
             UIFactory.Anchor(hint.rectTransform, new Vector2(0.5f, 1f), new Vector2(0.5f, 1f), new Vector2(0f, -2f), new Vector2(800f, 40f));
 
-            _bookList = ScrollArea(content, new Vector2(0f, -46f), new Vector2(800f, 382f));
+            _bookList = ScrollArea(content, new Vector2(0f, -46f), new Vector2(800f, 372f));
 
             var close = UIFactory.Button("Close", content, "Tutup", UIStyle.Wood, UIStyle.Cream, () => SetPanel(_bookPanel, false));
             UIFactory.Anchor(close.image.rectTransform, new Vector2(0.5f, 0f), new Vector2(0.5f, 0f), new Vector2(0f, 4f), new Vector2(240f, 48f));
