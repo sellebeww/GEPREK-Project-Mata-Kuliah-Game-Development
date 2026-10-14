@@ -40,7 +40,8 @@ namespace Geprek.Customers
         DayPlanDef _plan;
 
         bool _running;
-        float _spawnTimer;
+        float[] _arrivals = System.Array.Empty<float>();   // waktu datang tiap pelanggan (progres hari 0..1)
+        int _nextArrival;
         int _spawnedCount;
         int _plannedCount;
 
@@ -79,7 +80,9 @@ namespace Geprek.Customers
             _spawnedCount = 0;
             _specialPending = _game.TodayVlogger ? FindSpecialType() : null;
             _specialAt = _specialPending != null ? Mathf.Max(2, Mathf.RoundToInt(_plannedCount * 0.35f)) : -1;
-            _spawnTimer = 2.5f;
+            _arrivals = BuildSchedule(_plannedCount, _game.Config.dayLengthSeconds, plan.hasLunchRush,
+                                      plan.rushStart, plan.rushEnd, plan.rushSpawnScale, new System.Random());
+            _nextArrival = 0;
             _running = true;
         }
 
@@ -120,20 +123,78 @@ namespace Geprek.Customers
         void Update()
         {
             if (!_running || _game == null) return;
-            if (_spawnedCount >= _plannedCount) return;
+            if (_nextArrival >= _arrivals.Length) return;
 
-            _spawnTimer -= Time.deltaTime;
-            if (_spawnTimer > 0f) return;
-
+            // kedatangan mengikuti jam warung, bukan timer acak: pagi sepi, makan siang ramai
+            if (_game.DayProgress < _arrivals[_nextArrival]) return;
+            _nextArrival++;
             SpawnOne();
+        }
 
-            float t = _game.DayProgress;
-            float interval = Mathf.Lerp(_plan.spawnIntervalStart, _plan.spawnIntervalEnd, t);
+        // ------------------------------------------------------------- jadwal
 
-            // jam sibuk merapatkan kedatangan, jadi antrean benar-benar terasa
-            if (_game.IsLunchRush && _plan.hasLunchRush) interval *= _plan.rushSpawnScale;
+        /// <summary>Pelanggan pertama boleh datang setelah warung buka sebentar.</summary>
+        public const float FirstArrival = 0.03f;
+        /// <summary>Pelanggan terakhir datang sebelum tutup supaya masih sempat dilayani.</summary>
+        public const float LastArrival = 0.86f;
+        /// <summary>Jeda minimum antar pelanggan (detik) supaya pemain sempat membagi waktu.</summary>
+        public const float MinGapSeconds = 2.2f;
 
-            _spawnTimer = Mathf.Max(1.2f, interval * Random.Range(0.85f, 1.15f));
+        /// <summary>Kerapatan kedatangan relatif pada saat t (progres hari).</summary>
+        public static float ArrivalDensity(float t, bool hasRush, float rushStart, float rushEnd, float rushScale)
+        {
+            // pagi: pelan lalu naik
+            float d = Mathf.Lerp(0.55f, 1f, Mathf.SmoothStep(0f, 1f, t / 0.25f));
+            if (hasRush)
+            {
+                float boost = Mathf.Clamp(1f / Mathf.Max(0.2f, rushScale), 1f, 2.5f);
+                const float edge = 0.04f;
+                float inside = Mathf.SmoothStep(0f, 1f, (t - (rushStart - edge)) / (2f * edge))
+                             * (1f - Mathf.SmoothStep(0f, 1f, (t - (rushEnd - edge)) / (2f * edge)));
+                d *= Mathf.Lerp(1f, boost, inside);
+                if (t > rushEnd + edge) d *= 0.75f;       // sore melandai
+            }
+            return d;
+        }
+
+        /// <summary>Waktu datang (progres hari, terurut) untuk <paramref name="count"/> pelanggan.</summary>
+        public static float[] BuildSchedule(int count, float dayLengthSeconds, bool hasRush,
+                                            float rushStart, float rushEnd, float rushScale, System.Random rng)
+        {
+            if (count <= 0) return System.Array.Empty<float>();
+
+            const int steps = 256;
+            var cdf = new float[steps + 1];
+            for (int i = 1; i <= steps; i++)
+            {
+                float t = Mathf.Lerp(FirstArrival, LastArrival, (i - 0.5f) / steps);
+                cdf[i] = cdf[i - 1] + ArrivalDensity(t, hasRush, rushStart, rushEnd, rushScale);
+            }
+
+            var result = new float[count];
+            for (int n = 0; n < count; n++)
+            {
+                // satu pelanggan per irisan kerapatan, digeser sedikit supaya tidak terlalu rapi
+                float jitter = (float)(rng.NextDouble() - 0.5) * 0.7f;
+                float q = Mathf.Clamp01((n + 0.5f + jitter) / count) * cdf[steps];
+                int k = 1;
+                while (k < steps && cdf[k] < q) k++;
+                float span = Mathf.Max(1e-5f, cdf[k] - cdf[k - 1]);
+                float frac = Mathf.Clamp01((q - cdf[k - 1]) / span);
+                result[n] = Mathf.Lerp(FirstArrival, LastArrival, (k - 1 + frac) / steps);
+            }
+            System.Array.Sort(result);
+
+            // jeda minimum: dorong ke depan, lalu tarik mundur dari batas akhir bila meluap
+            float window = LastArrival - FirstArrival;
+            float gap = Mathf.Min(MinGapSeconds / Mathf.Max(1f, dayLengthSeconds), window / count * 0.9f);
+            for (int i = 1; i < count; i++) result[i] = Mathf.Max(result[i], result[i - 1] + gap);
+            for (int i = count - 1; i >= 0; i--)
+            {
+                float limit = LastArrival - (count - 1 - i) * gap;
+                if (result[i] > limit) result[i] = limit;
+            }
+            return result;
         }
 
         // ------------------------------------------------------------- spawn

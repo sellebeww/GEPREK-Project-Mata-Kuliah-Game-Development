@@ -18,9 +18,9 @@ namespace Geprek.Data
 
         [Header("Keramaian")]
         public int totalCustomers = 8;
-        [Tooltip("Jeda antar pelanggan di awal hari (detik).")]
+        [Tooltip("Tidak dipakai lagi: kedatangan kini dijadwalkan mengikuti jam warung (lihat CustomerSpawner.BuildSchedule).")]
         public float spawnIntervalStart = 9f;
-        [Tooltip("Jeda antar pelanggan di akhir hari (detik). Biasanya lebih kecil = makin ramai.")]
+        [Tooltip("Tidak dipakai lagi (lihat spawnIntervalStart).")]
         public float spawnIntervalEnd = 5f;
 
         [Header("Kesulitan")]

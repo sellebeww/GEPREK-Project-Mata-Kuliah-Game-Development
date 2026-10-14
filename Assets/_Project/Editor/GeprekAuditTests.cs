@@ -116,5 +116,33 @@ namespace Geprek.EditorTools
             }
             finally { UnityEngine.Object.DestroyImmediate(go); UnityEngine.Object.DestroyImmediate(fryerGo); }
         }
+
+        [Test]
+        public void ArrivalsFollowTheClockWithRushAndBreathingRoom()
+        {
+            const float day = 200f;
+            foreach (int count in new[] { 7, 18, 42 })
+            {
+                var a = Customers.CustomerSpawner.BuildSchedule(count, day, true, 0.38f, 0.64f, 0.55f, new System.Random(7));
+                Assert.AreEqual(count, a.Length);
+                Assert.GreaterOrEqual(a[0], Customers.CustomerSpawner.FirstArrival - 1e-4f);
+                Assert.LessOrEqual(a[count - 1], Customers.CustomerSpawner.LastArrival + 1e-4f, "pelanggan terakhir harus datang sebelum tutup");
+
+                float minGap = float.MaxValue;
+                for (int i = 1; i < count; i++) minGap = Mathf.Min(minGap, (a[i] - a[i - 1]) * day);
+                float expected = Mathf.Min(Customers.CustomerSpawner.MinGapSeconds, (Customers.CustomerSpawner.LastArrival - Customers.CustomerSpawner.FirstArrival) * day / count * 0.9f);
+                Assert.GreaterOrEqual(minGap, expected - 0.05f, $"jeda minimum untuk {count} pelanggan");
+            }
+
+            // jam sibuk memang lebih padat daripada pagi dengan lebar jendela yang sama
+            var many = Customers.CustomerSpawner.BuildSchedule(30, day, true, 0.38f, 0.64f, 0.55f, new System.Random(3));
+            int morning = 0, rush = 0;
+            foreach (var t in many) { if (t >= 0.10f && t < 0.36f) morning++; if (t >= 0.38f && t < 0.64f) rush++; }
+            Assert.Greater(rush, morning, "kedatangan saat jam sibuk harus lebih banyak dari pagi");
+
+            // tanpa jam sibuk tetap valid dan terurut
+            var calm = Customers.CustomerSpawner.BuildSchedule(10, day, false, 0.4f, 0.6f, 1f, new System.Random(1));
+            for (int i = 1; i < calm.Length; i++) Assert.GreaterOrEqual(calm[i], calm[i - 1]);
+        }
     }
 }
