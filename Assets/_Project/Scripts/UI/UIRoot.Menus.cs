@@ -169,7 +169,7 @@ namespace Geprek.UI
         void BuildBriefing()
         {
             _briefPanel = NewPanel("Briefing");
-            var content = Dialog(_briefPanel, "Hari Baru", new Vector2(680f, 500f), out _briefTitle);
+            var content = Dialog(_briefPanel, "Hari Baru", new Vector2(680f, 548f), out _briefTitle);
 
             _briefBody = UIFactory.Label("Body", content, "", UIStyle.FontBody, UIStyle.Ink, TextAnchor.UpperLeft);
             _briefBody.resizeTextForBestFit = true;
@@ -203,7 +203,12 @@ namespace Geprek.UI
             int repPercent = Mathf.RoundToInt(game.Progress.reputation * 100f);
             var extra = new System.Text.StringBuilder();
             foreach (var o in plan.objectives) extra.Append($"• {o.Describe()}\n");
-            if (plan.hasLunchRush) extra.Append("• Bersiap saat <color=#C2452F><b>jam sibuk</b></color> di tengah hari\n");
+            if (plan.hasLunchRush)
+            {
+                string from = MathUtil.ToGameClock(plan.rushStart, game.Config.openHour, game.Config.closeHour);
+                string to = MathUtil.ToGameClock(plan.rushEnd, game.Config.openHour, game.Config.closeHour);
+                extra.Append($"• Bersiap saat <color=#C2452F><b>jam sibuk {from}–{to}</b></color>\n");
+            }
 
             _briefBody.text =
                 $"<b>{plan.title}</b>\n{plan.briefing}\n\n" +
@@ -441,10 +446,14 @@ namespace Geprek.UI
         void BuildGameOver()
         {
             _overPanel = NewPanel("GameOver");
-            var content = Dialog(_overPanel, "Tamat", new Vector2(620f, 420f), out _);
+            var content = Dialog(_overPanel, "Selamat — Tamat!", new Vector2(680f, 460f), out _);
 
-            _overBody = UIFactory.Label("Body", content, "", UIStyle.FontBody, UIStyle.Ink, TextAnchor.UpperLeft);
-            UIFactory.Anchor(_overBody.rectTransform, new Vector2(0.5f, 1f), new Vector2(0.5f, 1f), new Vector2(0f, -6f), new Vector2(540f, 250f));
+            var stars = UIFactory.Label("Stars", content, "\u2605 \u2605 \u2605", UIStyle.FontTitle, UIStyle.Gold, TextAnchor.MiddleCenter, FontStyle.Bold);
+            UIFactory.Outline(stars, new Color(0.45f, 0.30f, 0.08f, 0.9f), new Vector2(2f, -2f));
+            UIFactory.Anchor(stars.rectTransform, new Vector2(0.5f, 1f), new Vector2(0.5f, 1f), new Vector2(0f, 0f), new Vector2(320f, 56f));
+
+            _overBody = UIFactory.Label("Body", content, "", UIStyle.FontBody, UIStyle.Ink, TextAnchor.UpperCenter);
+            UIFactory.Anchor(_overBody.rectTransform, new Vector2(0.5f, 1f), new Vector2(0.5f, 1f), new Vector2(0f, -64f), new Vector2(560f, 250f));
 
             var menu = UIFactory.Button("Menu", content, "Kembali ke Menu", UIStyle.Leaf, Color.white, () => Game.BackToMenu(), UIStyle.FontHeading);
             UIFactory.Anchor(menu.image.rectTransform, new Vector2(0.5f, 0f), new Vector2(0.5f, 0f), new Vector2(0f, 14f), new Vector2(320f, 58f));
